@@ -327,6 +327,13 @@
             gap: 4px;
         }
 
+        .move-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
         .your-move-label, .best-move-label {
             font-size: 0.8em;
             color: #666;
@@ -1012,8 +1019,10 @@
                         <div class="move-summary-left">
                             <span class="move-quality quality-${actualQuality.toLowerCase().replace(' ', '-')}">${getQualityDisplay(actualQuality)}</span>
                             <div class="move-labels">
-                                <div><span class="your-move-label">Your Move:</span> <span class="your-move-text">${move.Move || 'N/A'}</span></div>
-                                <div><span class="best-move-label">Best Move:</span> <span class="best-move-text">${move.Stockfish_Best_Move || 'N/A'}</span></div>
+                                <div class="move-row">
+                                    <span class="your-move-label">Your Move:</span> <span class="your-move-text">${move.Move || 'N/A'}</span>
+                                    <span class="best-move-label">Best Move:</span> <span class="best-move-text">${move.Stockfish_Best_Move || 'N/A'}</span>
+                                </div>
                             </div>
                         </div>
                         <div class="move-summary-right">
