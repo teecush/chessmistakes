@@ -1146,24 +1146,20 @@
             }).join('');
         }
 
-        // Event listeners for filter buttons (excluding sticky header buttons)
-        document.querySelectorAll('.filter-section .filter-button').forEach(button => {
+        // Event listeners for main filter buttons
+        document.querySelectorAll('.filter-section .filter-button[data-quality]').forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from siblings
-                const siblings = this.parentElement.querySelectorAll('.filter-button');
-                siblings.forEach(sib => sib.classList.remove('active'));
+                // Remove active class from all quality filter buttons (main and sticky)
+                document.querySelectorAll('.filter-button[data-quality]').forEach(btn => {
+                    btn.classList.remove('active');
+                });
                 // Add active class to clicked button
                 this.classList.add('active');
                 
-                // Sync with sticky header if this is a quality filter
-                if (this.dataset.quality) {
-                    document.querySelectorAll('.sticky-header .filter-button').forEach(btn => {
-                        btn.classList.remove('active');
-                    });
-                    const stickyButton = document.querySelector(`.sticky-header .filter-button[data-quality="${this.dataset.quality}"]`);
-                    if (stickyButton) {
-                        stickyButton.classList.add('active');
-                    }
+                // Sync with sticky header
+                const stickyButton = document.querySelector(`.sticky-header .filter-button[data-quality="${this.dataset.quality}"]`);
+                if (stickyButton) {
+                    stickyButton.classList.add('active');
                 }
                 
                 filterData();
