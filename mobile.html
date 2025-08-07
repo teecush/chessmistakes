@@ -70,13 +70,13 @@
         }
 
         .filter-button {
-            padding: 10px 14px;
+            padding: 8px 12px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.2s;
-            font-size: 0.9em;
+            font-size: 0.85em;
             background: white;
             color: #333;
         }
@@ -477,6 +477,56 @@
             color: #666;
         }
 
+        /* Sticky header for move quality filters */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 10px 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: none;
+        }
+
+        .sticky-header .filter-controls {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sticky-header .filter-button {
+            padding: 6px 10px;
+            font-size: 0.8em;
+        }
+
+        .sticky-header.show {
+            display: block;
+        }
+
+        /* Add space for sticky header */
+        .container {
+            padding-top: 60px;
+        }
+
+        .filter-dropdown {
+            padding: 8px 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.9em;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .filter-dropdown:focus {
+            outline: none;
+            border-color: #9C27B0;
+        }
+
         /* Mobile-specific improvements */
         @media (max-width: 480px) {
             .container {
@@ -518,6 +568,19 @@
     </style>
 </head>
 <body>
+    <!-- Sticky header for move quality filters -->
+    <div class="sticky-header" id="sticky-header">
+        <div class="filter-controls">
+            <button class="filter-button button-all active" data-quality="all">All</button>
+            <button class="filter-button button-best" data-quality="best">⭐ Best</button>
+            <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
+            <button class="filter-button button-good" data-quality="good">✅ Good</button>
+            <button class="filter-button button-inaccuracy" data-quality="inaccuracy">⚠️ Inaccuracy</button>
+            <button class="filter-button button-mistake" data-quality="mistake">❌ Mistake</button>
+            <button class="filter-button button-blunder" data-quality="blunder">💥 Blunder</button>
+        </div>
+    </div>
+
     <div class="container">
         <div class="header">
             <h1>♟️ Chess Mistakes</h1>
@@ -555,6 +618,35 @@
                         <span class="slider-value" id="move-number-value">All</span>
                     </div>
                     <input type="range" id="move-number-slider" class="slider" min="1" max="50" value="1">
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <div class="filter-label">Move Themes</div>
+                <div class="dropdown-container">
+                    <select id="theme-filter" class="filter-dropdown">
+                        <option value="all">All Themes</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <div class="filter-label">Times Repeated</div>
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <span>Filter by repetitions</span>
+                        <span class="slider-value" id="repetitions-value">All</span>
+                    </div>
+                    <input type="range" id="repetitions-slider" class="slider" min="1" max="50" value="1">
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <div class="filter-label">Opening</div>
+                <div class="dropdown-container">
+                    <select id="opening-filter" class="filter-dropdown">
+                        <option value="all">All Openings</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -787,10 +879,14 @@
             const selectedQuality = document.querySelector('.filter-button[data-quality].active')?.dataset.quality;
             const selectedSide = document.querySelector('.filter-button[data-side].active')?.dataset.side;
             const maxMoveNumber = parseInt(document.getElementById('move-number-slider').value);
+            const maxRepetitions = parseInt(document.getElementById('repetitions-slider').value);
+            const selectedTheme = document.getElementById('theme-filter').value;
+            const selectedOpening = document.getElementById('opening-filter').value;
 
             filteredData = movesData.filter(move => {
                 const actualQuality = getActualMoveQuality(move);
                 const moveNumber = getMoveNumberFromFEN(move.Position) || move.Move_Number || 0;
+                const repetitions = parseInt(move.Times_Repeated) || 0;
                 
                 // Quality filter
                 if (selectedQuality && selectedQuality !== 'all' && actualQuality.toLowerCase() !== selectedQuality) {
@@ -805,6 +901,26 @@
                 // Move number filter
                 if (maxMoveNumber > 1 && moveNumber > maxMoveNumber) {
                     return false;
+                }
+
+                // Repetitions filter
+                if (maxRepetitions > 1 && repetitions > maxRepetitions) {
+                    return false;
+                }
+
+                // Theme filter
+                if (selectedTheme && selectedTheme !== 'all' && move.Move_Theme) {
+                    const themes = move.Move_Theme.split('; ').map(t => t.trim());
+                    if (!themes.includes(selectedTheme)) {
+                        return false;
+                    }
+                }
+
+                // Opening filter
+                if (selectedOpening && selectedOpening !== 'all' && move.Opening) {
+                    if (!move.Opening.includes(selectedOpening)) {
+                        return false;
+                    }
                 }
                 
                 return true;
@@ -907,6 +1023,52 @@
             filterData();
         });
 
+        document.getElementById('repetitions-slider').addEventListener('input', function() {
+            const value = this.value;
+            document.getElementById('repetitions-value').textContent = value === '1' ? 'All' : value;
+            filterData();
+        });
+
+        // Event listeners for dropdowns
+        document.getElementById('theme-filter').addEventListener('change', filterData);
+        document.getElementById('opening-filter').addEventListener('change', filterData);
+
+        // Sticky header functionality
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const stickyHeader = document.getElementById('sticky-header');
+            
+            if (scrollTop > 200) {
+                stickyHeader.classList.add('show');
+            } else {
+                stickyHeader.classList.remove('show');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Sync sticky header buttons with main filter buttons
+        document.querySelectorAll('.sticky-header .filter-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const quality = this.dataset.quality;
+                
+                // Update main filter buttons
+                document.querySelectorAll('.filter-button[data-quality]').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector(`.filter-button[data-quality="${quality}"]`).classList.add('active');
+                
+                // Update sticky header buttons
+                document.querySelectorAll('.sticky-header .filter-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                filterData();
+            });
+        });
+
         // Load and display data
         async function loadData() {
             try {
@@ -946,6 +1108,43 @@
                 // Update slider max value
                 const slider = document.getElementById('move-number-slider');
                 slider.max = Math.min(maxMoveNumber, 50); // Cap at 50 for usability
+                
+                // Update repetitions slider
+                const maxRepetitions = Math.max(...movesData.map(move => parseInt(move.Times_Repeated) || 0));
+                const repetitionsSlider = document.getElementById('repetitions-slider');
+                repetitionsSlider.max = Math.min(maxRepetitions, 50);
+                
+                // Populate theme dropdown
+                const themes = new Set();
+                movesData.forEach(move => {
+                    if (move.Move_Theme) {
+                        move.Move_Theme.split('; ').forEach(theme => {
+                            themes.add(theme.trim());
+                        });
+                    }
+                });
+                const themeFilter = document.getElementById('theme-filter');
+                themes.forEach(theme => {
+                    const option = document.createElement('option');
+                    option.value = theme;
+                    option.textContent = theme;
+                    themeFilter.appendChild(option);
+                });
+                
+                // Populate opening dropdown
+                const openings = new Set();
+                movesData.forEach(move => {
+                    if (move.Opening) {
+                        openings.add(move.Opening);
+                    }
+                });
+                const openingFilter = document.getElementById('opening-filter');
+                openings.forEach(opening => {
+                    const option = document.createElement('option');
+                    option.value = opening;
+                    option.textContent = opening;
+                    openingFilter.appendChild(option);
+                });
                 
                 // Initial filter
                 filterData();
