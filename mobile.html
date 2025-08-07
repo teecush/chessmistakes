@@ -484,7 +484,7 @@
         .info-row {
             display: flex;
             align-items: center;
-            gap: 2px;
+            gap: 1px;
             margin-bottom: 6px;
             flex-wrap: wrap;
         }
@@ -497,6 +497,10 @@
             font-weight: bold;
             color: #333;
             min-width: 50px;
+        }
+
+        .info-label.opening-label {
+            margin-left: 8px;
         }
 
         .info-value {
@@ -1119,7 +1123,7 @@
                                 <div class="info-row">
                                     <span class="info-label">Side:</span>
                                     <span class="side-bubble side-${(move.Side || 'unknown').toLowerCase()}">${move.Side || 'Unknown'}</span>
-                                    <span class="info-label">Opening:</span>
+                                    <span class="info-label opening-label">Opening:</span>
                                     <span class="info-value">${move.Opening || 'Unknown'}</span>
                                 </div>
                                 <div class="info-row">
