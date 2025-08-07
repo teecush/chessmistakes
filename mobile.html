@@ -208,30 +208,39 @@
         .stats {
             display: flex;
             justify-content: space-around;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 6px;
         }
 
         .stat-item {
             text-align: center;
-            padding: 10px;
+            padding: 6px 8px;
             background: #f8f9fa;
-            border-radius: 8px;
-            min-width: 80px;
+            border-radius: 6px;
+            min-width: 60px;
         }
 
         .stat-number {
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: bold;
             color: #333;
         }
 
         .stat-label {
-            font-size: 0.8em;
+            font-size: 0.7em;
             color: #666;
-            margin-top: 4px;
+            margin-top: 2px;
         }
+
+        /* Light shades of move quality colors for stats */
+        .stat-item:nth-child(1) .stat-number { color: #666; } /* Total - grey */
+        .stat-item:nth-child(2) .stat-number { color: #1976D2; } /* Best - blue */
+        .stat-item:nth-child(3) .stat-number { color: #4CAF50; } /* Excellent - green */
+        .stat-item:nth-child(4) .stat-number { color: #8BC34A; } /* Good - light green */
+        .stat-item:nth-child(5) .stat-number { color: #FFC107; } /* Inaccuracy - yellow */
+        .stat-item:nth-child(6) .stat-number { color: #FF9800; } /* Mistake - orange */
+        .stat-item:nth-child(7) .stat-number { color: #F44336; } /* Blunder - red */
 
         .move-card {
             background: white;
