@@ -215,9 +215,14 @@
 
         .stats {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            gap: 8px;
             margin-bottom: 15px;
-            flex-wrap: wrap;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
             gap: 6px;
         }
 
@@ -242,7 +247,7 @@
         }
 
         /* Light shades of move quality colors for stats */
-        .stat-item:nth-child(1) .stat-number { color: #666; } /* Total - grey */
+        .stat-item:nth-child(1) .stat-number { color: #9C27B0; } /* Total - purple to match All button */
         .stat-item:nth-child(2) .stat-number { color: #1976D2; } /* Best - blue */
         .stat-item:nth-child(3) .stat-number { color: #4CAF50; } /* Excellent - green */
         .stat-item:nth-child(4) .stat-number { color: #8BC34A; } /* Good - light green */
@@ -677,6 +682,41 @@
                 </div>
             </div>
 
+            <div class="stats">
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-moves">-</div>
+                        <div class="stat-label">Total</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="best-count">-</div>
+                        <div class="stat-label">Best</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="excellent-count">-</div>
+                        <div class="stat-label">Excellent</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="good-count">-</div>
+                        <div class="stat-label">Good</div>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number" id="inaccuracy-count">-</div>
+                        <div class="stat-label">Inaccuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="mistake-count">-</div>
+                        <div class="stat-label">Mistake</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="blunder-count">-</div>
+                        <div class="stat-label">Blunder</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="filter-row">
                 <div class="filter-label">Side</div>
                 <div class="filter-controls">
@@ -729,37 +769,6 @@
 
         <div class="move-counter" id="move-counter">
             <span id="current-count">0</span> of <span id="total-count">0</span> moves
-        </div>
-
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number" id="total-moves">-</div>
-                <div class="stat-label">Total</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="best-count">-</div>
-                <div class="stat-label">Best</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="excellent-count">-</div>
-                <div class="stat-label">Excellent</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="good-count">-</div>
-                <div class="stat-label">Good</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="inaccuracy-count">-</div>
-                <div class="stat-label">Inaccuracy</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="mistake-count">-</div>
-                <div class="stat-label">Mistake</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="blunder-count">-</div>
-                <div class="stat-label">Blunder</div>
-            </div>
         </div>
 
         <div id="moves-container">
