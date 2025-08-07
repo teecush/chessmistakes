@@ -127,6 +127,11 @@
             color: white;
         }
 
+        .button-all-errors {
+            background: #8B0000;
+            color: white;
+        }
+
         .button-white {
             background: white;
             color: #333;
@@ -578,8 +583,9 @@
             <button class="filter-button button-inaccuracy" data-quality="inaccuracy">⚠️ Inaccuracy</button>
             <button class="filter-button button-mistake" data-quality="mistake">❌ Mistake</button>
             <button class="filter-button button-blunder" data-quality="blunder">💥 Blunder</button>
-        </div>
-    </div>
+            <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
+                </div>
+            </div>
 
     <div class="container">
         <div class="header">
@@ -598,6 +604,7 @@
                     <button class="filter-button button-inaccuracy" data-quality="inaccuracy">⚠️ Inaccuracy</button>
                     <button class="filter-button button-mistake" data-quality="mistake">❌ Mistake</button>
                     <button class="filter-button button-blunder" data-quality="blunder">💥 Blunder</button>
+                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
                 </div>
             </div>
 
@@ -889,8 +896,15 @@
                 const repetitions = parseInt(move.Times_Repeated) || 0;
                 
                 // Quality filter
-                if (selectedQuality && selectedQuality !== 'all' && actualQuality.toLowerCase() !== selectedQuality) {
-                    return false;
+                if (selectedQuality && selectedQuality !== 'all') {
+                    if (selectedQuality === 'errors') {
+                        // All Errors includes Inaccuracy, Mistake, and Blunder
+                        if (!['Inaccuracy', 'Mistake', 'Blunder'].includes(actualQuality)) {
+                            return false;
+                        }
+                    } else if (actualQuality.toLowerCase() !== selectedQuality) {
+                        return false;
+                    }
                 }
                 
                 // Side filter
