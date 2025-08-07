@@ -444,7 +444,7 @@
         .lichess-button {
             width: 100%;
             padding: 12px;
-            background: #2e7d32;
+            background: #B4AFA5;
             color: white;
             border: none;
             border-radius: 8px;
@@ -455,7 +455,7 @@
         }
 
         .lichess-button:hover {
-            background: #1b5e20;
+            background: #9A948A;
             transform: translateY(-1px);
         }
 
@@ -1101,7 +1101,7 @@
                                      style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                                 <div class="lichess-link">
                                     <button class="lichess-button" onclick="window.open('${generateLichessUrl(move.Position, move.Move)}', '_blank')">
-                                        🔍 Analyze on Lichess
+                                        🔍
                                     </button>
                                 </div>
                             </div>
@@ -1132,8 +1132,8 @@
             }).join('');
         }
 
-        // Event listeners for filter buttons
-        document.querySelectorAll('.filter-button').forEach(button => {
+        // Event listeners for filter buttons (excluding sticky header buttons)
+        document.querySelectorAll('.filter-section .filter-button').forEach(button => {
             button.addEventListener('click', function() {
                 // Remove active class from siblings
                 const siblings = this.parentElement.querySelectorAll('.filter-button');
