@@ -357,6 +357,14 @@
 
         .move-row {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .move-row-left {
+            display: flex;
             align-items: center;
             gap: 5px;
             flex-wrap: wrap;
@@ -411,7 +419,7 @@
 
         .move-number {
             font-weight: bold;
-            color: #333;
+            color: #1976D2;
             font-size: 0.9em;
         }
 
@@ -1091,8 +1099,10 @@
                             </div>
                             <div class="move-labels">
                                 <div class="move-row">
-                                    <span class="your-move-label">Your Move:</span> <span class="your-move-text">${move.Move || 'N/A'}</span>
-                                    <span class="best-move-label">Best Move:</span> <span class="best-move-text">${move.Stockfish_Best_Move || 'N/A'}</span>
+                                    <div class="move-row-left">
+                                        <span class="your-move-label">Your Move:</span> <span class="your-move-text">${move.Move || 'N/A'}</span>
+                                        <span class="best-move-label">Best Move:</span> <span class="best-move-text">${move.Stockfish_Best_Move || 'N/A'}</span>
+                                    </div>
                                     <div class="move-number">Move #${getMoveNumberFromFEN(move.Position) || move.Move_Number || 'N/A'}</div>
                                 </div>
                                 <div class="eval-row">
