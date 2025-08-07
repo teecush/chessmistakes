@@ -1204,11 +1204,16 @@
             button.addEventListener('click', function() {
                 const quality = this.dataset.quality;
                 
-                // Update main filter buttons
-                document.querySelectorAll('.filter-button[data-quality]').forEach(btn => {
+                // Force update main filter buttons - be very specific
+                document.querySelectorAll('.filter-section .filter-button[data-quality]').forEach(btn => {
                     btn.classList.remove('active');
                 });
-                document.querySelector(`.filter-button[data-quality="${quality}"]`).classList.add('active');
+                
+                // Find and activate the specific main filter button
+                const mainButton = document.querySelector(`.filter-section .filter-button[data-quality="${quality}"]`);
+                if (mainButton) {
+                    mainButton.classList.add('active');
+                }
                 
                 // Update sticky header buttons
                 document.querySelectorAll('.sticky-header .filter-button').forEach(btn => {
