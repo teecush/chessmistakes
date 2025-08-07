@@ -247,13 +247,13 @@
         }
 
         /* Light shades of move quality colors for stats */
-        .stat-item:nth-child(1) .stat-number { color: #9C27B0; } /* Total - purple to match All button */
-        .stat-item:nth-child(2) .stat-number { color: #1976D2; } /* Best - blue */
-        .stat-item:nth-child(3) .stat-number { color: #4CAF50; } /* Excellent - green */
-        .stat-item:nth-child(4) .stat-number { color: #8BC34A; } /* Good - light green */
-        .stat-item:nth-child(5) .stat-number { color: #FFC107; } /* Inaccuracy - yellow */
-        .stat-item:nth-child(6) .stat-number { color: #FF9800; } /* Mistake - orange */
-        .stat-item:nth-child(7) .stat-number { color: #F44336; } /* Blunder - red */
+        .stats-row:first-child .stat-item:nth-child(1) .stat-number { color: #9C27B0; } /* Total - purple to match All button */
+        .stats-row:first-child .stat-item:nth-child(2) .stat-number { color: #1976D2; } /* Best - blue */
+        .stats-row:first-child .stat-item:nth-child(3) .stat-number { color: #4CAF50; } /* Excellent - green */
+        .stats-row:first-child .stat-item:nth-child(4) .stat-number { color: #8BC34A; } /* Good - light green */
+        .stats-row:last-child .stat-item:nth-child(1) .stat-number { color: #FFC107; } /* Inaccuracy - yellow */
+        .stats-row:last-child .stat-item:nth-child(2) .stat-number { color: #FF9800; } /* Mistake - orange */
+        .stats-row:last-child .stat-item:nth-child(3) .stat-number { color: #F44336; } /* Blunder - red */
 
         .move-card {
             background: white;
@@ -721,8 +721,8 @@
                 <div class="filter-label">Side</div>
                 <div class="filter-controls">
                     <button class="filter-button active" data-side="all">All</button>
-                    <button class="filter-button" data-side="white">White</button>
-                    <button class="filter-button" data-side="black">Black</button>
+                    <button class="filter-button button-white" data-side="white">White</button>
+                    <button class="filter-button button-black" data-side="black">Black</button>
                 </div>
             </div>
 
