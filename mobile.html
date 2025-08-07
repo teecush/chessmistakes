@@ -93,37 +93,38 @@
         }
 
         .button-all {
-            background: #f0f0f0;
+            background: #9E9E9E;
+            color: white;
         }
 
         .button-best {
-            background: #e8f5e8;
-            color: #2e7d32;
+            background: #1976D2;
+            color: white;
         }
 
         .button-excellent {
-            background: #e3f2fd;
-            color: #1565c0;
+            background: #4CAF50;
+            color: white;
         }
 
         .button-good {
-            background: #e8f5e8;
-            color: #388e3c;
+            background: #8BC34A;
+            color: white;
         }
 
         .button-inaccuracy {
-            background: #fff3e0;
-            color: #f57c00;
+            background: #FFC107;
+            color: #333;
         }
 
         .button-mistake {
-            background: #ffebee;
-            color: #d32f2f;
+            background: #FF9800;
+            color: white;
         }
 
         .button-blunder {
-            background: #ffebee;
-            color: #c62828;
+            background: #F44336;
+            color: white;
         }
 
         .slider-container {
@@ -654,11 +655,29 @@
                 return "Best";
             }
             
-            // If not best, determine quality based on evaluation drop
-            const evalDrop = Math.abs(parseFloat(move.Stockfish_Eval_Drop || move.Original_Eval_Drop || 0));
+            // Use evaluation-based classification instead of CSV classification
+            const evalDrop = Math.abs(parseFloat(move.Original_Eval_Drop));
             
+            // Debug: log any problematic evaluation drops
+            if (isNaN(evalDrop)) {
+                console.log(`Problematic eval drop for move ${move.Move}: ${move.Original_Eval_Drop}`);
+                return "Good"; // Fallback for invalid data
+            }
+            
+            // Only mark as "Best" if the move actually matches Stockfish's best move
+            // Otherwise, use evaluation-based classification
             if (evalDrop === 0.0) {
-                return "Best";
+                // Check if this move actually matches Stockfish's best move
+                const playerMove = move.Move;
+                const bestMove = move.Stockfish_Best_Move;
+                const cleanPlayerMove = playerMove.replace(/[+#]/, '');
+                const cleanBestMove = bestMove.replace(/[+#]/, '');
+                
+                if (playerMove === bestMove || cleanPlayerMove === cleanBestMove) {
+                    return "Best";
+                } else {
+                    return "Excellent"; // Good move but not the best
+                }
             } else if (evalDrop <= 0.1) {
                 return "Excellent";
             } else if (evalDrop <= 0.3) {
