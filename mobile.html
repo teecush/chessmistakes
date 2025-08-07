@@ -408,13 +408,18 @@
         .move-number {
             font-weight: bold;
             color: #333;
-            font-size: 1.1em;
+            font-size: 0.9em;
         }
 
         .times-repeated {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 4px;
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            background: #E91E63;
+            padding: 4px 8px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 4px;
         }
 
         .move-content {
@@ -1091,8 +1096,8 @@
                             </div>
                         </div>
                         <div class="move-summary-right">
-                            <div class="move-number">Move #${getMoveNumberFromFEN(move.Position) || move.Move_Number || 'N/A'}</div>
                             <div class="times-repeated">${move.Times_Repeated || 0}×</div>
+                            <div class="move-number">Move #${getMoveNumberFromFEN(move.Position) || move.Move_Number || 'N/A'}</div>
                         </div>
                     </div>
                     
