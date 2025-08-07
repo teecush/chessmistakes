@@ -352,7 +352,7 @@
         .move-row {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 5px;
             flex-wrap: wrap;
         }
 
@@ -370,6 +370,35 @@
         .best-move-text {
             font-weight: bold;
             color: #2e7d32; /* Green color to match board arrows */
+        }
+
+        .eval-row {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 4px;
+            font-size: 0.85em;
+        }
+
+        .eval-label {
+            color: #666;
+            font-weight: bold;
+        }
+
+        .eval-before {
+            color: #d32f2f; /* Red to match Your Move */
+        }
+
+        .eval-arrow {
+            color: #666;
+        }
+
+        .eval-after {
+            color: #2e7d32; /* Green to match Best Move */
+        }
+
+        .eval-drop {
+            color: #666;
         }
 
         .move-summary-right {
@@ -446,7 +475,7 @@
         .info-row {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
             margin-bottom: 6px;
             flex-wrap: wrap;
         }
@@ -559,9 +588,9 @@
         }
 
         .sticky-header .filter-button {
-            padding: 4px 6px;
-            font-size: 0.75em;
-            min-width: 28px;
+            padding: 6px 8px;
+            font-size: 0.8em;
+            min-width: 32px;
         }
 
 
@@ -682,6 +711,10 @@
                 </div>
             </div>
 
+            <div class="move-counter" id="move-counter">
+                <span id="current-count">0</span> of <span id="total-count">0</span> moves
+            </div>
+
             <div class="stats">
                 <div class="stats-row">
                     <div class="stat-item">
@@ -765,10 +798,6 @@
                     </select>
                 </div>
             </div>
-        </div>
-
-        <div class="move-counter" id="move-counter">
-            <span id="current-count">0</span> of <span id="total-count">0</span> moves
         </div>
 
         <div id="moves-container">
@@ -1049,6 +1078,13 @@
                                     <span class="your-move-label">Your Move:</span> <span class="your-move-text">${move.Move || 'N/A'}</span>
                                     <span class="best-move-label">Best Move:</span> <span class="best-move-text">${move.Stockfish_Best_Move || 'N/A'}</span>
                                 </div>
+                                <div class="eval-row">
+                                    <span class="eval-label">Eval:</span> 
+                                    <span class="eval-before">${(parseFloat(move.Stockfish_Eval_Before) || 0).toFixed(2)}</span>
+                                    <span class="eval-arrow">→</span>
+                                    <span class="eval-after">${(parseFloat(move.Stockfish_Eval_After) || 0).toFixed(2)}</span>
+                                    <span class="eval-drop">(${(parseFloat(move.Stockfish_Eval_Drop) || 0).toFixed(2)})</span>
+                                </div>
                             </div>
                         </div>
                         <div class="move-summary-right">
@@ -1087,10 +1123,7 @@
                                         ).join('') : ''}
                                     </div>
                                 </div>
-                                <div class="info-row">
-                                    <span class="info-label">Eval:</span>
-                                    <span class="eval-value">${(parseFloat(move.Stockfish_Eval_Before) || 0).toFixed(2)} → ${(parseFloat(move.Stockfish_Eval_After) || 0).toFixed(2)} (${(parseFloat(move.Stockfish_Eval_Drop) || 0).toFixed(2)})</span>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1107,6 +1140,18 @@
                 siblings.forEach(sib => sib.classList.remove('active'));
                 // Add active class to clicked button
                 this.classList.add('active');
+                
+                // Sync with sticky header if this is a quality filter
+                if (this.dataset.quality) {
+                    document.querySelectorAll('.sticky-header .filter-button').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    const stickyButton = document.querySelector(`.sticky-header .filter-button[data-quality="${this.dataset.quality}"]`);
+                    if (stickyButton) {
+                        stickyButton.classList.add('active');
+                    }
+                }
+                
                 filterData();
             });
         });
