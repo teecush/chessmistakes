@@ -511,9 +511,21 @@
             display: block;
         }
 
+        /* Move counter styling */
+        .move-counter {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #666;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+
         /* Add space for sticky header */
         .container {
-            padding-top: 60px;
+            padding-top: 80px;
         }
 
         .filter-dropdown {
@@ -573,7 +585,7 @@
     </style>
 </head>
 <body>
-    <!-- Sticky header for move quality filters -->
+        <!-- Sticky header for move quality filters -->
     <div class="sticky-header" id="sticky-header">
         <div class="filter-controls">
             <button class="filter-button button-all active" data-quality="all">All</button>
@@ -584,8 +596,11 @@
             <button class="filter-button button-mistake" data-quality="mistake">❌ Mistake</button>
             <button class="filter-button button-blunder" data-quality="blunder">💥 Blunder</button>
             <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
-                </div>
-            </div>
+        </div>
+        <div class="move-counter" id="sticky-move-counter">
+            <span id="sticky-current-count">0</span> of <span id="sticky-total-count">0</span> moves
+        </div>
+    </div>
 
     <div class="container">
         <div class="header">
@@ -629,15 +644,6 @@
             </div>
 
             <div class="filter-row">
-                <div class="filter-label">Move Themes</div>
-                <div class="dropdown-container">
-                    <select id="theme-filter" class="filter-dropdown">
-                        <option value="all">All Themes</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="filter-row">
                 <div class="filter-label">Times Repeated</div>
                 <div class="slider-container">
                     <div class="slider-label">
@@ -649,6 +655,15 @@
             </div>
 
             <div class="filter-row">
+                <div class="filter-label">Move Themes</div>
+                <div class="dropdown-container">
+                    <select id="theme-filter" class="filter-dropdown">
+                        <option value="all">All Themes</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter-row">
                 <div class="filter-label">Opening</div>
                 <div class="dropdown-container">
                     <select id="opening-filter" class="filter-dropdown">
@@ -656,6 +671,10 @@
                     </select>
                 </div>
             </div>
+        </div>
+
+        <div class="move-counter" id="move-counter">
+            <span id="current-count">0</span> of <span id="total-count">0</span> moves
         </div>
 
         <div class="stats">
@@ -880,6 +899,12 @@
             document.getElementById('inaccuracy-count').textContent = inaccuracy;
             document.getElementById('mistake-count').textContent = mistake;
             document.getElementById('blunder-count').textContent = blunder;
+
+            // Update move counter
+            document.getElementById('current-count').textContent = total;
+            document.getElementById('total-count').textContent = movesData.length;
+            document.getElementById('sticky-current-count').textContent = total;
+            document.getElementById('sticky-total-count').textContent = movesData.length;
         }
 
         function filterData() {
