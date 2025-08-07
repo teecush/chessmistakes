@@ -333,9 +333,14 @@
             font-weight: bold;
         }
 
-        .your-move-text, .best-move-text {
+        .your-move-text {
             font-weight: bold;
-            color: #333;
+            color: #d32f2f; /* Red color to match board arrows */
+        }
+
+        .best-move-text {
+            font-weight: bold;
+            color: #2e7d32; /* Green color to match board arrows */
         }
 
         .move-summary-right {
@@ -399,30 +404,35 @@
         .info-section {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 8px;
         }
 
-        .detail-group {
+        .compact-info {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.85em;
+        }
+
+        .info-row {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 8px 0;
-            border-bottom: 1px solid #f0f0f0;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
         }
 
-        .detail-group:last-child {
-            border-bottom: none;
+        .info-row:last-child {
+            margin-bottom: 0;
         }
 
-        .detail-label {
+        .info-label {
             font-weight: bold;
             color: #333;
-            font-size: 0.9em;
+            min-width: 50px;
         }
 
-        .detail-value {
-            text-align: right;
-            font-size: 0.9em;
+        .info-value {
             color: #666;
         }
 
@@ -446,16 +456,16 @@
         .themes {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
-            justify-content: flex-end;
+            gap: 4px;
+            flex: 1;
         }
 
         .theme-tag {
             background: #e3f2fd;
             color: #1565c0;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.7em;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 0.65em;
             font-weight: bold;
         }
 
@@ -1026,33 +1036,24 @@
                         </div>
                         
                         <div class="info-section">
-                            <div class="detail-group">
-                                <div class="detail-label">Side</div>
-                                <div class="detail-value">
+                            <div class="compact-info">
+                                <div class="info-row">
+                                    <span class="info-label">Side:</span>
                                     <span class="side-bubble side-${(move.Side || 'unknown').toLowerCase()}">${move.Side || 'Unknown'}</span>
+                                    <span class="info-label">Opening:</span>
+                                    <span class="info-value">${move.Opening || 'Unknown'}</span>
                                 </div>
-                            </div>
-                            
-                            <div class="detail-group">
-                                <div class="detail-label">Move Themes</div>
-                                <div class="detail-value">
+                                <div class="info-row">
+                                    <span class="info-label">Themes:</span>
                                     <div class="themes">
                                         ${move.Move_Theme ? [...new Set(move.Move_Theme.split('; '))].map(theme => 
                                             `<span class="theme-tag">${theme}</span>`
                                         ).join('') : ''}
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="detail-group">
-                                <div class="detail-label">Opening</div>
-                                <div class="detail-value">${move.Opening || 'Unknown'}</div>
-                            </div>
-                            
-                            <div class="stockfish-analysis">
-                                <div class="stockfish-header">Stockfish Analysis</div>
-                                <div class="eval-row">
-                                    <span class="eval-label">Evaluation:&nbsp;</span><span class="eval-value">${(parseFloat(move.Stockfish_Eval_Before) || 0).toFixed(2)} → ${(parseFloat(move.Stockfish_Eval_After) || 0).toFixed(2)} (${(parseFloat(move.Stockfish_Eval_Drop) || 0).toFixed(2)})</span>
+                                <div class="info-row">
+                                    <span class="info-label">Eval:</span>
+                                    <span class="eval-value">${(parseFloat(move.Stockfish_Eval_Before) || 0).toFixed(2)} → ${(parseFloat(move.Stockfish_Eval_After) || 0).toFixed(2)} (${(parseFloat(move.Stockfish_Eval_Drop) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
                         </div>
