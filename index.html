@@ -910,14 +910,10 @@
         }
 
         function generateLichessUrl(position, move) {
-            // Create a Lichess analysis URL with the position and move
-            // The position is the FEN before the move, so we need to show the position after the move
-            const fen = encodeURIComponent(position);
-            const moveParam = encodeURIComponent(move);
-            // Use the position before the move and let Lichess apply the move
-            console.log('Generating Lichess URL:', {position, move, fen, moveParam});
-            // Lichess expects moves in the URL parameter format
-            return `https://lichess.org/analysis/${fen}?moves=${moveParam}`;
+            // Create a Lichess analysis URL with just the FEN position
+            // Replace spaces with %20 for proper URL encoding
+            const fen = position.replace(/ /g, '%20');
+            return `https://lichess.org/analysis/${fen}`;
         }
 
         function getQualityDisplay(quality) {
