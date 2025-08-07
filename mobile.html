@@ -725,10 +725,19 @@
         }
 
         function generateLichessUrl(position, move) {
-            // Create a Lichess analysis URL with just the FEN position
+            // Create a Lichess analysis URL with the position and board orientation
             // Replace spaces with %20 for proper URL encoding
             const fen = position.replace(/ /g, '%20');
-            return `https://lichess.org/analysis/${fen}`;
+            
+            // Determine board orientation based on whose move it is
+            // Extract the side to move from FEN (4th part of FEN string)
+            const fenParts = position.split(' ');
+            const sideToMove = fenParts.length >= 2 ? fenParts[1] : 'w';
+            
+            // If it's black's move, flip the board by adding ?color=black
+            const colorParam = sideToMove === 'b' ? '?color=black' : '';
+            
+            return `https://lichess.org/analysis/${fen}${colorParam}`;
         }
 
         function getQualityDisplay(quality) {
