@@ -984,16 +984,9 @@
         }
 
         function getQualityDisplay(quality) {
-            // Convert quality to display format
-            switch(quality) {
-                case 'Best': return '⭐ Best';
-                case 'Excellent': return '👍 Excellent';
-                case 'Good': return '✅ Good';
-                case 'Inaccuracy': return '⚠️ Inaccuracy';
-                case 'Mistake': return '❌ Mistake';
-                case 'Blunder': return '💥 Blunder';
-                default: return quality;
-            }
+            // Use the qualityEmojis mapping
+            const emoji = qualityEmojis[quality] || quality;
+            return `${emoji} ${quality}`;
         }
 
         function updateMoveCounter() {
