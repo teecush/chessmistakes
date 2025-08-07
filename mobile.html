@@ -899,12 +899,14 @@
                 return "Best";
             }
             
-            // Use evaluation-based classification instead of CSV classification
-            const evalDrop = Math.abs(parseFloat(move.Original_Eval_Drop));
+            // Calculate eval drop directly from before/after values
+            const evalBefore = parseFloat(move.Original_Eval_Before) || 0;
+            const evalAfter = parseFloat(move.Original_Eval_After) || 0;
+            const evalDrop = Math.abs(evalAfter - evalBefore);
             
             // Debug: log any problematic evaluation drops
             if (isNaN(evalDrop)) {
-                console.log(`Problematic eval drop for move ${move.Move}: ${move.Original_Eval_Drop}`);
+                console.log(`Problematic eval drop for move ${move.Move}: Before=${evalBefore}, After=${evalAfter}`);
                 return "Good"; // Fallback for invalid data
             }
             
@@ -1107,7 +1109,7 @@
                                     <span class="eval-before">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
                                     <span class="eval-arrow">→</span>
                                     <span class="eval-after">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
-                                    <span class="eval-drop">(${Math.abs(parseFloat(move.Original_Eval_Drop) || 0).toFixed(2)})</span>
+                                    <span class="eval-drop">(${Math.abs(parseFloat(move.Original_Eval_After - move.Original_Eval_Before) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
                         </div>
