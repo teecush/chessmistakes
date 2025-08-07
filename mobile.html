@@ -441,21 +441,21 @@
             margin-top: 12px;
         }
 
-        .lichess-button {
-            width: 100%;
-            padding: 12px;
-            background: #B4AFA5;
+        .lichess-button-small {
+            padding: 4px 6px;
+            background: #918C7D;
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 4px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.2s;
-            font-size: 1em;
+            font-size: 0.8em;
+            margin-left: 8px;
         }
 
-        .lichess-button:hover {
-            background: #9A948A;
+        .lichess-button-small:hover {
+            background: #7A7568;
             transform: translateY(-1px);
         }
 
@@ -1084,6 +1084,9 @@
                                     <span class="eval-arrow">→</span>
                                     <span class="eval-after">${(parseFloat(move.Stockfish_Eval_After) || 0).toFixed(2)}</span>
                                     <span class="eval-drop">(${(parseFloat(move.Stockfish_Eval_Drop) || 0).toFixed(2)})</span>
+                                    <button class="lichess-button-small" onclick="window.open('${generateLichessUrl(move.Position, move.Move)}', '_blank')">
+                                        🔍
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1099,11 +1102,6 @@
                                 <img src="board_images/board_${(move.index || 0).toString().padStart(3, '0')}.png?t=${Date.now()}" 
                                      alt="Chess position with moves highlighted" 
                                      style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                <div class="lichess-link">
-                                    <button class="lichess-button" onclick="window.open('${generateLichessUrl(move.Position, move.Move)}', '_blank')">
-                                        🔍
-                                    </button>
-                                </div>
                             </div>
                         </div>
                         
