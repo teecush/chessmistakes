@@ -719,17 +719,24 @@
                 margin-bottom: 0;
             }
             
-            /* Desktop filter layout - organized rows */
+                        /* Desktop filter layout - organized rows */
             .filter-section {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
             }
             
-            /* Row 1: Statistics and Move Counter */
+            /* Row 1: Statistics and Move Counter side by side */
             .filter-section > .stats,
             .filter-section > .move-counter {
-                width: 100%;
+                display: inline-block;
+                width: 50%;
+                vertical-align: top;
+                margin-right: 0;
+            }
+            
+            .filter-section > .stats {
+                margin-left: 0;
             }
             
             /* Row 2: Move Quality and Side Filters side by side */
@@ -809,7 +816,7 @@
         }
 
         /* Add space for sticky header */
-        .container {
+            .container {
             padding-top: 80px;
         }
 
@@ -835,7 +842,7 @@
                 padding: 15px;
                 border-radius: 8px;
             }
-
+            
             .header h1 {
                 font-size: 1.6em;
             }
@@ -844,7 +851,7 @@
                 padding: 8px 12px;
                 font-size: 0.85em;
             }
-
+            
             .move-summary {
                 padding: 12px;
             }
@@ -858,11 +865,11 @@
                 align-items: flex-start;
                 gap: 4px;
             }
-
+            
             .detail-value {
                 text-align: left;
             }
-
+            
             .themes {
                 justify-content: flex-start;
             }
@@ -906,19 +913,19 @@
                     <div class="stat-item">
                         <div class="stat-number" id="total-moves">-</div>
                         <div class="stat-label">Total</div>
-                    </div>
+            </div>
                     <div class="stat-item">
                         <div class="stat-number" id="best-count">-</div>
                         <div class="stat-label">Best</div>
-                    </div>
+        </div>
                     <div class="stat-item">
                         <div class="stat-number" id="excellent-count">-</div>
                         <div class="stat-label">Excellent</div>
-                    </div>
+            </div>
                     <div class="stat-item">
                         <div class="stat-number" id="good-count">-</div>
                         <div class="stat-label">Good</div>
-                    </div>
+        </div>
                     <div class="stat-item">
                         <div class="stat-number" id="inaccuracy-count">-</div>
                         <div class="stat-label">Inaccuracy</div>
@@ -931,8 +938,8 @@
                         <div class="stat-number" id="blunder-count">-</div>
                         <div class="stat-label">Blunder</div>
                     </div>
-                </div>
             </div>
+        </div>
 
             <div class="move-counter" id="move-counter">
                 <span id="current-count">0</span> of <span id="total-count">0</span> moves
@@ -940,7 +947,7 @@
 
             <div class="filter-row">
                 <div class="filter-label">Move Quality</div>
-                <div class="filter-controls">
+            <div class="filter-controls">
                     <button class="filter-button button-all active" data-quality="all">All</button>
                     <button class="filter-button button-best" data-quality="best">⭐ Best</button>
                     <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
@@ -949,10 +956,10 @@
                     <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
                     <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
                     <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
-                </div>
             </div>
+        </div>
 
-            <div class="filter-row">
+        <div class="filter-row">
                 <div class="filter-label">Side</div>
                 <div class="filter-controls">
                     <button class="filter-button active" data-side="all">All</button>
@@ -979,10 +986,10 @@
                         <option value="40">40+ times</option>
                         <option value="50">50+ times</option>
                     </select>
-                </div>
             </div>
+        </div>
 
-            <div class="filter-row">
+        <div class="filter-row">
                 <div class="filter-label">Move Number</div>
                 <div class="dropdown-container">
                     <select id="move-number-filter" class="filter-dropdown">
@@ -1015,8 +1022,8 @@
                     <select id="opening-filter" class="filter-dropdown">
                         <option value="all">All Openings</option>
                     </select>
-                </div>
             </div>
+        </div>
 
             <div class="filter-row">
                 <div class="filter-label">Move Themes</div>
@@ -1256,12 +1263,12 @@
                 if (maxMoveNumber > 1 && moveNumber > maxMoveNumber) {
                     return false;
                 }
-
+                
                 // Repetitions filter
                 if (maxRepetitions > 1 && repetitions > maxRepetitions) {
                     return false;
                 }
-
+                
                 // Theme filter
                 if (selectedTheme && selectedTheme !== 'all' && move.Move_Theme) {
                     const themes = move.Move_Theme.split('; ').map(t => t.trim());
@@ -1269,7 +1276,7 @@
                         return false;
                     }
                 }
-
+                
                 // Opening filter
                 if (selectedOpening && selectedOpening !== 'all' && move.Opening) {
                     if (!move.Opening.includes(selectedOpening)) {
@@ -1296,16 +1303,16 @@
                     <div class="move-summary">
                         <div class="move-summary-left">
                             <div class="move-header-row">
-                                <span class="move-quality quality-${actualQuality.toLowerCase().replace(' ', '-')}">${getQualityDisplay(actualQuality)}</span>
+                            <span class="move-quality quality-${actualQuality.toLowerCase().replace(' ', '-')}">${getQualityDisplay(actualQuality)}</span>
                                 <div class="times-repeated">${move.Times_Repeated || 0}×</div>
-                            </div>
+                        </div>
                             <div class="move-labels">
                                 <div class="move-row">
                                     <div class="move-row-left">
                                         <span class="your-move-label">Your Move:</span> <span class="your-move-text">${move.Move || 'N/A'}</span>
                                         <span class="best-move-label">Best Move:</span> <span class="best-move-text">${move.Stockfish_Best_Move || 'N/A'}</span>
                                     </div>
-                                    <div class="move-number">Move #${getMoveNumberFromFEN(move.Position) || move.Move_Number || 'N/A'}</div>
+                            <div class="move-number">Move #${getMoveNumberFromFEN(move.Position) || move.Move_Number || 'N/A'}</div>
                                 </div>
                                 <div class="eval-row">
                                     <button class="lichess-button-small" onclick="window.open('${generateLichessUrl(move.Position, move.Move)}', '_blank')">
@@ -1344,9 +1351,9 @@
                                         ${move.Move_Theme ? [...new Set(move.Move_Theme.split('; '))].map(theme => 
                                             `<span class="theme-tag">${theme}</span>`
                                         ).join('') : ''}
-                                    </div>
                                 </div>
-
+                            </div>
+                            
                             </div>
                         </div>
                     </div>
@@ -1391,7 +1398,7 @@
                     stickyButton.classList.add('active');
                 }
                 
-                filterData();
+            filterData();
             });
         });
 
