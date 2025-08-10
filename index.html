@@ -721,51 +721,54 @@
             
             /* Desktop filter layout - organized rows */
             .filter-section {
-                display: grid;
-                grid-template-areas: 
-                    "stats"
-                    "counter"
-                    "quality side"
-                    "dropdown1 dropdown2 dropdown3 dropdown4";
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                display: flex;
+                flex-direction: column;
                 gap: 20px;
             }
             
-            /* Row 1: Statistics */
-            .filter-section > .stats {
-                grid-area: stats;
-            }
-            
-            /* Row 1: Move Counter */
+            /* Row 1: Statistics and Move Counter */
+            .filter-section > .stats,
             .filter-section > .move-counter {
-                grid-area: counter;
+                width: 100%;
             }
             
-            /* Row 2: Move Quality */
-            .filter-section > .filter-row:nth-child(3) {
-                grid-area: quality;
-            }
-            
-            /* Row 2: Side Filters */
+            /* Row 2: Move Quality and Side Filters side by side */
+            .filter-section > .filter-row:nth-child(3),
             .filter-section > .filter-row:nth-child(4) {
-                grid-area: side;
+                display: inline-block;
+                width: 50%;
+                vertical-align: top;
+                margin-right: 0;
             }
             
-            /* Row 3: All 4 dropdowns */
+            .filter-section > .filter-row:nth-child(3) {
+                margin-left: 0;
+            }
+            
+            /* Row 3: All 4 dropdowns side by side */
+            .filter-section > .filter-row:nth-child(5),
+            .filter-section > .filter-row:nth-child(6),
+            .filter-section > .filter-row:nth-child(7),
+            .filter-section > .filter-row:nth-child(8) {
+                display: inline-block;
+                width: 25%;
+                margin-right: 0;
+                vertical-align: top;
+            }
+            
             .filter-section > .filter-row:nth-child(5) {
-                grid-area: dropdown1;
-            }
-            
-            .filter-section > .filter-row:nth-child(6) {
-                grid-area: dropdown2;
-            }
-            
-            .filter-section > .filter-row:nth-child(7) {
-                grid-area: dropdown3;
+                margin-left: 0;
             }
             
             .filter-section > .filter-row:nth-child(8) {
-                grid-area: dropdown4;
+                margin-right: 0;
+            }
+            
+            /* Clear floats to prevent layout issues */
+            .filter-section::after {
+                content: "";
+                display: table;
+                clear: both;
             }
             
             /* Desktop sticky header layout */
