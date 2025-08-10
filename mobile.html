@@ -1109,7 +1109,7 @@
                                         <span class="eval-after">${(parseFloat(move.Your_Move_Eval) || 0).toFixed(2)}</span>
                                         <span class="eval-arrow">→</span>
                                         <span class="eval-before">${(parseFloat(move.Best_Move_Eval) || 0).toFixed(2)}</span>
-                                        <span class="eval-drop">(${(parseFloat(move.Eval_Difference) || 0).toFixed(2)})</span>
+                                        <span class="eval-drop">(${Math.abs(parseFloat(move.Eval_Difference) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
                         </div>
