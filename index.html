@@ -628,6 +628,26 @@
                 font-size: 0.85em !important;
                 min-width: auto !important;
             }
+            
+            /* Force override with higher specificity */
+            body .sticky-header .filter-button {
+                padding: 8px 12px !important;
+                font-size: 0.85em !important;
+                min-width: auto !important;
+                width: auto !important;
+                height: auto !important;
+            }
+            
+            /* Override for all sticky button states */
+            body .sticky-header .filter-controls .filter-button,
+            body .sticky-header.show .filter-button,
+            body .sticky-header .sticky-filters .filter-button {
+                padding: 8px 12px !important;
+                font-size: 0.85em !important;
+                min-width: auto !important;
+                width: auto !important;
+                height: auto !important;
+            }
         }
 
         /* Desktop sticky header improvements */
@@ -664,7 +684,7 @@
             
             .stats {
                 flex-direction: row;
-                justify-content: center;
+                justify-content: flex-start;
                 gap: 15px;
             }
             
@@ -824,14 +844,14 @@
         <div class="sticky-header" id="sticky-header">
             <div class="sticky-filters">
                 <div class="filter-controls">
-                    <button class="filter-button button-all active" data-quality="all">∀</button>
-                    <button class="filter-button button-best" data-quality="best">⭐</button>
-                    <button class="filter-button button-excellent" data-quality="excellent">👍</button>
-                    <button class="filter-button button-good" data-quality="good">✅</button>
-                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!?</button>
-                    <button class="filter-button button-mistake" data-quality="mistake">?</button>
-                    <button class="filter-button button-blunder" data-quality="blunder">??</button>
-                    <button class="filter-button button-all-errors" data-quality="errors">💥</button>
+                    <button class="filter-button button-all active" data-quality="all">All</button>
+                    <button class="filter-button button-best" data-quality="best">⭐ Best</button>
+                    <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
+                    <button class="filter-button button-good" data-quality="good">✅ Good</button>
+                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
+                    <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
+                    <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
+                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
                 </div>
                 <div class="filter-controls">
                     <button class="filter-button active" data-side="all">All</button>
