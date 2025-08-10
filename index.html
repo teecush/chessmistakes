@@ -911,129 +911,138 @@
         </div>
 
         <div class="filter-section">
-            <div class="stats">
-                <div class="stats-row">
-                    <div class="stat-item">
-                        <div class="stat-number" id="total-moves">-</div>
-                        <div class="stat-label">Total</div>
-            </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="best-count">-</div>
-                        <div class="stat-label">Best</div>
-        </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="excellent-count">-</div>
-                        <div class="stat-label">Excellent</div>
-            </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="good-count">-</div>
-                        <div class="stat-label">Good</div>
-        </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="inaccuracy-count">-</div>
-                        <div class="stat-label">Inaccuracy</div>
+            <!-- Row 1: Statistics and Move Counter side by side -->
+            <div class="row-1" style="display: flex; gap: 20px; margin-bottom: 20px;">
+                <div class="stats" style="flex: 1;">
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-number" id="total-moves">-</div>
+                            <div class="stat-label">Total</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="best-count">-</div>
+                            <div class="stat-label">Best</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="excellent-count">-</div>
+                            <div class="stat-label">Excellent</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="good-count">-</div>
+                            <div class="stat-label">Good</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="inaccuracy-count">-</div>
+                            <div class="stat-label">Inaccuracy</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="mistake-count">-</div>
+                            <div class="stat-label">Mistake</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="blunder-count">-</div>
+                            <div class="stat-label">Blunder</div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="mistake-count">-</div>
-                        <div class="stat-label">Mistake</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="blunder-count">-</div>
-                        <div class="stat-label">Blunder</div>
-                    </div>
-            </div>
-        </div>
+                </div>
 
-            <div class="move-counter" id="move-counter">
-                <span id="current-count">0</span> of <span id="total-count">0</span> moves
-            </div>
-
-            <div class="filter-row">
-                <div class="filter-label">Move Quality</div>
-            <div class="filter-controls">
-                    <button class="filter-button button-all active" data-quality="all">All</button>
-                    <button class="filter-button button-best" data-quality="best">⭐ Best</button>
-                    <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
-                    <button class="filter-button button-good" data-quality="good">✅ Good</button>
-                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
-                    <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
-                    <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
-                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
-            </div>
-        </div>
-
-        <div class="filter-row">
-                <div class="filter-label">Side</div>
-                <div class="filter-controls">
-                    <button class="filter-button active" data-side="all">All</button>
-                    <button class="filter-button button-white" data-side="white">White</button>
-                    <button class="filter-button button-black" data-side="black">Black</button>
+                <div class="move-counter" id="move-counter" style="flex: 1; text-align: center; align-self: center;">
+                    <span id="current-count">0</span> of <span id="total-count">0</span> moves
                 </div>
             </div>
 
-            <div class="filter-row">
-                <div class="filter-label">Times Repeated</div>
-                <div class="dropdown-container">
-                    <select id="repetitions-filter" class="filter-dropdown">
-                        <option value="all">All Repetitions</option>
-                        <option value="1">1+ times</option>
-                        <option value="2">2+ times</option>
-                        <option value="3">3+ times</option>
-                        <option value="4">4+ times</option>
-                        <option value="5">5+ times</option>
-                        <option value="10">10+ times</option>
-                        <option value="15">15+ times</option>
-                        <option value="20">20+ times</option>
-                        <option value="25">25+ times</option>
-                        <option value="30">30+ times</option>
-                        <option value="40">40+ times</option>
-                        <option value="50">50+ times</option>
-                    </select>
-            </div>
-        </div>
+            <!-- Row 2: Move Quality and Side Filters side by side -->
+            <div class="row-2" style="display: flex; gap: 20px; margin-bottom: 20px;">
+                <div class="filter-row" style="flex: 1;">
+                    <div class="filter-label">Move Quality</div>
+                    <div class="filter-controls">
+                        <button class="filter-button button-all active" data-quality="all">All</button>
+                        <button class="filter-button button-best" data-quality="best">⭐ Best</button>
+                        <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
+                        <button class="filter-button button-good" data-quality="good">✅ Good</button>
+                        <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
+                        <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
+                        <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
+                        <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
+                    </div>
+                </div>
 
-        <div class="filter-row">
-                <div class="filter-label">Move Number</div>
-                <div class="dropdown-container">
-                    <select id="move-number-filter" class="filter-dropdown">
-                        <option value="all">All Moves</option>
-                        <option value="1">Move 1</option>
-                        <option value="2">Move 2</option>
-                        <option value="3">Move 3</option>
-                        <option value="4">Move 4</option>
-                        <option value="5">Move 5</option>
-                        <option value="6">Move 6</option>
-                        <option value="7">Move 7</option>
-                        <option value="8">Move 8</option>
-                        <option value="9">Move 9</option>
-                        <option value="10">Move 10</option>
-                        <option value="15">Move 15</option>
-                        <option value="20">Move 20</option>
-                        <option value="25">Move 25</option>
-                        <option value="30">Move 30</option>
-                        <option value="35">Move 35</option>
-                        <option value="40">Move 40</option>
-                        <option value="45">Move 45</option>
-                        <option value="50">Move 50</option>
-                    </select>
+                <div class="filter-row" style="flex: 1;">
+                    <div class="filter-label">Side</div>
+                    <div class="filter-controls">
+                        <button class="filter-button active" data-side="all">All</button>
+                        <button class="filter-button button-white" data-side="white">White</button>
+                        <button class="filter-button button-black" data-side="black">Black</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="filter-row">
-                <div class="filter-label">Opening</div>
-                <div class="dropdown-container">
-                    <select id="opening-filter" class="filter-dropdown">
-                        <option value="all">All Openings</option>
-                    </select>
-            </div>
-        </div>
+                        <!-- Row 3: All 4 dropdowns side by side -->
+            <div class="row-3" style="display: flex; gap: 20px; margin-bottom: 20px;">
+                <div class="filter-row" style="flex: 1;">
+                    <div class="filter-label">Times Repeated</div>
+                    <div class="dropdown-container">
+                        <select id="repetitions-filter" class="filter-dropdown">
+                            <option value="all">All Repetitions</option>
+                            <option value="1">1+ times</option>
+                            <option value="2">2+ times</option>
+                            <option value="3">3+ times</option>
+                            <option value="4">4+ times</option>
+                            <option value="5">5+ times</option>
+                            <option value="10">10+ times</option>
+                            <option value="15">15+ times</option>
+                            <option value="20">20+ times</option>
+                            <option value="25">25+ times</option>
+                            <option value="30">30+ times</option>
+                            <option value="40">40+ times</option>
+                            <option value="50">50+ times</option>
+                        </select>
+                    </div>
+                </div>
 
-            <div class="filter-row">
-                <div class="filter-label">Move Themes</div>
-                <div class="dropdown-container">
-                    <select id="theme-filter" class="filter-dropdown">
-                        <option value="all">All Themes</option>
-                    </select>
+                <div class="filter-row" style="flex: 1;">
+                    <div class="filter-label">Move Number</div>
+                    <div class="dropdown-container">
+                        <select id="move-number-filter" class="filter-dropdown">
+                            <option value="all">All Moves</option>
+                            <option value="1">Move 1</option>
+                            <option value="2">Move 2</option>
+                            <option value="3">Move 3</option>
+                            <option value="4">Move 4</option>
+                            <option value="5">Move 5</option>
+                            <option value="6">Move 6</option>
+                            <option value="7">Move 7</option>
+                            <option value="8">Move 8</option>
+                            <option value="9">Move 9</option>
+                            <option value="10">Move 10</option>
+                            <option value="15">Move 15</option>
+                            <option value="20">Move 20</option>
+                            <option value="25">Move 25</option>
+                            <option value="30">Move 30</option>
+                            <option value="35">Move 35</option>
+                            <option value="40">Move 40</option>
+                            <option value="45">Move 45</option>
+                            <option value="50">Move 50</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-row" style="flex: 1;">
+                    <div class="filter-label">Opening</div>
+                    <div class="dropdown-container">
+                        <select id="opening-filter" class="filter-dropdown">
+                            <option value="all">All Openings</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-row" style="flex: 1;">
+                    <div class="filter-label">Move Themes</div>
+                    <div class="dropdown-container">
+                        <select id="theme-filter" class="filter-dropdown">
+                            <option value="all">All Themes</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
