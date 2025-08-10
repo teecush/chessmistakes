@@ -627,16 +627,13 @@
                 padding: 8px 12px !important;
                 font-size: 0.85em !important;
                 min-width: auto !important;
+                width: auto !important;
+                height: auto !important;
             }
         }
 
         /* Desktop-specific improvements */
         @media (min-width: 768px) {
-            .sticky-header .filter-button {
-                padding: 8px 12px;
-                font-size: 0.85em;
-                min-width: auto;
-            }
             
             .stats {
                 flex-direction: row;
@@ -678,7 +675,7 @@
             /* Desktop filter layout - 2x2 grid */
             .filter-section {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 2fr 1fr;
                 gap: 20px;
             }
             
@@ -706,6 +703,13 @@
             
             .sticky-filters .filter-controls {
                 gap: 8px;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            
+            .filter-controls {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
             }
         }
 
@@ -864,10 +868,10 @@
                     <button class="filter-button button-best" data-quality="best">⭐ Best</button>
                     <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
                     <button class="filter-button button-good" data-quality="good">✅ Good</button>
-                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
+                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inacc</button>
                     <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
                     <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
-                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
+                    <button class="filter-button button-all-errors" data-quality="errors">💥 Errors</button>
                 </div>
             </div>
 
