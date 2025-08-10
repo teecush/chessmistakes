@@ -719,10 +719,10 @@
                 margin-bottom: 0;
             }
             
-            /* Desktop filter layout - 2x2 grid */
+            /* Desktop filter layout - 4 dropdowns in one row */
             .filter-section {
                 display: grid;
-                grid-template-columns: 2fr 1fr;
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
             
@@ -731,14 +731,24 @@
                 grid-column: 1 / -1;
             }
             
+            /* 4 dropdowns in one row */
             .filter-section > .filter-row:nth-child(3),
-            .filter-section > .filter-row:nth-child(4) {
-                grid-column: span 1;
-            }
-            
+            .filter-section > .filter-row:nth-child(4),
             .filter-section > .filter-row:nth-child(5),
             .filter-section > .filter-row:nth-child(6) {
-                grid-column: span 1;
+                grid-column: 1 / -1;
+                display: inline-block;
+                width: 25%;
+                margin-right: 0;
+                vertical-align: top;
+            }
+            
+            .filter-section > .filter-row:nth-child(3) {
+                margin-left: 0;
+            }
+            
+            .filter-section > .filter-row:nth-child(6) {
+                margin-right: 0;
             }
             
             /* Desktop sticky header layout */
@@ -867,7 +877,7 @@
     <div class="container">
         <div class="header">
             <h1>♟️ teecush Chess Mistakes</h1>
-            <p>Mobile-optimized chess analysis viewer</p>
+            <p>Desktop-optimized chess analysis viewer</p>
         </div>
 
         <div class="filter-section">
@@ -933,12 +943,28 @@
 
             <div class="filter-row">
                 <div class="filter-label">Move Number</div>
-                <div class="slider-container">
-                    <div class="slider-label">
-                        <span>Filter by move number</span>
-                        <span class="slider-value" id="move-number-value">All</span>
-                    </div>
-                    <input type="range" id="move-number-slider" class="slider" min="1" max="50" value="1">
+                <div class="dropdown-container">
+                    <select id="move-number-filter" class="filter-dropdown">
+                        <option value="all">All Moves</option>
+                        <option value="1">Move 1</option>
+                        <option value="2">Move 2</option>
+                        <option value="3">Move 3</option>
+                        <option value="4">Move 4</option>
+                        <option value="5">Move 5</option>
+                        <option value="6">Move 6</option>
+                        <option value="7">Move 7</option>
+                        <option value="8">Move 8</option>
+                        <option value="9">Move 9</option>
+                        <option value="10">Move 10</option>
+                        <option value="15">Move 15</option>
+                        <option value="20">Move 20</option>
+                        <option value="25">Move 25</option>
+                        <option value="30">Move 30</option>
+                        <option value="35">Move 35</option>
+                        <option value="40">Move 40</option>
+                        <option value="45">Move 45</option>
+                        <option value="50">Move 50</option>
+                    </select>
                 </div>
             </div>
 
@@ -953,12 +979,22 @@
 
             <div class="filter-row">
                 <div class="filter-label">Times Repeated</div>
-                <div class="slider-container">
-                    <div class="slider-label">
-                        <span>Filter by repetitions</span>
-                        <span class="slider-value" id="repetitions-value">All</span>
-                    </div>
-                    <input type="range" id="repetitions-slider" class="slider" min="1" max="50" value="1">
+                <div class="dropdown-container">
+                    <select id="repetitions-filter" class="filter-dropdown">
+                        <option value="all">All Repetitions</option>
+                        <option value="1">1+ times</option>
+                        <option value="2">2+ times</option>
+                        <option value="3">3+ times</option>
+                        <option value="4">4+ times</option>
+                        <option value="5">5+ times</option>
+                        <option value="10">10+ times</option>
+                        <option value="15">15+ times</option>
+                        <option value="20">20+ times</option>
+                        <option value="25">25+ times</option>
+                        <option value="30">30+ times</option>
+                        <option value="40">40+ times</option>
+                        <option value="50">50+ times</option>
+                    </select>
                 </div>
             </div>
 
@@ -1169,8 +1205,8 @@
         function filterData() {
             const selectedQuality = document.querySelector('.filter-button[data-quality].active')?.dataset.quality;
             const selectedSide = document.querySelector('.filter-button[data-side].active')?.dataset.side;
-            const maxMoveNumber = parseInt(document.getElementById('move-number-slider').value);
-            const maxRepetitions = parseInt(document.getElementById('repetitions-slider').value);
+            const maxMoveNumber = parseInt(document.getElementById('move-number-filter').value);
+            const maxRepetitions = parseInt(document.getElementById('repetitions-filter').value);
             const selectedTheme = document.getElementById('theme-filter').value;
             const selectedOpening = document.getElementById('opening-filter').value;
 
@@ -1339,18 +1375,9 @@
             });
         });
 
-        // Event listeners for sliders
-        document.getElementById('move-number-slider').addEventListener('input', function() {
-            const value = this.value;
-            document.getElementById('move-number-value').textContent = value === '1' ? 'All' : value;
-            filterData();
-        });
-
-        document.getElementById('repetitions-slider').addEventListener('input', function() {
-            const value = this.value;
-            document.getElementById('repetitions-value').textContent = value === '1' ? 'All' : value;
-            filterData();
-        });
+        // Event listeners for dropdowns
+        document.getElementById('move-number-filter').addEventListener('change', filterData);
+        document.getElementById('repetitions-filter').addEventListener('change', filterData);
 
         // Event listeners for dropdowns
         document.getElementById('theme-filter').addEventListener('change', filterData);
@@ -1451,14 +1478,42 @@
                 
                 console.log('Max move number:', maxMoveNumber);
                 
-                // Update slider max value
-                const slider = document.getElementById('move-number-slider');
-                slider.max = Math.min(maxMoveNumber, 50); // Cap at 50 for usability
+                // Populate move number dropdown with actual data
+                const moveNumberFilter = document.getElementById('move-number-filter');
+                const uniqueMoveNumbers = [...new Set(movesData.map(move => {
+                    const moveNum = getMoveNumberFromFEN(move.Position) || move.Move_Number || 0;
+                    return moveNum;
+                }))].sort((a, b) => a - b);
                 
-                // Update repetitions slider
-                const maxRepetitions = Math.max(...movesData.map(move => parseInt(move.Times_Repeated) || 0));
-                const repetitionsSlider = document.getElementById('repetitions-slider');
-                repetitionsSlider.max = Math.min(maxRepetitions, 50);
+                // Clear existing options except "All Moves"
+                moveNumberFilter.innerHTML = '<option value="all">All Moves</option>';
+                
+                // Add move number options
+                uniqueMoveNumbers.forEach(moveNum => {
+                    if (moveNum > 0 && moveNum <= 50) {
+                        const option = document.createElement('option');
+                        option.value = moveNum;
+                        option.textContent = `Move ${moveNum}`;
+                        moveNumberFilter.appendChild(option);
+                    }
+                });
+                
+                // Populate repetitions dropdown with actual data
+                const repetitionsFilter = document.getElementById('repetitions-filter');
+                const uniqueRepetitions = [...new Set(movesData.map(move => parseInt(move.Times_Repeated) || 0))].sort((a, b) => a - b);
+                
+                // Clear existing options except "All Repetitions"
+                repetitionsFilter.innerHTML = '<option value="all">All Repetitions</option>';
+                
+                // Add repetition options
+                uniqueRepetitions.forEach(rep => {
+                    if (rep > 0 && rep <= 50) {
+                        const option = document.createElement('option');
+                        option.value = rep;
+                        option.textContent = `${rep}+ times`;
+                        repetitionsFilter.appendChild(option);
+                    }
+                });
                 
                 // Populate theme dropdown
                 const themes = new Set();
