@@ -1,0 +1,518 @@
+Position,Move,Times_Repeated,Move_Number,Side,Original_Eval_Before,Original_Eval_After,Original_Eval_Drop,Original_Move_Quality,Stockfish_Eval_Drop,Stockfish_Move_Quality,Stockfish_Best_Move,Opening,Move_Theme,Board_Image,Your_Move_Eval,Best_Move_Eval,Eval_Difference
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1,d4,880,1,White,0.36,0.24,0.12,Mistake,51,Good,e4,Unknown,pawn_push; central_control,board_images/board_000.png,-0.35,0.32,0.67
+rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1,e5,543,2,Black,0.3,0.35,-0.05,Good,-67,Good,c5,Unknown,pawn_push; central_control,board_images/board_001.png,0.30,-0.28,-0.58
+rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,434,3,White,0.22,0.24,-0.02,Excellent,56,Excellent,c4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_002.png,-0.26,0.31,0.57
+rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2,Nf6,357,4,Black,0.32,0.4,-0.08,Inaccuracy,-80,Good,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_003.png,0.44,-0.36,-0.80
+rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1,d5,243,2,Black,0.27,0.27,0.0,Best,-50,Good,Nf6,Unknown,pawn_push; central_control,board_images/board_004.png,0.31,-0.35,-0.66
+rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2,c4,161,3,White,0.24,0.25,-0.01,Excellent,50,Good,Nf3,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_005.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 3 3,Nc6,137,6,Black,0.17,0.13,0.04,Good,-34,Excellent,Nc6,Petroff Defense,knight_development; knight_development,board_images/board_006.png,,,
+rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,131,5,White,0.31,0.27,0.04,Good,58,Excellent,Nc3,Queen's Pawn Game,knight_development; knight_development,board_images/board_007.png,,,
+rnbqkb1r/pppp1ppp/5n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R b KQkq - 0 3,Nc6,108,6,Black,0.43,1.57,-1.14,Blunder,-209,Inaccuracy,d6,Petroff Defense,knight_development; knight_development,board_images/board_008.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2,e6,107,4,Black,0.27,0.29,-0.02,Excellent,-53,Excellent,e6,Queen's Gambit,general,board_images/board_009.png,,,
+rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,104,5,White,0.27,0.25,0.02,Good,51,Good,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_010.png,,,
+rnbqkbnr/ppp1pppp/8/8/2pP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,e3,95,5,White,0.35,0.29,0.06,Inaccuracy,74,Good,e4,Queen's Gambit,general,board_images/board_011.png,,,
+r1bqkb1r/pppp1ppp/2N2n2/8/4P3/8/PPPP1PPP/RNBQKB1R b KQkq - 0 4,dxc6,94,8,Black,1.78,1.87,-0.09,Inaccuracy,-375,Excellent,dxc6,Petroff Defense,capture,board_images/board_012.png,1.87,-1.88,3.75
+rnbqkb1r/ppp1pppp/5n2/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,80,5,White,0.78,0.18,0.6,Blunder,85,Inaccuracy,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_013.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3,Nc6,67,6,Black,-0.6,0.21,-0.81,Blunder,21,Inaccuracy,Nxe4,King's Pawn Game,knight_development; knight_development,board_images/board_014.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,64,7,White,0.25,0.25,0.0,Best,55,Good,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_015.png,,,
+rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,61,3,White,0.47,0.21,0.26,Blunder,74,Good,Nc3,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_016.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4,Nxe4,59,8,Black,-0.22,-0.16,-0.06,Inaccuracy,52,Excellent,Nxe4,Petroff Defense,tactical; capture,board_images/board_017.png,-0.16,0.36,0.52
+rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3,Nf6,59,6,Black,0.21,0.23,-0.02,Good,-56,Excellent,Nf6,Queen's Gambit,knight_development; knight_development,board_images/board_018.png,,,
+rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,56,7,White,0.33,0.24,0.09,Inaccuracy,59,Good,e3,Queen's Gambit,knight_development; knight_development,board_images/board_019.png,,,
+rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,54,5,White,0.28,0.31,-0.03,Good,58,Good,h4,King's Indian Defense,knight_development; knight_development,board_images/board_020.png,,,
+rnbqkbnr/pppp1ppp/8/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2,Nf6,53,4,Black,0.17,0.1,0.07,Inaccuracy,-32,Good,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_021.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq - 1 2,c5,49,4,Black,0.22,0.21,0.01,Excellent,-35,Good,Nf6,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_022.png,,,
+rnbqkb1r/pppp1ppp/4pn2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,48,5,White,0.26,0.19,0.07,Inaccuracy,66,Good,g3,Queen's Pawn Game,knight_development; knight_development,board_images/board_023.png,,,
+r1bqkb1r/ppp2ppp/2p2n2/8/4P3/3P4/PPP2PPP/RNBQKB1R b KQkq - 0 5,Bc5,47,10,Black,2.02,2.05,-0.03,Good,-363,Excellent,Bc5,Petroff Defense,bishop_development,board_images/board_024.png,2.05,-1.58,3.63
+rnbqkbnr/pppp1ppp/8/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2,Nf6,42,4,Black,0.07,0.08,-0.01,Excellent,-11,Excellent,Nf6,King's Pawn Game,knight_development; knight_development,board_images/board_025.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,40,7,White,0.24,0.27,-0.03,Good,56,Good,cxd5,Queen's Pawn Game,knight_development; knight_development,board_images/board_026.png,,,
+rnbqkbnr/pppp1ppp/8/4p3/4PP2/8/PPPP2PP/RNBQKBNR b KQkq - 0 2,d5,38,4,Black,-0.5,-0.23,-0.27,Blunder,61,Good,exf4,King's Pawn Game,pawn_push; central_control,board_images/board_027.png,,,
+rnbqkbnr/pppp1ppp/8/4p3/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,dxe5,36,3,White,1.36,1.31,0.05,Inaccuracy,254,Excellent,dxe5,Queen's Pawn Game,pawn_capture; capture,board_images/board_028.png,,,
+rnbqkbnr/pppppp1p/6p1/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,34,3,White,0.65,0.46,0.19,Mistake,113,Good,e4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_029.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq - 0 3,d5,31,6,Black,-0.2,-0.22,0.02,Excellent,59,Excellent,d5,King's Pawn Game,pawn_push; central_control,board_images/board_030.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq - 3 4,Be7,30,8,Black,0.2,0.22,-0.02,Excellent,-57,Excellent,Be7,Queen's Gambit,bishop_development; bishop_development,board_images/board_031.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 0 4,exd4,29,8,Black,0.07,0.15,-0.08,Inaccuracy,-10,Excellent,exd4,Petroff Defense,pawn_capture; capture,board_images/board_032.png,0.15,0.05,0.10
+r1bqkb1r/ppp2ppp/2p2n2/8/4P3/2N5/PPPP1PPP/R1BQKB1R b KQkq - 1 5,Bc5,28,10,Black,1.86,1.84,0.02,Good,-360,Good,Be6,Petroff Defense,bishop_development,board_images/board_033.png,1.84,-1.76,3.60
+rnbqkb1r/ppp2ppp/5n2/3pP3/4P3/2N5/PPPP2PP/R1BQKBNR b KQkq - 0 4,Nxe4,28,8,Black,-0.18,-0.24,0.06,Inaccuracy,45,Excellent,Nxe4,King's Pawn Game,tactical; capture,board_images/board_034.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2,c5,27,4,Black,0.2,0.36,-0.16,Mistake,-65,Inaccuracy,c6,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_035.png,,,
+rnbqkbnr/pp3ppp/2p1p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,27,7,White,0.53,0.24,0.29,Blunder,79,Good,e4,Queen's Gambit,knight_development; knight_development,board_images/board_036.png,,,
+rnbqkbnr/ppp2ppp/8/3Pp3/5P2/8/PPPP2PP/RNBQKBNR b KQkq - 0 3,exf4,27,6,Black,-0.24,-0.32,0.08,Inaccuracy,57,Excellent,exf4,King's Pawn Game,capture,board_images/board_037.png,,,
+rnbqkbnr/ppp1pppp/3p4/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,27,3,White,0.48,0.3,0.18,Mistake,81,Inaccuracy,Nf3,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_038.png,,,
+r1bqkb1r/pppp1ppp/2n5/4p3/2B1N3/5N2/PPPP1PPP/R1BQK2R b KQkq - 0 5,d5,26,10,Black,-0.13,-0.1,-0.03,Good,49,Excellent,d5,Petroff Defense,pawn_push; central_control,board_images/board_039.png,-0.10,0.39,0.49
+rnbqkbnr/pp2pppp/8/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR b KQkq - 0 3,Nc6,25,6,Black,0.19,0.2,-0.01,Excellent,-39,Good,e6,Queen's Pawn Game,knight_development; knight_development,board_images/board_040.png,,,
+rnbqkbnr/pp1ppppp/2p5/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,25,3,White,0.41,0.36,0.05,Good,70,Good,e4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_041.png,,,
+rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,e4,25,7,White,0.54,0.55,-0.01,Excellent,109,Excellent,e4,King's Indian Defense,pawn_push; central_control,board_images/board_042.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p1N1/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq - 5 4,d5,24,8,Black,-0.01,0.17,-0.18,Mistake,-51,Excellent,d5,King's Pawn Game,pawn_push; central_control,board_images/board_043.png,0.17,-0.34,0.51
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/3P1N2/PPP2PPP/RNBQKB1R b KQkq - 0 3,Nc6,24,6,Black,-0.14,-0.18,0.04,Good,29,Excellent,Nc6,Petroff Defense,knight_development; knight_development,board_images/board_044.png,,,
+rnbqkbnr/ppp2ppp/4p3/8/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 0 4,Bxc4,24,7,White,0.32,0.34,-0.02,Good,74,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_045.png,,,
+r1bqkb1r/pppp1Bpp/2n5/4p3/4n3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 0 5,Kxf7,24,10,Black,-1.48,-1.44,-0.04,Good,334,Excellent,Kxf7,Petroff Defense,capture,board_images/board_046.png,-1.44,1.90,3.34
+r1bq1b1r/pppp1kpp/2n5/4p3/4N3/5N2/PPPP1PPP/R1BQK2R b KQ - 0 6,d5,24,12,Black,-1.51,-1.58,0.07,Inaccuracy,352,Excellent,d5,Petroff Defense,pawn_push; central_control,board_images/board_047.png,-1.58,1.94,3.52
+rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2,c5,24,4,Black,-0.06,0.09,-0.15,Mistake,-1,Good,Nf6,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_048.png,,,
+rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bg5,24,9,White,0.21,0.09,0.12,Mistake,38,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_049.png,,,
+rnbqk1nr/ppppppbp/6p1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,23,5,White,0.47,0.55,-0.08,Inaccuracy,100,Excellent,Nc3,Queen's Pawn Game,knight_development; knight_development,board_images/board_050.png,0.55,1.55,1.00
+rn1qkbnr/ppp1pppp/8/3p1b2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,23,5,White,0.89,0.38,0.51,Blunder,108,Mistake,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_051.png,0.38,1.46,1.08
+rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2,exd4,22,4,Black,0.07,-0.01,0.08,Inaccuracy,-2,Excellent,exd4,King's Pawn Game,pawn_capture; capture,board_images/board_052.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 5,Bc5,22,10,Black,0.1,0.48,-0.38,Blunder,-57,Good,Bb4,Petroff Defense,bishop_development,board_images/board_053.png,0.48,-0.09,0.57
+rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 3,Nf6,22,6,Black,0.19,0.25,-0.06,Inaccuracy,-47,Excellent,Nf6,Queen's Gambit,knight_development; knight_development,board_images/board_054.png,,,
+rnbqkbnr/ppp2ppp/8/3pp3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,dxe5,22,5,White,0.73,0.7,0.03,Good,148,Excellent,dxe5,Queen's Gambit,pawn_capture; capture,board_images/board_055.png,,,
+rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,22,9,White,0.23,0.31,-0.08,Inaccuracy,50,Excellent,Bg5,Queen's Gambit,bishop_development; bishop_development,board_images/board_056.png,,,
+rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,22,3,White,0.6,0.43,0.17,Mistake,100,Good,Bg5,Dutch Defense,pawn_push; central_control; queenside_attack,board_images/board_057.png,,,
+rnbqkbnr/p1pppppp/1p6/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,21,3,White,0.95,0.59,0.36,Blunder,145,Mistake,e4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_058.png,,,
+rnbqkbnr/pppp1ppp/8/4p3/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,21,3,White,1.36,-0.1,1.46,Blunder,92,Inaccuracy,dxe5,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_059.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4,Bb4,21,8,Black,0.2,0.21,-0.01,Excellent,-44,Good,Bd6,Petroff Defense,bishop_development,board_images/board_060.png,0.21,-0.23,0.44
+r1bqkbnr/pppp1ppp/2n5/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 1 3,e4,20,5,White,1.24,0.64,0.6,Blunder,202,Mistake,Nf3,Queen's Pawn Game,pawn_push; central_control,board_images/board_061.png,,,
+r1bqkb1r/ppp2ppp/2n2n2/3Pp1N1/2B5/8/PPPP1PPP/RNBQK2R b KQkq - 0 5,Na5,19,10,Black,0.15,0.21,-0.06,Inaccuracy,12,Excellent,Na5,King's Pawn Game,knight_development,board_images/board_062.png,0.21,0.33,0.12
+rnbqkb1r/pppp1ppp/5n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3,exd4,19,6,Black,0.28,0.45,-0.17,Mistake,-76,Good,Nxe4,Petroff Defense,pawn_capture; capture,board_images/board_063.png,,,
+rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bg5,19,9,White,0.26,0.29,-0.03,Good,63,Good,e3,Queen's Gambit,bishop_development; bishop_development,board_images/board_064.png,,,
+rnbqkbnr/p1p1pppp/8/1p6/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 0 4,a4,19,7,White,0.96,0.93,0.03,Good,172,Excellent,a4,Queen's Gambit,queenside_attack,board_images/board_065.png,,,
+rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1,d5,19,2,Black,0.27,0.25,0.02,Good,-30,Excellent,d5,Unknown,pawn_push; central_control,board_images/board_066.png,,,
+rn1qkbnr/pbpppppp/1p6/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,18,5,White,0.68,0.62,0.06,Inaccuracy,108,Good,Qc2,Queen's Pawn Game,knight_development; knight_development,board_images/board_067.png,0.62,1.70,1.08
+rn1qkbnr/pp2pppp/2p5/3p1b2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,18,7,White,1.34,0.61,0.73,Blunder,172,Mistake,Qb3,Queen's Pawn Game,knight_development; knight_development,board_images/board_068.png,0.61,2.33,1.72
+rn1qkb1r/ppp1pppp/5n2/3p1b2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4,Nf3,17,7,White,0.68,0.42,0.26,Blunder,110,Good,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_069.png,0.42,1.52,1.10
+rnbqkbnr/ppp1pppp/8/3p4/3P4/4P3/PPP2PPP/RNBQKBNR b KQkq - 0 2,c5,16,4,Black,0.17,0.24,-0.07,Inaccuracy,-16,Good,e6,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_070.png,,,
+rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,16,7,White,0.39,0.21,0.18,Mistake,76,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_071.png,,,
+rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,16,9,White,0.27,0.22,0.05,Inaccuracy,55,Excellent,Bg5,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_072.png,,,
+rnbqkbnr/pppp1ppp/8/8/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Qxd4,16,5,White,-0.14,-0.11,-0.03,Good,-28,Excellent,Qxd4,Queen's Pawn Game,tactical; capture,board_images/board_073.png,,,
+r1bqkbnr/pppp1ppp/2n5/8/2PQ4/8/PP2PPPP/RNB1KBNR w KQkq - 1 4,Qd1,16,7,White,-0.08,-0.2,0.12,Mistake,-21,Excellent,Qd1,Queen's Pawn Game,general,board_images/board_074.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Bg5,16,7,White,0.24,0.29,-0.05,Good,59,Good,cxd5,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_075.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Bg5,16,7,White,0.25,0.25,0.0,Best,50,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_076.png,,,
+rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5,Be2,16,9,White,0.56,0.57,-0.01,Excellent,104,Good,h3,King's Indian Defense,bishop_development; bishop_development,board_images/board_077.png,,,
+rnbqkb1r/ppp1pppp/5n2/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,15,5,White,0.86,0.27,0.59,Blunder,88,Good,cxd5,Queen's Pawn Game,knight_development; knight_development,board_images/board_078.png,,,
+rnbqkb1r/ppp1pppp/5n2/8/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 1 4,Bxc4,15,7,White,0.32,0.27,0.05,Good,75,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_079.png,,,
+rn1qkb1r/pp2pppp/2p2n2/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,15,9,White,0.63,0.29,0.34,Blunder,88,Inaccuracy,Qb3,Queen's Gambit,bishop_development; bishop_development,board_images/board_080.png,0.29,1.17,0.88
+rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 5,c5,15,10,Black,0.22,0.28,-0.06,Inaccuracy,-59,Inaccuracy,h6,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_081.png,,,
+rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,15,7,White,0.25,0.2,0.05,Good,47,Good,e3,Queen's Pawn Game,knight_development; knight_development,board_images/board_082.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4,c5,14,8,Black,0.24,0.32,-0.08,Inaccuracy,-50,Excellent,c5,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_083.png,,,
+rnbqk2r/ppp2pp1/4pn1p/3p2B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,Bh4,14,11,White,0.22,-0.09,0.31,Blunder,13,Inaccuracy,Bxf6,Queen's Pawn Game,bishop_development,board_images/board_084.png,,,
+r1bqkb1r/ppp2ppp/2n5/3Bp3/4N3/5N2/PPPP1PPP/R1BQK2R b KQkq - 0 6,Qxd5,14,12,Black,-1.35,-1.42,0.07,Inaccuracy,254,Excellent,Qxd5,Petroff Defense,capture,board_images/board_085.png,-1.42,1.12,2.54
+rnbqkbnr/pppp1ppp/8/8/3pP3/2P5/PP3PPP/RNBQKBNR b KQkq - 0 3,d5,14,6,Black,-0.31,-0.13,-0.18,Mistake,61,Good,Qe7,King's Pawn Game,pawn_push; central_control,board_images/board_086.png,,,
+rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Bg5,13,7,White,0.25,-0.11,0.36,Blunder,16,Inaccuracy,e3,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_087.png,,,
+rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,13,9,White,1.06,0.45,0.61,Blunder,145,Mistake,Ne5,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_088.png,0.45,1.90,1.45
+rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1,e5,13,2,Black,0.12,0.27,-0.15,Mistake,-40,Excellent,e5,Unknown,pawn_push; central_control,board_images/board_089.png,,,
+r1bqkb1r/ppp2ppp/5n2/nB1Pp1N1/8/8/PPPP1PPP/RNBQK2R b KQkq - 2 6,c6,13,12,Black,0.22,0.17,0.05,Good,-37,Excellent,c6,Petroff Defense,general,board_images/board_090.png,0.17,-0.20,0.37
+rnbqkbnr/pp3ppp/4p3/2pp4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,13,7,White,0.41,0.17,0.24,Blunder,61,Good,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_091.png,,,
+r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/3P4/PPP1BPPP/RNBQK2R b KQkq - 2 6,h5,13,12,Black,1.81,2.28,-0.47,Blunder,-377,Inaccuracy,Ng4,Petroff Defense,pawn_push; kingside_attack,board_images/board_092.png,2.28,-1.49,3.77
+rnbqk1nr/ppp2ppp/4p3/3p4/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,13,7,White,0.22,0.25,-0.03,Good,48,Good,e3,Queen's Gambit,knight_development; knight_development,board_images/board_093.png,0.25,0.73,0.48
+rnbqkbnr/pppp2pp/4p3/5p2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,13,5,White,0.51,0.5,0.01,Excellent,114,Mistake,a3,Dutch Defense,knight_development; knight_development,board_images/board_094.png,,,
+r1bq1b1r/ppp2kpp/2n5/3pp1N1/8/5N2/PPPP1PPP/R1BQK2R b KQ - 1 7,Kg8,13,14,Black,-1.98,-1.96,-0.02,Good,396,Excellent,Kg8,Petroff Defense,general,board_images/board_095.png,-1.96,2.00,3.96
+rnbqkb1r/ppp1pppp/3p1n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,13,5,White,0.45,0.48,-0.03,Good,119,Good,Nf3,Queen's Pawn Game,knight_development; knight_development,board_images/board_096.png,,,
+rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,13,7,White,0.54,0.29,0.25,Blunder,93,Good,e4,King's Indian Defense,knight_development; knight_development,board_images/board_097.png,,,
+r1bqkbnr/pp2pppp/2n5/2pp4/3P1B2/2P1P3/PP3PPP/RN1QKBNR b KQkq - 0 4,Nf6,12,8,Black,-0.12,0.05,-0.17,Mistake,-13,Good,Qb6,Queen's Pawn Game,knight_development; knight_development,board_images/board_098.png,,,
+r1bqk2r/pppp1ppp/2N2n2/2b5/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 6,bxc6,12,12,Black,0.36,0.27,0.09,Inaccuracy,-52,Excellent,bxc6,Petroff Defense,capture,board_images/board_099.png,0.27,-0.25,0.52
+rn1qkbnr/ppp2ppp/4p3/3p1b2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,12,7,White,0.37,0.39,-0.02,Good,73,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_100.png,0.39,1.12,0.73
+r1bqkb1r/pp3ppp/2P2n2/nB2p1N1/8/8/PPPP1PPP/RNBQK2R b KQkq - 0 7,bxc6,12,14,Black,0.15,0.22,-0.07,Inaccuracy,-55,Excellent,bxc6,Petroff Defense,capture,board_images/board_101.png,0.22,-0.33,0.55
+rnbqkbnr/ppp2ppp/8/3P4/5p2/5N2/PPPP2PP/RNBQKB1R b KQkq - 1 4,Bg4,12,8,Black,-0.13,0.23,-0.36,Blunder,2,Inaccuracy,Nf6,King's Pawn Game,bishop_development,board_images/board_102.png,,,
+rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,12,5,White,0.54,0.4,0.14,Mistake,124,Good,g3,Dutch Defense,knight_development; knight_development,board_images/board_103.png,,,
+rnbqkb1r/ppp2ppp/4pn2/8/2BP4/4P3/PP3PPP/RNBQK1NR w KQkq - 1 5,Nc3,12,9,White,0.33,0.21,0.12,Mistake,68,Excellent,Nc3,Queen's Gambit,knight_development; knight_development,board_images/board_104.png,,,
+rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1,c5,12,2,Black,0.12,0.23,-0.11,Mistake,-42,Inaccuracy,e5,Unknown,pawn_push; central_control; queenside_attack,board_images/board_105.png,,,
+rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,11,9,White,0.37,0.31,0.06,Inaccuracy,56,Good,e3,Queen's Gambit,bishop_development; bishop_development,board_images/board_106.png,,,
+rn1qkbnr/pp3ppp/2p1p3/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bg5,11,9,White,0.52,0.16,0.36,Blunder,66,Inaccuracy,Qb3,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_107.png,0.16,0.82,0.66
+rnbqkbnr/ppp2ppp/8/4p3/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 0 4,Bxc4,11,7,White,0.36,0.29,0.07,Inaccuracy,69,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_108.png,,,
+rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq - 4 5,Nf3,11,9,White,0.17,0.13,0.04,Good,55,Good,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_109.png,,,
+rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq - 0 1,d5,11,2,Black,-0.23,-0.23,0.0,Best,55,Excellent,d5,Unknown,pawn_push; central_control,board_images/board_110.png,,,
+r1bqkb1r/ppp2ppp/2p2n2/4P3/8/8/PPPP1PPP/RNBQKB1R b KQkq - 0 5,Ne4,11,10,Black,1.11,2.13,-1.02,Blunder,-318,Inaccuracy,Nd5,Petroff Defense,knight_development,board_images/board_111.png,2.13,-1.05,3.18
+rnbqkbnr/pp1ppppp/8/2p5/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,11,3,White,0.69,-0.16,0.85,Blunder,64,Inaccuracy,d5,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_112.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/2N5/PPPP1PPP/R1BQK1NR b KQkq - 3 3,Nc6,11,6,Black,-0.02,0.09,-0.11,Mistake,-16,Good,Bc5,King's Pawn Game,knight_development; knight_development,board_images/board_113.png,,,
+r1bqkbnr/ppp1pppp/2n5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,10,5,White,0.51,0.53,-0.02,Good,133,Good,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_114.png,,,
+rn1qkb1r/pp3ppp/2p1pn2/3p2B1/2PP2b1/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,e3,10,11,White,1.08,0.31,0.77,Blunder,160,Mistake,Ne5,Queen's Gambit,general,board_images/board_115.png,0.31,1.91,1.60
+rnbqkb1r/pp1ppppp/5n2/2p5/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,10,5,White,0.63,-0.09,0.72,Blunder,62,Inaccuracy,d5,Benoni Defense,knight_development; knight_development,board_images/board_116.png,,,
+rnbqkbnr/p3pppp/2p5/1p6/P1pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 5,axb5,10,9,White,1.85,1.89,-0.04,Good,390,Excellent,axb5,Queen's Gambit,capture,board_images/board_117.png,,,
+rnbqk2r/pp2bppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6,e3,10,11,White,0.44,0.47,-0.03,Good,74,Excellent,e3,Queen's Pawn Game,general,board_images/board_118.png,,,
+rn1qkb1r/ppp2ppp/4pn2/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bg5,10,9,White,0.39,0.33,0.06,Inaccuracy,73,Good,Nh4,Queen's Gambit,bishop_development; bishop_development,board_images/board_119.png,0.33,1.06,0.73
+rnbqkb1r/ppp2ppp/8/3pP3/4n3/2N2Q2/PPPP2PP/R1B1KBNR b KQkq - 1 5,Nxc3,10,10,Black,-0.29,0.17,-0.46,Blunder,17,Good,f5,King's Pawn Game,capture,board_images/board_120.png,,,
+rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,10,9,White,0.32,0.24,0.08,Inaccuracy,61,Good,Bf4,Queen's Gambit,bishop_development; bishop_development,board_images/board_121.png,,,
+r1bqkb1r/ppp1pppp/2n2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4,Nf3,10,7,White,0.55,0.55,0.0,Best,116,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_122.png,0.55,1.71,1.16
+rnbqkb1r/ppp1pppp/5n2/8/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,9,7,White,0.24,-0.32,0.56,Blunder,13,Inaccuracy,e3,Queen's Pawn Game,pawn_push; central_control,board_images/board_123.png,,,
+r1bqk2r/ppp2ppp/2p2n2/2b3B1/4P3/3P4/PPP2PPP/RN1QKB1R b KQkq - 2 6,Nxe4,9,12,Black,-3.66,-3.88,0.22,Blunder,688,Excellent,Nxe4,Petroff Defense,tactical; capture,board_images/board_124.png,-3.88,3.00,6.88
+rnbqkbnr/pppp1ppp/8/4p3/4P3/3P4/PPP2PPP/RNBQKBNR b KQkq - 0 2,Nf6,9,4,Black,-0.15,-0.07,-0.08,Inaccuracy,31,Good,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_125.png,,,
+rnbqkb1r/ppp1pppp/3p1n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,9,5,White,0.56,0.59,-0.03,Good,113,Good,Nf3,Queen's Pawn Game,knight_development; knight_development,board_images/board_126.png,,,
+rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq - 0 1,d5,9,2,Black,0.21,0.22,-0.01,Excellent,-40,Good,e5,Unknown,pawn_push; central_control,board_images/board_127.png,,,
+r1bqk2r/pp1nbppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 1 7,Bd3,9,13,White,0.36,0.35,0.01,Excellent,60,Inaccuracy,Qc2,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_128.png,0.35,0.95,0.60
+rnbqkb1r/pp3ppp/4pn2/3p2B1/2Pp4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,Nxd4,9,11,White,-0.04,-0.07,0.03,Good,39,Excellent,Nxd4,Queen's Gambit,capture,board_images/board_129.png,,,
+rnbqk2r/ppp1bpp1/4pn1p/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,Bh4,9,11,White,0.24,0.23,0.01,Excellent,47,Good,Bxf6,Queen's Pawn Game,bishop_development,board_images/board_130.png,,,
+rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 6 6,e3,9,11,White,0.26,0.22,0.04,Good,46,Excellent,e3,Queen's Gambit,general,board_images/board_131.png,0.22,0.68,0.46
+rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 5,c5,9,10,Black,0.21,0.4,-0.19,Mistake,-66,Inaccuracy,O-O,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_132.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4,Be7,9,8,Black,0.24,0.3,-0.06,Inaccuracy,-47,Good,c5,Queen's Gambit,bishop_development; bishop_development,board_images/board_133.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 5 4,Bc5,9,8,Black,-0.31,0.19,-0.5,Blunder,27,Good,Nxe4,Petroff Defense,bishop_development,board_images/board_134.png,0.19,0.46,0.27
+r1bqkbnr/pp2pppp/2n5/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R b KQkq - 2 4,Nf6,9,8,Black,0.19,0.12,0.07,Inaccuracy,-28,Good,Bg4,Queen's Pawn Game,knight_development; knight_development,board_images/board_135.png,,,
+r1bqk2r/ppp2ppp/2p2n2/2b5/2B1P3/2N5/PPPP1PPP/R1BQK2R b KQkq - 3 6,Ng4,9,12,Black,-0.85,-1.15,0.3,Blunder,194,Excellent,Ng4,Petroff Defense,knight_development,board_images/board_136.png,-1.15,0.79,1.94
+r1bqk2r/ppp2ppp/2p5/2b5/2B1P1n1/2N5/PPPP1PPP/R1BQ1RK1 b kq - 5 7,Qh4,9,14,Black,-2.2,-2.28,0.08,Inaccuracy,511,Excellent,Qh4,Petroff Defense,general,board_images/board_137.png,-2.28,2.83,5.11
+r1b1k2r/ppp2ppp/2p5/2b5/2B1P1nq/2N4P/PPPP1PP1/R1BQ1RK1 b kq - 0 8,Nxf2,9,16,Black,-2.49,-2.31,-0.18,Mistake,472,Good,Bxf2+,Petroff Defense,capture,board_images/board_138.png,-2.31,2.41,4.72
+rnbqkbnr/pp1ppppp/8/8/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Qxd4,9,5,White,-0.12,-0.09,-0.03,Good,-4,Excellent,Qxd4,Queen's Pawn Game,tactical; capture,board_images/board_139.png,,,
+rnbqkbnr/p3pppp/8/1p6/2pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 6,Qf3,9,11,White,3.02,3.13,-0.11,Mistake,614,Excellent,Qf3,Queen's Gambit,general,board_images/board_140.png,,,
+rnbqk2r/pp2bppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 4 6,e3,9,11,White,0.39,0.41,-0.02,Excellent,66,Excellent,e3,Queen's Gambit,general,board_images/board_141.png,,,
+rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,9,7,White,0.21,0.25,-0.04,Good,51,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_142.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4,a6,8,8,Black,0.2,0.49,-0.29,Blunder,-64,Inaccuracy,Bd6,Petroff Defense,defensive,board_images/board_143.png,0.49,-0.15,0.64
+rnbqk2r/pppp1pp1/4pn1p/6B1/1bPP4/2N5/PP2PPPP/R2QKBNR w KQkq - 0 5,Bh4,8,9,White,-0.08,0.1,-0.18,Mistake,22,Excellent,Bh4,Queen's Pawn Game,bishop_development,board_images/board_144.png,,,
+rnbqkb1r/pp1ppppp/5n2/8/2Pp4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Qxd4,8,7,White,-0.22,-0.11,-0.11,Mistake,-21,Excellent,Qxd4,Benoni Defense,tactical; capture,board_images/board_145.png,,,
+r1bqkb1r/pp1ppppp/2n2n2/8/2PQ4/2N5/PP2PPPP/R1B1KBNR w KQkq - 1 5,Qd1,8,9,White,-0.12,-0.18,0.06,Inaccuracy,-33,Good,Qd3,Benoni Defense,general,board_images/board_146.png,-0.18,-0.51,0.33
+rnbqkb1r/pp1ppppp/2p2n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,8,5,White,0.29,0.28,0.01,Excellent,73,Good,Nf3,Queen's Pawn Game,knight_development; knight_development,board_images/board_147.png,,,
+rnbqkbnr/pp2pppp/8/2pp4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,8,5,White,0.49,0.28,0.21,Blunder,68,Inaccuracy,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_148.png,,,
+rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq - 2 5,Nf3,8,9,White,0.2,0.18,0.02,Good,48,Excellent,Nf3,Queen's Pawn Game,knight_development; knight_development,board_images/board_149.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/3P4/PPP2PPP/RNBQK1NR b KQkq - 0 3,Nc6,8,6,Black,0.09,0.24,-0.15,Mistake,-30,Inaccuracy,c6,King's Pawn Game,knight_development; knight_development,board_images/board_150.png,,,
+rnbqkbnr/ppp2ppp/8/4P3/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 4,Nf3,8,7,White,0.69,0.62,0.07,Inaccuracy,153,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_151.png,,,
+rn1qkbnr/pbpp1ppp/1p2p3/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,8,7,White,0.57,0.51,0.06,Inaccuracy,159,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_152.png,0.51,2.10,1.59
+rnbqkb1r/ppp1pp1p/3p1np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,8,7,White,0.57,0.47,0.1,Inaccuracy,98,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_153.png,,,
+rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP2BPPP/R1BQK1NR w KQ - 2 6,Bg5,8,11,White,0.54,0.47,0.07,Inaccuracy,92,Inaccuracy,Nf3,King's Indian Defense,bishop_development; bishop_development,board_images/board_154.png,0.47,1.39,0.92
+r1bqkbnr/pppp1ppp/8/4n3/4P3/8/PPP2PPP/RNBQKBNR w KQkq - 0 4,Nc3,8,7,White,0.59,0.61,-0.02,Good,139,Good,Qe2,Queen's Pawn Game,knight_development; knight_development,board_images/board_155.png,,,
+rnbq1rk1/pp2bppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7,Bd3,8,13,White,0.41,0.28,0.13,Mistake,64,Inaccuracy,h4,Queen's Gambit,bishop_development; bishop_development,board_images/board_156.png,0.28,0.92,0.64
+rnbqkbnr/pp2pppp/8/2pp4/3P1B2/2N5/PPP1PPPP/R2QKBNR b KQkq - 1 3,Nf6,8,6,Black,0.01,0.14,-0.13,Mistake,-9,Excellent,Nf6,Queen's Pawn Game,knight_development; knight_development,board_images/board_157.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,8,5,White,0.66,-0.12,0.78,Blunder,66,Good,dxe5,Budapest Gambit,knight_development; knight_development,board_images/board_158.png,,,
+rnbqkbnr/pp1ppppp/8/2p5/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,dxc5,8,3,White,0.69,0.09,0.6,Blunder,80,Good,d5,Queen's Pawn Game,capture,board_images/board_159.png,,,
+rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq - 0 1,e5,8,2,Black,0.19,0.17,0.02,Excellent,-28,Inaccuracy,d5,Unknown,pawn_push; central_control,board_images/board_160.png,,,
+rnbqkbnr/ppp2ppp/4p3/8/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,7,7,White,0.62,0.59,0.03,Good,104,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_161.png,,,
+r1bqkb1r/ppp2ppp/2n1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,7,9,White,0.55,0.43,0.12,Mistake,118,Good,e3,Queen's Gambit,bishop_development; bishop_development,board_images/board_162.png,0.43,1.61,1.18
+rnbqkbnr/pp2pppp/8/2pp4/3P4/4PN2/PPP2PPP/RNBQKB1R b KQkq - 0 3,Nc6,7,6,Black,0.19,0.19,0.0,Best,-40,Inaccuracy,Nf6,Queen's Pawn Game,knight_development; knight_development,board_images/board_163.png,,,
+r1bqkbnr/pppp1ppp/8/4n3/4P3/8/PPP2PPP/RNBQKBNR w KQkq - 0 4,Bf4,7,7,White,0.59,0.28,0.31,Blunder,96,Inaccuracy,Nc3,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_164.png,,,
+rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,7,9,White,0.95,0.39,0.56,Blunder,139,Mistake,Ne5,Queen's Gambit,bishop_development; bishop_development,board_images/board_165.png,0.39,1.78,1.39
+rnbq1rk1/ppp1bpp1/4pn1p/3p4/2PP3B/2N2N2/PP2PPPP/R2QKB1R w KQ - 2 7,e3,7,13,White,0.17,0.16,0.01,Excellent,44,Excellent,e3,Queen's Pawn Game,general,board_images/board_166.png,0.16,0.60,0.44
+r1b1kb1r/ppp2ppp/2n5/3qp3/4N3/3P1N2/PPP2PPP/R1BQK2R b KQkq - 0 7,Bg4,7,14,Black,-1.64,-1.51,-0.13,Mistake,336,Excellent,Bg4,Petroff Defense,bishop_development,board_images/board_167.png,-1.51,1.85,3.36
+rn1qkb1r/pp3ppp/2p1pn2/3p1bB1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,e3,7,11,White,0.27,0.15,0.12,Mistake,51,Inaccuracy,Qb3,Queen's Pawn Game,general,board_images/board_168.png,0.15,0.66,0.51
+r1bqk2r/pppp1ppp/2n2n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 5,h6,7,10,Black,0.14,0.94,-0.8,Blunder,-84,Inaccuracy,Nd4,Petroff Defense,defensive,board_images/board_169.png,0.94,0.10,0.84
+rnbqkb1r/ppp2ppp/8/3pP3/4n3/2N2N2/PPPP2PP/R1BQKB1R b KQkq - 1 5,Bg4,7,10,Black,-0.2,0.3,-0.5,Blunder,-30,Inaccuracy,Bb4,King's Pawn Game,bishop_development,board_images/board_170.png,,,
+rnbqkbnr/pp2pppp/8/2pp4/3P4/2P2N2/PP2PPPP/RNBQKB1R b KQkq - 0 3,Nc6,7,6,Black,0.18,0.55,-0.37,Blunder,-61,Inaccuracy,Nf6,Queen's Pawn Game,knight_development; knight_development,board_images/board_171.png,,,
+rn1qk1nr/pp2bppp/2p1p3/3p1bB1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6,Bxe7,7,11,White,0.12,0.05,0.07,Inaccuracy,28,Good,Qb3,Queen's Gambit,capture,board_images/board_172.png,0.05,0.33,0.28
+rnbqkbnr/ppp2ppp/4p3/3P4/3P4/8/PP2PPPP/RNBQKBNR b KQkq - 0 3,exd5,7,6,Black,0.1,0.12,-0.02,Excellent,-45,Excellent,exd5,Queen's Gambit,pawn_capture; capture,board_images/board_173.png,,,
+r1bqkbnr/pp1ppppp/2n5/8/2PQ4/8/PP2PPPP/RNB1KBNR w KQkq - 1 4,Qd1,7,7,White,-0.15,-0.21,0.06,Inaccuracy,-22,Good,Qd3,Queen's Pawn Game,general,board_images/board_174.png,,,
+rnbq1rk1/pppp1ppp/4pn2/8/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQ - 4 5,Bg5,7,9,White,0.22,0.09,0.13,Mistake,18,Good,Qc2,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_175.png,0.09,0.27,0.18
+rnbqkbnr/pp2pppp/8/2pp4/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq - 1 3,Nc6,7,6,Black,0.14,0.15,-0.01,Excellent,-24,Excellent,Nc6,Queen's Pawn Game,knight_development; knight_development,board_images/board_176.png,,,
+r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/2P1PN2/PP3PPP/RN1QKB1R b KQkq - 0 5,Bg4,7,10,Black,0.15,0.16,-0.01,Excellent,-27,Inaccuracy,Nh5,Queen's Pawn Game,bishop_development,board_images/board_177.png,0.16,-0.11,0.27
+r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,e3,7,11,White,0.24,0.19,0.05,Good,53,Excellent,e3,Queen's Gambit,general,board_images/board_178.png,0.19,0.72,0.53
+rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/3P4/PPP2PPP/RNBQK1NR b KQkq - 0 3,h6,7,6,Black,0.09,0.3,-0.21,Blunder,-25,Inaccuracy,c6,King's Pawn Game,defensive,board_images/board_179.png,,,
+rnbqkb1r/pp2pppp/2p2n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,e4,7,9,White,0.3,0.09,0.21,Blunder,23,Good,a4,Queen's Pawn Game,pawn_push; central_control,board_images/board_180.png,,,
+r2qkb1r/pp2pppp/2n2n2/2pp4/3P1Bb1/2P1PN2/PP1N1PPP/R2QKB1R b KQkq - 2 6,e6,7,12,Black,0.24,0.18,0.06,Inaccuracy,-44,Excellent,e6,Queen's Pawn Game,general,board_images/board_181.png,0.18,-0.26,0.44
+r1bqkb1r/p4ppp/2p2n2/n3p1N1/B7/8/PPPP1PPP/RNBQK2R b KQkq - 1 8,h6,7,16,Black,-1.96,-1.79,-0.17,Mistake,348,Excellent,h6,Petroff Defense,defensive,board_images/board_182.png,-1.79,1.69,3.48
+r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/3PB3/PPP2PPP/RN1QKB1R b KQkq - 2 6,Bxe3,6,12,Black,0.61,0.68,-0.07,Inaccuracy,-140,Excellent,Bxe3,Petroff Defense,capture,board_images/board_183.png,0.68,-0.72,1.40
+rnbqkbnr/pp1ppppp/8/2p5/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,d5,6,3,White,0.69,0.78,-0.09,Inaccuracy,153,Excellent,d5,Queen's Pawn Game,pawn_push; central_control,board_images/board_184.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p1B1/4P3/3P1N2/PPP2PPP/RN1QKB1R b KQkq - 2 4,Be7,6,8,Black,-0.39,-0.11,-0.28,Blunder,58,Inaccuracy,d5,Petroff Defense,bishop_development; bishop_development,board_images/board_185.png,-0.11,0.47,0.58
+r1bBk2r/ppp2ppp/2p5/2b5/4n3/3P4/PPP2PPP/RN1QKB1R b KQkq - 0 7,Bxf2+,6,14,Black,-99.98,-99.99,0.01,Excellent,19997,Excellent,Bxf2+,Petroff Defense,capture; check,board_images/board_186.png,-99.99,99.98,199.97
+r1bBk2r/ppp2ppp/2p5/8/4n3/3P4/PPP1KbPP/RN1Q1B1R b kq - 1 8,Bg4#,6,16,Black,-99.99,-100.0,0.01,Excellent,19999,Excellent,Bg4#,Petroff Defense,bishop_development; checkmate,board_images/board_187.png,-100.00,99.99,199.99
+rnbqkbnr/ppp2ppp/3p4/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3,e4,6,5,White,1.62,0.34,1.28,Blunder,188,Mistake,Nf3,Queen's Pawn Game,pawn_push; central_control,board_images/board_188.png,,,
+rnbqk1nr/ppppppbp/6p1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nf3,6,5,White,0.47,0.32,0.15,Mistake,89,Inaccuracy,e4,Queen's Pawn Game,knight_development; knight_development,board_images/board_189.png,0.32,1.21,0.89
+rnbqkbnr/pp2pppp/2p5/8/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,6,7,White,0.28,0.23,0.05,Inaccuracy,52,Good,e3,Queen's Gambit,pawn_push; central_control,board_images/board_190.png,,,
+r1b1kb1r/ppp2ppp/2n5/3qp3/8/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 7,Qd8,6,14,Black,-1.45,-0.89,-0.56,Blunder,207,Mistake,Qd6,Petroff Defense,general,board_images/board_191.png,-0.89,1.18,2.07
+rnbqkbnr/pp2pppp/8/2pp4/3P1B2/2N5/PPP1PPPP/R2QKBNR b KQkq - 1 3,Nc6,6,6,Black,0.01,0.08,-0.07,Inaccuracy,-7,Excellent,Nc6,Queen's Pawn Game,knight_development; knight_development,board_images/board_192.png,,,
+rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/P7/1P2PPPP/RNBQKBNR b KQkq - 0 3,Nf6,6,6,Black,0.07,0.11,-0.04,Good,10,Good,dxc4,Queen's Gambit,knight_development; knight_development,board_images/board_193.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/8/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 3 5,Nc3,6,9,White,-0.11,-0.12,0.01,Excellent,-22,Excellent,Nc3,Queen's Pawn Game,knight_development; knight_development,board_images/board_194.png,-0.12,-0.34,0.22
+rnbqkbnr/pp2pppp/8/2pp4/3P1B2/2P5/PP2PPPP/RN1QKBNR b KQkq - 0 3,Nc6,6,6,Black,0.07,0.11,-0.04,Good,-9,Good,Qb6,Queen's Pawn Game,knight_development; knight_development,board_images/board_195.png,,,
+r2qkb1r/pp1npppp/2p2n2/3p1bB1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 6 6,e3,6,11,White,0.17,0.2,-0.03,Good,34,Good,Nh4,Queen's Gambit,general,board_images/board_196.png,0.20,0.54,0.34
+r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 5,Nxd4,6,10,Black,0.1,1.36,-1.26,Blunder,-118,Inaccuracy,Bb4,Petroff Defense,capture,board_images/board_197.png,1.36,0.18,1.18
+r1bqkb1r/pppp1ppp/5n2/8/3QP3/2N5/PPP2PPP/R1B1KB1R b KQkq - 0 6,c5,6,12,Black,1.4,1.99,-0.59,Blunder,-352,Inaccuracy,d6,Petroff Defense,pawn_push; central_control; queenside_attack,board_images/board_198.png,1.99,-1.53,3.52
+r1bqk2r/pp2bppp/2n1pn2/2pp2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 1 7,Bd3,6,13,White,0.51,-0.18,0.69,Blunder,10,Inaccuracy,dxc5,Queen's Gambit,bishop_development; bishop_development,board_images/board_199.png,-0.18,-0.08,0.10
+rnbqkbnr/ppp1pppp/8/3p4/5P2/5N2/PPPPP1PP/RNBQKB1R b KQkq - 1 2,c5,6,4,Black,-0.21,-0.17,-0.04,Good,55,Excellent,c5,Bird's Opening,pawn_push; central_control; queenside_attack,board_images/board_200.png,,,
+rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP2BPPP/R1BQK1NR w KQ - 2 6,h3,6,11,White,0.54,0.7,-0.16,Mistake,104,Mistake,Nf3,King's Indian Defense,defensive,board_images/board_201.png,0.70,1.74,1.04
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/3P1N2/PPP2PPP/RNBQKB1R b KQkq - 0 3,h6,6,6,Black,-0.14,1.03,-1.17,Blunder,-80,Inaccuracy,Nc6,Petroff Defense,defensive,board_images/board_202.png,,,
+r1bqk2r/ppp2ppp/2p5/2b5/4P3/2NPP3/PPP3PP/R2QKB1R b KQkq - 0 8,Bxe3,6,16,Black,-0.79,-0.81,0.02,Good,206,Excellent,Bxe3,Petroff Defense,capture,board_images/board_203.png,-0.81,1.25,2.06
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/5NP1/PP2PP1P/RNBQKB1R b KQkq - 0 4,c5,6,8,Black,0.25,0.32,-0.07,Inaccuracy,-73,Good,dxc4,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_204.png,,,
+rnbqkb1r/ppp2ppp/8/3pP3/8/2P2Q2/P1PP2PP/R1B1KBNR b KQkq - 0 6,Be6,6,12,Black,0.23,0.45,-0.22,Blunder,-62,Inaccuracy,Be7,King's Pawn Game,bishop_development,board_images/board_205.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 4,h6,6,8,Black,0.11,0.27,-0.16,Mistake,-44,Good,Bc5,Petroff Defense,defensive,board_images/board_206.png,0.27,-0.17,0.44
+rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 1 5,Be2,6,9,White,0.53,0.56,-0.03,Good,114,Good,Nf3,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_207.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 2 4,Nxe4,6,8,Black,0.11,0.05,0.06,Inaccuracy,-23,Excellent,Nxe4,Petroff Defense,tactical; capture,board_images/board_208.png,0.05,-0.18,0.23
+r1bqkb1r/ppp2ppp/2n1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,6,9,White,0.41,0.44,-0.03,Good,109,Good,e3,Queen's Gambit,bishop_development; bishop_development,board_images/board_209.png,0.44,1.53,1.09
+r1bqk1nr/pppp1ppp/8/4n3/1b2P3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 5,Bd2,6,9,White,1.51,0.58,0.93,Blunder,162,Good,Qd4,Queen's Pawn Game,bishop_development,board_images/board_210.png,0.58,2.20,1.62
+rnbqk2r/ppp1bppp/4pn2/8/2BP4/2N1P3/PP3PPP/R1BQK1NR w KQkq - 3 6,Nf3,6,11,White,0.36,0.49,-0.13,Mistake,72,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_211.png,,,
+rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,6,7,White,0.41,0.38,0.03,Good,93,Inaccuracy,a3,Dutch Defense,knight_development; knight_development,board_images/board_212.png,,,
+r1bq1bkr/ppp3pp/2n5/3pp1N1/8/3P1N2/PPP2PPP/R1BQK2R b KQ - 0 8,h6,6,16,Black,-2.71,-2.7,-0.01,Excellent,517,Excellent,h6,Petroff Defense,defensive,board_images/board_213.png,-2.70,2.47,5.17
+rnbq1rk1/ppp2ppp/4pn2/3p2B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 6 6,e3,6,11,White,0.39,0.35,0.04,Good,62,Good,cxd5,Queen's Gambit,general,board_images/board_214.png,0.35,0.97,0.62
+r1bq1rk1/pppn1ppp/4pn2/3p2B1/1bPP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7,Bd3,6,13,White,0.58,0.22,0.36,Blunder,62,Inaccuracy,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_215.png,0.22,0.84,0.62
+rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5,Nf3,6,9,White,0.56,0.49,0.07,Inaccuracy,114,Good,h3,King's Indian Defense,knight_development; knight_development,board_images/board_216.png,,,
+rnbqkbnr/ppp2ppp/8/3P4/5p2/5N2/PPPP2PP/RNBQKB1R b KQkq - 1 4,Nf6,6,8,Black,-0.13,-0.14,0.01,Excellent,57,Excellent,Nf6,King's Pawn Game,knight_development; knight_development,board_images/board_217.png,,,
+rn1qkb1r/ppp2ppp/4pn2/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,5,9,White,0.41,0.33,0.08,Inaccuracy,83,Good,Nh4,Queen's Gambit,bishop_development; bishop_development,board_images/board_218.png,0.33,1.16,0.83
+rnbqkbnr/pp2pppp/8/2Pp4/5B2/8/PPP1PPPP/RN1QKBNR b KQkq - 0 3,Nc6,5,6,Black,-0.04,0.09,-0.13,Mistake,9,Good,e6,Queen's Pawn Game,knight_development; knight_development,board_images/board_219.png,,,
+rnbqk2r/pppp1p2/4pn1p/6p1/1bPP3B/2N5/PP2PPPP/R2QKBNR w KQkq - 0 6,Bg3,5,11,White,0.22,0.2,0.02,Excellent,33,Excellent,Bg3,Queen's Pawn Game,bishop_development,board_images/board_220.png,,,
+rnbqkb1r/pppp1ppp/5n2/8/3QP3/5N2/PPP2PPP/RNB1KB1R b KQkq - 0 4,Nc6,5,8,Black,-0.23,-0.21,-0.02,Good,32,Excellent,Nc6,Petroff Defense,knight_development; knight_development,board_images/board_221.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq - 0 3,Nc6,5,6,Black,-0.14,-0.14,0.0,Best,30,Excellent,Nc6,Petroff Defense,knight_development; knight_development,board_images/board_222.png,,,
+r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6,e3,5,11,White,0.23,0.27,-0.04,Good,59,Good,cxd5,Queen's Gambit,general,board_images/board_223.png,0.27,0.86,0.59
+rnbqkbnr/pp2pppp/8/2pp4/3P4/2P1P3/PP3PPP/RNBQKBNR b KQkq - 0 3,Nc6,5,6,Black,0.02,0.16,-0.14,Mistake,-20,Inaccuracy,e6,Queen's Pawn Game,knight_development; knight_development,board_images/board_224.png,,,
+r1bqkbnr/pp2pppp/2n5/2pp4/3P1P2/2P1P3/PP4PP/RNBQKBNR b KQkq - 0 4,Nf6,5,8,Black,-0.34,-0.35,0.01,Excellent,80,Good,Bf5,Queen's Pawn Game,knight_development; knight_development,board_images/board_225.png,,,
+rnbqk2r/ppp2p2/4pn1p/3p2p1/1bPP3B/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 7,Bg3,5,13,White,0.32,0.34,-0.02,Good,82,Excellent,Bg3,Queen's Pawn Game,bishop_development,board_images/board_226.png,,,
+rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 3,Nf6,5,6,Black,0.1,0.11,-0.01,Excellent,-17,Excellent,Nf6,Queen's Gambit,knight_development; knight_development,board_images/board_227.png,,,
+rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq - 0 1,e5,5,2,Black,-0.3,-0.3,0.0,Best,49,Excellent,e5,Unknown,pawn_push; central_control,board_images/board_228.png,,,
+rn1qkbnr/p1p1pppp/8/1b6/2pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 6,Nc3,5,11,White,1.85,2.07,-0.22,Blunder,416,Excellent,Nc3,Queen's Gambit,knight_development; knight_development,board_images/board_229.png,2.07,6.23,4.16
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4,exd4,5,8,Black,0.06,0.15,-0.09,Inaccuracy,-6,Excellent,exd4,Petroff Defense,pawn_capture; capture,board_images/board_230.png,0.15,0.09,0.06
+rnbqkbnr/p1pp1ppp/1p2p3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,5,5,White,0.58,0.49,0.09,Inaccuracy,143,Good,e4,Queen's Pawn Game,knight_development; knight_development,board_images/board_231.png,,,
+rn1qkbnr/pbpp1ppp/1p2p3/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,e4,5,7,White,0.62,0.52,0.1,Inaccuracy,99,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_232.png,0.52,1.51,0.99
+rnbqkb1r/ppp2ppp/4pn2/8/2BP4/4P3/PP3PPP/RNBQK1NR w KQkq - 0 5,Nc3,5,9,White,0.32,0.24,0.08,Inaccuracy,64,Good,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_233.png,,,
+rnbqkb1r/ppp1pp1p/3p1np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,5,7,White,0.57,0.47,0.1,Inaccuracy,115,Good,h3,King's Indian Defense,knight_development; knight_development,board_images/board_234.png,,,
+rnbqkbnr/ppp2ppp/8/8/2Bp4/4P3/PP3PPP/RNBQK1NR w KQkq - 0 5,exd4,5,9,White,0.27,0.28,-0.01,Excellent,67,Excellent,exd4,Queen's Gambit,pawn_capture; capture,board_images/board_235.png,,,
+r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/2P1PN2/PP3PPP/RN1QKB1R b KQkq - 2 5,Bg4,5,10,Black,0.05,0.19,-0.14,Mistake,-1,Inaccuracy,Nh5,Queen's Pawn Game,bishop_development,board_images/board_236.png,0.19,0.18,0.01
+r2qkb1r/pp3ppp/2n1pn2/2pp4/3P1Bb1/2P1PN2/PP1NBPPP/R2QK2R b KQkq - 1 7,Bd6,5,14,Black,0.11,0.04,0.07,Inaccuracy,-10,Good,cxd4,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_237.png,0.04,-0.06,0.10
+r2qkb1r/pp1n1ppp/2p1pn2/3p1bB1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 0 7,Bd3,5,13,White,0.09,0.17,-0.08,Inaccuracy,20,Inaccuracy,Nh4,Queen's Gambit,bishop_development; bishop_development,board_images/board_238.png,0.17,0.37,0.20
+r1bqkb1r/ppp2ppp/2n5/3pp3/4N3/3B1N2/PPPP1PPP/R1BQK2R b KQkq - 1 6,dxe4,5,12,Black,-0.04,-0.03,-0.01,Excellent,36,Excellent,dxe4,Petroff Defense,pawn_capture; capture,board_images/board_239.png,-0.03,0.33,0.36
+rnbqkbnr/ppp1pppp/8/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 0 2,c5,5,4,Black,-0.87,1.22,-2.09,Blunder,-45,Inaccuracy,dxe4,Zukertort Opening,pawn_push; central_control; queenside_attack,board_images/board_240.png,,,
+rnbqkbnr/ppp2ppp/8/8/2Bp4/4P3/PP3PPP/RNBQK1NR w KQkq - 0 5,Qxd4,5,9,White,0.27,-0.21,0.48,Blunder,17,Inaccuracy,exd4,Queen's Gambit,tactical; capture,board_images/board_241.png,,,
+rnbq1rk1/ppp1bpp1/4pn1p/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 7,Bh4,5,13,White,0.19,0.14,0.05,Good,44,Good,Bxf6,Queen's Gambit,bishop_development,board_images/board_242.png,0.14,0.58,0.44
+r1bqk2r/pppp1ppp/2n2n2/2b5/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq - 2 6,d6,5,12,Black,0.46,2.59,-2.13,Blunder,-310,Inaccuracy,Bb6,Petroff Defense,general,board_images/board_243.png,2.59,-0.51,3.10
+rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N4P/PP2BPP1/R1BQK1NR w KQ - 0 7,dxe5,5,13,White,0.66,0.01,0.65,Blunder,82,Good,d5,King's Indian Defense,pawn_capture; capture,board_images/board_244.png,0.01,0.83,0.82
+rnbq1rk1/ppp2pp1/4pn1p/3p2B1/1bPP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 7,Bh4,5,13,White,0.27,0.22,0.05,Inaccuracy,65,Good,Bxf6,Queen's Pawn Game,bishop_development,board_images/board_245.png,0.22,0.87,0.65
+rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,5,9,White,0.25,0.11,0.14,Mistake,46,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_246.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3p2B1/2PP4/5N2/PP2PPPP/RN1QKB1R b KQkq - 3 4,Be7,5,8,Black,0.12,0.27,-0.15,Mistake,-47,Good,dxc4,Queen's Gambit,bishop_development; bishop_development,board_images/board_247.png,,,
+rn1qk2r/pp2nppp/2p1p3/3p1b2/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 7,e3,5,13,White,0.16,0.16,0.0,Best,42,Excellent,e3,Queen's Gambit,general,board_images/board_248.png,0.16,0.58,0.42
+rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,5,7,White,0.52,0.31,0.21,Blunder,84,Inaccuracy,Bd2,Dutch Defense,knight_development; knight_development,board_images/board_249.png,,,
+r1bqk2r/ppp1bppp/2n1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 4 6,e3,5,11,White,0.43,0.46,-0.03,Good,105,Excellent,e3,Queen's Gambit,general,board_images/board_250.png,0.46,1.51,1.05
+rnbqk2r/pp2bppp/4pn2/2pp2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6,e3,5,11,White,0.37,0.16,0.21,Blunder,63,Good,dxc5,Queen's Gambit,general,board_images/board_251.png,,,
+rnbqkbnr/ppp2ppp/8/3P4/3p4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4,Qxd5,5,8,Black,-0.15,-0.06,-0.09,Inaccuracy,40,Good,Nf6,King's Pawn Game,capture,board_images/board_252.png,,,
+rnbqkbnr/pp2pppp/2pp4/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,5,5,White,0.81,0.77,0.04,Good,144,Good,e4,Queen's Pawn Game,knight_development; knight_development,board_images/board_253.png,,,
+rnbqkbnr/pp1p1ppp/2p1p3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,5,5,White,0.6,0.6,0.0,Best,109,Good,Nd2,Queen's Pawn Game,knight_development; knight_development,board_images/board_254.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4N3/3PP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4,Nxe5,5,8,Black,0.85,1.23,-0.38,Blunder,-189,Good,Qe7,Petroff Defense,capture,board_images/board_255.png,1.23,-0.66,1.89
+r1bqkb1r/pppp1ppp/5n2/4P3/4P3/8/PPP2PPP/RNBQKB1R b KQkq - 0 5,Nxe4,5,10,Black,1.02,1.35,-0.33,Blunder,-219,Excellent,Nxe4,Petroff Defense,tactical; capture,board_images/board_256.png,1.35,-0.84,2.19
+rnbqkbnr/ppp1pp1p/3p2p1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,5,5,White,0.51,0.56,-0.05,Inaccuracy,106,Good,e4,Queen's Pawn Game,knight_development; knight_development,board_images/board_257.png,,,
+rnbqkbnr/pppp1ppp/8/8/3QP3/8/PPP2PPP/RNB1KBNR b KQkq - 0 3,Nc6,5,6,Black,-0.23,-0.17,-0.06,Inaccuracy,44,Excellent,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_258.png,,,
+rnbq1rk1/pppp1pp1/4pn1p/6B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 0 6,Bh4,5,11,White,0.22,0.19,0.03,Good,40,Excellent,Bh4,Queen's Pawn Game,bishop_development,board_images/board_259.png,0.19,0.59,0.40
+r1b1k2r/ppp2ppp/2p5/2b5/2B1P2q/2N2Q1P/PPPP1nP1/R1B2RK1 b kq - 1 9,Nxh3+,5,18,Black,-99.87,-99.88,0.01,Excellent,19978,Excellent,Nxh3+,Petroff Defense,capture; check,board_images/board_260.png,-99.88,99.90,199.78
+rn1qkbnr/ppp1pppp/8/5b2/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,5,7,White,1.41,1.54,-0.13,Mistake,263,Excellent,e4,Queen's Gambit,pawn_push; central_control,board_images/board_261.png,1.54,4.17,2.63
+rn1qkbnr/ppp1pppp/6b1/8/2pPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 1 5,Bxc4,5,9,White,1.45,1.5,-0.05,Inaccuracy,273,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_262.png,1.50,4.23,2.73
+rnbqkb1r/pppp1ppp/5n2/8/2Pp4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Qxd4,5,7,White,-0.14,-0.15,0.01,Excellent,-26,Excellent,Qxd4,Budapest Gambit,tactical; capture,board_images/board_263.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/8/2PQ4/2N5/PP2PPPP/R1B1KBNR w KQkq - 1 5,Qd1,5,9,White,-0.12,-0.1,-0.02,Excellent,-34,Excellent,Qd1,Budapest Gambit,general,board_images/board_264.png,-0.10,-0.44,0.34
+rnbqkb1r/pppp1ppp/5n2/4P3/3p4/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4,Nd5,5,8,Black,0.52,1.44,-0.92,Blunder,-200,Inaccuracy,Ne4,Petroff Defense,knight_development,board_images/board_265.png,,,
+rnbqkbnr/ppp2ppp/8/3pp3/4PP2/5N2/PPPP2PP/RNBQKB1R b KQkq - 1 3,dxe4,5,6,Black,-0.23,-0.1,-0.13,Mistake,52,Good,exf4,King's Pawn Game,pawn_capture; capture,board_images/board_266.png,,,
+rnbqk2r/pp2bppp/4pn2/2pp2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 6,Nc6,5,12,Black,0.16,0.47,-0.31,Blunder,-53,Inaccuracy,cxd4,Queen's Gambit,knight_development; knight_development,board_images/board_267.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4,Bc5,5,8,Black,0.2,0.44,-0.24,Blunder,-48,Good,Bb4,King's Pawn Game,bishop_development,board_images/board_268.png,0.44,-0.04,0.48
+rnbqk2r/ppp1bppp/4pB2/3p4/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq - 0 5,Bxf6,5,10,Black,-0.15,-0.17,0.02,Good,46,Excellent,Bxf6,Queen's Gambit,capture,board_images/board_269.png,,,
+rnbqk2r/ppp1ppbp/3p1np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,e4,5,9,White,0.52,0.58,-0.06,Inaccuracy,107,Excellent,e4,King's Indian Defense,pawn_push; central_control,board_images/board_270.png,,,
+rnbqkb1r/ppp2ppp/4pn2/3P4/3P4/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4,Nxd5,5,8,Black,0.29,0.27,0.02,Excellent,-74,Good,exd5,Queen's Gambit,capture,board_images/board_271.png,,,
+rnbqkb1r/ppp2ppp/4p3/3n4/3PP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5,Nxc3,5,10,Black,0.24,0.38,-0.14,Mistake,-58,Excellent,Nxc3,Queen's Gambit,capture,board_images/board_272.png,,,
+r1bqkb1r/ppp2ppp/2n2n2/3Pp1N1/2B5/8/PPPP1PPP/RNBQK2R b KQkq - 0 5,Nxd5,5,10,Black,0.15,0.59,-0.44,Blunder,-95,Inaccuracy,Na5,Petroff Defense,capture,board_images/board_273.png,0.59,-0.36,0.95
+rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4,e4,5,7,White,0.5,0.61,-0.11,Mistake,108,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_274.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 2,c5,5,4,Black,0.28,0.38,-0.1,Inaccuracy,-48,Inaccuracy,e6,Zukertort Opening,pawn_push; central_control; queenside_attack,board_images/board_275.png,,,
+rn1qkbnr/ppp1pppp/8/5b2/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 1 4,Bxc4,4,7,White,0.65,0.65,0.0,Best,133,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_276.png,0.65,1.98,1.33
+rnbqkbnr/pppp2pp/5p2/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3,e4,4,5,White,1.39,1.85,-0.46,Blunder,313,Good,Bf4,Queen's Pawn Game,pawn_push; central_control,board_images/board_277.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 5 4,d5,4,8,Black,-0.31,1.19,-1.5,Blunder,-86,Inaccuracy,Nxe4,Petroff Defense,pawn_push; central_control,board_images/board_278.png,1.19,0.33,0.86
+rnbqkbnr/pppp1ppp/8/4p3/4P3/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 2,Nf6,4,4,Black,-0.32,-0.15,-0.17,Mistake,34,Good,d5,King's Pawn Game,knight_development; knight_development,board_images/board_279.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4,exd4,4,8,Black,-0.06,0.0,-0.06,Inaccuracy,12,Good,Nxe4,Petroff Defense,pawn_capture; capture,board_images/board_280.png,0.00,0.12,0.12
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/3P1N2/PPP2PPP/RNBQKB1R b KQkq - 2 3,Nc6,4,6,Black,-0.15,-0.12,-0.03,Good,19,Excellent,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_281.png,,,
+rnbqk2r/ppp2p2/4p2p/3p2p1/1bPPn3/2N2NB1/PP2PPPP/R2QKB1R w KQkq - 2 8,Qc2,4,15,White,0.29,0.41,-0.12,Mistake,71,Good,a3,Queen's Pawn Game,general,board_images/board_282.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/3P4/6P1/PPP1PP1P/RNBQKBNR b KQkq - 0 2,c5,4,4,Black,0.04,0.1,-0.06,Inaccuracy,-14,Excellent,c5,Irregular Opening,pawn_push; central_control; queenside_attack,board_images/board_283.png,,,
+r1bq1rk1/pp1nbppp/2p1pn2/3p2B1/2PP4/2NBPN2/PP3PPP/R2QK2R w KQ - 3 8,O-O,4,15,White,0.28,0.38,-0.1,Inaccuracy,62,Good,a4,Queen's Pawn Game,castle; castle,board_images/board_284.png,0.38,1.00,0.62
+rnbqkbnr/pp2pppp/8/2Pp4/8/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 3,Nc6,4,6,Black,0.3,0.59,-0.29,Blunder,-68,Good,Nf6,Queen's Pawn Game,knight_development; knight_development,board_images/board_285.png,,,
+rnbqk2r/pp2bppp/4pn2/3p2B1/2PN4/2N5/PP2PPPP/R2QKB1R w KQkq - 1 7,e3,4,13,White,0.29,0.2,0.09,Inaccuracy,45,Good,cxd5,Queen's Gambit,general,board_images/board_286.png,,,
+rnbqkbnr/pp2pppp/8/2pP4/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 0 3,Qxd5,4,6,Black,1.13,1.27,-0.14,Mistake,-253,Good,Nf6,Zukertort Opening,capture,board_images/board_287.png,,,
+r1bqkbnr/pp3ppp/2n1p3/2pp4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,4,9,White,0.27,0.08,0.19,Mistake,77,Inaccuracy,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_288.png,,,
+rnbq1rk1/p1p1bpp1/1p2pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 8,Bd3,4,15,White,0.2,0.06,0.14,Mistake,17,Inaccuracy,g4,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_289.png,0.06,0.23,0.17
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 2 4,Bc5,4,8,Black,0.32,0.15,0.17,Mistake,-34,Excellent,Bc5,King's Pawn Game,bishop_development,board_images/board_290.png,0.15,-0.19,0.34
+rnbqkbnr/ppp1pppp/8/3p4/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2,dxe4,4,4,Black,-0.46,-0.52,0.06,Inaccuracy,109,Excellent,dxe4,Queen's Pawn Game,pawn_capture; capture,board_images/board_291.png,,,
+rnbqk2r/ppp2ppp/4pn2/3p2B1/1bPP4/2N5/PP2PPPP/R2QKBNR w KQkq - 2 5,Nf3,4,9,White,0.38,0.24,0.14,Mistake,52,Good,Qa4+,Queen's Gambit,knight_development; knight_development,board_images/board_292.png,,,
+rnbqk2r/pp2bppp/4pn2/2pp2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 1 6,Nc6,4,12,Black,0.2,0.39,-0.19,Mistake,-54,Inaccuracy,cxd4,Queen's Gambit,knight_development; knight_development,board_images/board_293.png,,,
+rnbqkbnr/pp2pppp/8/2Pp4/8/4P3/PPP2PPP/RNBQKBNR b KQkq - 0 3,e6,4,6,Black,0.06,0.04,0.02,Excellent,5,Excellent,e6,Queen's Pawn Game,general,board_images/board_294.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/8/6P1/PPPPPPBP/RNBQK1NR b KQkq - 1 2,c5,4,4,Black,-0.2,0.29,-0.49,Blunder,1,Good,e5,Irregular Opening,pawn_push; central_control; queenside_attack,board_images/board_295.png,,,
+rnbqk2r/pp3ppp/5B2/2bp4/8/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 8,Qxf6,4,16,Black,0.73,0.85,-0.12,Mistake,-162,Excellent,Qxf6,Queen's Gambit,capture,board_images/board_296.png,,,
+rn1qk2r/ppp1bppp/4pn2/3p1bB1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6,e3,4,11,White,0.99,0.16,0.83,Blunder,95,Inaccuracy,Bxf6,Queen's Gambit,general,board_images/board_297.png,0.16,1.11,0.95
+rnbqkbnr/pp2pppp/8/2pp4/5P2/4PN2/PPPP2PP/RNBQKB1R b KQkq - 0 3,Nc6,4,6,Black,-0.17,-0.25,0.08,Inaccuracy,36,Good,Nf6,Bird's Opening,knight_development; knight_development,board_images/board_298.png,,,
+rnbq1rk1/ppp2ppp/4pn2/3p2B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 4 6,e3,4,11,White,0.31,0.33,-0.02,Good,59,Excellent,e3,Queen's Pawn Game,general,board_images/board_299.png,0.33,0.92,0.59
+r1bqkbnr/ppp2ppp/2np4/4P3/4P3/8/PPP2PPP/RNBQKBNR w KQkq - 1 4,Nf3,4,7,White,0.83,0.45,0.38,Blunder,121,Good,exd6,Queen's Pawn Game,knight_development; knight_development,board_images/board_300.png,,,
+rnbqk2r/ppp2ppp/4pn2/3p2B1/2PP4/2b2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,bxc3,4,11,White,0.45,0.47,-0.02,Excellent,86,Excellent,bxc3,Queen's Gambit,capture,board_images/board_301.png,,,
+rnbqk2r/ppp2pp1/4pn1p/3p2B1/2PP4/2P2N2/P3PPPP/R2QKB1R w KQkq - 0 7,Bh4,4,13,White,0.62,0.59,0.03,Good,137,Excellent,Bh4,Queen's Gambit,bishop_development,board_images/board_302.png,,,
+rnbqkb1r/pppp1ppp/4pn2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,4,5,White,0.21,0.18,0.03,Good,60,Good,g3,Queen's Pawn Game,knight_development; knight_development,board_images/board_303.png,,,
+r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/2NP4/PPP2PPP/R1BQKB1R b KQkq - 0 6,Ng4,4,12,Black,-1.11,-0.9,-0.21,Blunder,297,Excellent,Ng4,Petroff Defense,knight_development,board_images/board_304.png,-0.90,2.07,2.97
+r1bqk2r/ppp2ppp/2p5/2b5/4P1n1/2NPB3/PPP2PPP/R2QKB1R b KQkq - 2 7,Nxe3,4,14,Black,-0.8,-0.94,0.14,Mistake,232,Excellent,Nxe3,Petroff Defense,capture,board_images/board_305.png,-0.94,1.38,2.32
+rnbqkb1r/ppp2ppp/4pn2/8/2pPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5,Bxc4,4,9,White,0.55,0.62,-0.07,Inaccuracy,136,Good,e5,Queen's Gambit,capture,board_images/board_306.png,,,
+r1bqk2r/ppp1bppp/2n1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 6 6,e3,4,11,White,0.57,0.46,0.11,Mistake,107,Excellent,e3,Queen's Pawn Game,general,board_images/board_307.png,0.46,1.53,1.07
+rn1qkb1r/ppp2ppp/8/3pP3/4n1b1/2N2N2/PPPPB1PP/R1BQK2R b KQkq - 3 6,Bxf3,4,12,Black,0.05,0.42,-0.37,Blunder,-35,Inaccuracy,Nc6,King's Pawn Game,capture,board_images/board_308.png,0.42,0.07,0.35
+r1bqkb1r/ppp2ppp/2p5/4P3/3Pn3/8/PPP2PPP/RNBQKB1R b KQkq - 0 6,Qh4,4,12,Black,2.02,2.16,-0.14,Mistake,-414,Excellent,Qh4,Petroff Defense,general,board_images/board_309.png,2.16,-1.98,4.14
+r1bqkbnr/pp2pppp/2n5/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R b KQkq - 2 4,Bg4,4,8,Black,0.19,0.12,0.07,Inaccuracy,-25,Excellent,Bg4,Queen's Pawn Game,bishop_development,board_images/board_310.png,,,
+rn1qkbnr/pp3ppp/2p1p3/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bf4,4,9,White,0.52,0.26,0.26,Blunder,68,Good,Qb3,Queen's Gambit,bishop_development; bishop_development,board_images/board_311.png,0.26,0.94,0.68
+r1bqkb1r/pp3ppp/2n1pn2/2pp2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6,e3,4,11,White,0.7,0.21,0.49,Blunder,67,Good,cxd5,Queen's Gambit,general,board_images/board_312.png,0.21,0.88,0.67
+rnbqkbnr/pp2pppp/8/2p5/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 0 4,Bxc4,4,7,White,0.34,0.31,0.03,Good,67,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_313.png,,,
+rnbqkbnr/pp2pppp/8/8/2Bp4/4P3/PP3PPP/RNBQK1NR w KQkq - 0 5,exd4,4,9,White,0.49,0.48,0.01,Excellent,97,Excellent,exd4,Queen's Gambit,pawn_capture; capture,board_images/board_314.png,,,
+rnb1kbnr/ppp2ppp/8/3q4/3P4/8/PP3PPP/RNBQKBNR b KQkq - 0 5,Nc6,4,10,Black,-0.15,-0.12,-0.03,Good,30,Good,Bb4+,King's Pawn Game,knight_development; knight_development,board_images/board_315.png,-0.12,0.18,0.30
+r2qkb1r/pp3ppp/2n1pn2/2pp4/3P1Bb1/2PBPN2/PP1N1PPP/R2QK2R b KQkq - 1 7,Bd6,4,14,Black,0.0,0.05,-0.05,Good,-2,Good,Rc8,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_316.png,0.05,0.03,0.02
+rnbq1rk1/ppp1bppp/4pn2/8/2BP4/2N1PN2/PP3PPP/R1BQK2R w KQ - 5 7,O-O,4,13,White,0.55,0.43,0.12,Mistake,104,Good,Qe2,Queen's Gambit,castle; castle,board_images/board_317.png,0.43,1.47,1.04
+rnbqkb1r/pppp1ppp/5n2/4p3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq - 0 3,exf4,4,6,Black,-0.2,0.67,-0.87,Blunder,-43,Good,d5,King's Pawn Game,capture,board_images/board_318.png,,,
+rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 1 5,Nc6,4,10,Black,0.12,0.19,-0.07,Inaccuracy,-28,Good,a6,Queen's Pawn Game,knight_development; knight_development,board_images/board_319.png,,,
+r1b1k2r/ppp2ppp/2p5/2b5/2B1P2q/2N2Q1n/PPPP2P1/R1B2R1K b kq - 1 10,Ng5+,4,20,Black,-99.98,-99.92,-0.06,Inaccuracy,19989,Good,Nf2+,Petroff Defense,knight_development; check,board_images/board_320.png,-99.92,99.97,199.89
+rnbqk1nr/pppp2pp/4p3/5p2/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,4,7,White,0.46,0.24,0.22,Blunder,61,Inaccuracy,Bd2,Dutch Defense,knight_development; knight_development,board_images/board_321.png,0.24,0.85,0.61
+rnbqkbnr/pp1p1ppp/4p3/2p5/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,4,5,White,0.77,-0.13,0.9,Blunder,59,Inaccuracy,d5,Queen's Pawn Game,knight_development; knight_development,board_images/board_322.png,,,
+r1bqkbnr/pp2pppp/2n5/2pp4/3P4/2P1PN2/PP3PPP/RNBQKB1R b KQkq - 0 4,Nf6,4,8,Black,0.17,0.54,-0.37,Blunder,-59,Inaccuracy,cxd4,Queen's Pawn Game,knight_development; knight_development,board_images/board_323.png,,,
+r1bqkb1r/pp2pppp/2n2n2/2pp4/3P4/2PBPN2/PP3PPP/RNBQK2R b KQkq - 2 5,Bg4,4,10,Black,-0.33,-0.4,0.07,Inaccuracy,56,Excellent,Bg4,Queen's Pawn Game,bishop_development,board_images/board_324.png,-0.40,0.16,0.56
+rnbqkb1r/ppp2ppp/8/3pP3/4N3/8/PPPP2PP/R1BQKBNR b KQkq - 0 5,dxe4,4,10,Black,-0.51,-0.54,0.03,Good,115,Excellent,dxe4,King's Pawn Game,pawn_capture; capture,board_images/board_325.png,,,
+rnbq1rk1/ppp1ppb1/3p1npp/6B1/2PPP3/2N5/PP2BPPP/R2QK1NR w KQ - 0 7,Be3,4,13,White,0.52,0.6,-0.08,Inaccuracy,92,Excellent,Be3,Queen's Pawn Game,bishop_development,board_images/board_326.png,0.60,1.52,0.92
+r1bqkb1r/ppp2ppp/5n2/nB1Pp1N1/8/8/PPPP1PPP/RNBQK2R b KQkq - 2 6,Bd7,4,12,Black,0.22,0.35,-0.13,Mistake,-42,Good,c6,Petroff Defense,bishop_development,board_images/board_327.png,0.35,-0.07,0.42
+rnbqkbnr/ppp2ppp/8/3p4/3P4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 4,Nf6,4,8,Black,0.16,0.21,-0.05,Good,-44,Good,c6,Queen's Gambit,knight_development; knight_development,board_images/board_328.png,,,
+rnbqk2r/pp2bppp/4pn2/2pP2B1/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 6,Nxd5,4,12,Black,0.32,0.48,-0.16,Mistake,-76,Good,cxd4,Queen's Gambit,capture,board_images/board_329.png,,,
+rnbqk2r/ppp2ppp/4pb2/3P4/3P4/2N5/PP2PPPP/R2QKBNR b KQkq - 0 6,exd5,4,12,Black,-0.19,-0.07,-0.12,Mistake,37,Excellent,exd5,Queen's Gambit,pawn_capture; capture,board_images/board_330.png,,,
+rnbqk2r/ppp1bppp/4pn2/3p4/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 5,c5,4,10,Black,0.28,0.4,-0.12,Mistake,-71,Good,O-O,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_331.png,,,
+rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bf4,4,9,White,0.31,0.06,0.25,Blunder,53,Inaccuracy,Qb3,Queen's Gambit,bishop_development; bishop_development,board_images/board_332.png,,,
+rnbqk2r/pp2Bppp/4p3/2pn4/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 7,Qxe7,4,14,Black,0.36,0.34,0.02,Excellent,-75,Excellent,Qxe7,Queen's Gambit,capture,board_images/board_333.png,,,
+rnbqkb1r/ppp2ppp/5n2/3P4/2P2p2/5N2/PP1P2PP/RNBQKB1R b KQkq - 0 5,c6,4,10,Black,-0.21,-0.07,-0.14,Mistake,61,Excellent,c6,King's Pawn Game,general,board_images/board_334.png,,,
+rnbqkb1r/pp3ppp/2P2n2/8/2P2p2/5N2/PP1P2PP/RNBQKB1R b KQkq - 0 6,Nxc6,4,12,Black,-1.08,-0.85,-0.23,Blunder,242,Excellent,Nxc6,King's Pawn Game,capture,board_images/board_335.png,,,
+r1bqkbnr/pp2pppp/2n5/2pp4/3P1B2/2P2N2/PP2PPPP/RN1QKB1R b KQkq - 2 4,Nf6,4,8,Black,-0.04,0.07,-0.11,Mistake,-13,Good,Qb6,Queen's Pawn Game,knight_development; knight_development,board_images/board_336.png,,,
+r1bqk2r/ppp2ppp/2p2n2/8/4P3/3PP3/PPP3PP/RN1QKB1R b KQkq - 0 7,Ng4,4,14,Black,0.51,0.85,-0.34,Blunder,-114,Good,Qd6,Petroff Defense,knight_development,board_images/board_337.png,0.85,-0.29,1.14
+r1bqkbnr/ppp1pppp/2n5/8/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e3,3,7,White,0.74,0.32,0.42,Blunder,118,Good,d5,Queen's Pawn Game,general,board_images/board_338.png,,,
+rnbqkbnr/pppp2pp/8/4p3/4P3/8/PPP2PPP/RNBQKBNR w KQkq - 0 4,Nf3,3,7,White,5.04,1.46,3.58,Blunder,617,Good,Qh5+,Queen's Pawn Game,knight_development; knight_development,board_images/board_339.png,,,
+rnbqkbnr/pppp1ppp/8/8/3pP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 3,Nc6,3,6,Black,-0.07,0.22,-0.29,Blunder,-14,Good,Bc5,King's Pawn Game,knight_development; knight_development,board_images/board_340.png,,,
+rnbqk1nr/pp2bppp/2p1p3/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bf4,3,9,White,0.63,0.23,0.4,Blunder,95,Good,e4,Queen's Gambit,bishop_development; bishop_development,board_images/board_341.png,0.23,1.18,0.95
+rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP1B2/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7,Bd3,3,13,White,0.51,0.35,0.16,Mistake,85,Inaccuracy,Qc2,Queen's Gambit,bishop_development; bishop_development,board_images/board_342.png,0.35,1.20,0.85
+r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/2N4P/PPPP1PP1/R1BQKB1R b KQkq - 0 6,O-O,3,12,Black,1.86,1.94,-0.08,Inaccuracy,-359,Excellent,O-O,Petroff Defense,castle; castle,board_images/board_343.png,1.94,-1.65,3.59
+r1bqkbnr/pppp1ppp/6n1/8/4PB2/8/PPP2PPP/RN1QKBNR w KQkq - 2 5,Bg3,3,9,White,0.21,0.31,-0.1,Inaccuracy,57,Excellent,Bg3,Queen's Pawn Game,bishop_development,board_images/board_344.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,dxe5,3,5,White,0.66,0.68,-0.02,Good,173,Excellent,dxe5,Budapest Gambit,pawn_capture; capture,board_images/board_345.png,,,
+rnbqkbnr/pp3ppp/2p1p3/8/2BP4/4P3/PP3PPP/RNBQK1NR w KQkq - 0 5,Nc3,3,9,White,0.82,0.77,0.05,Good,168,Good,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_346.png,,,
+r1bqkb1r/ppp2ppp/2n2n2/3Pp3/8/2NP1N2/PPP2PPP/R1BQKB1R b KQkq - 0 5,Nxd5,3,10,Black,-0.28,-0.32,0.04,Good,51,Excellent,Nxd5,King's Pawn Game,capture,board_images/board_347.png,-0.32,0.19,0.51
+rn1qkbnr/pbp1pppp/1p1p4/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,3,7,White,0.98,0.95,0.03,Good,188,Good,Nf3,Queen's Pawn Game,pawn_push; central_control,board_images/board_348.png,0.95,2.83,1.88
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4,Bb4,3,8,Black,-0.22,0.39,-0.61,Blunder,-10,Good,Nxe4,Petroff Defense,bishop_development,board_images/board_349.png,0.39,0.29,0.10
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 4,c5,3,8,Black,0.0,0.0,0.0,Best,-13,Good,Bb4,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_350.png,,,
+r2qkb1r/pp1npppp/2p2n2/3p2B1/2PP2b1/2N2N2/PP2PPPP/R2QKB1R w KQkq - 6 6,e3,3,11,White,0.4,-0.09,0.49,Blunder,24,Inaccuracy,cxd5,Queen's Pawn Game,general,board_images/board_351.png,-0.09,0.15,0.24
+r2qkb1r/pp1nppp1/2p2n1p/3p2B1/2PP2b1/2N1PN2/PP3PPP/R2QKB1R w KQkq - 0 7,Bh4,3,13,White,0.35,0.18,0.17,Mistake,72,Excellent,Bh4,Queen's Pawn Game,bishop_development,board_images/board_352.png,0.18,0.90,0.72
+rnbqkb1r/pp3ppp/4pn2/2pP4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 0 5,exd5,3,10,Black,0.24,0.52,-0.28,Blunder,-80,Good,Nxd5,Queen's Gambit,pawn_capture; capture,board_images/board_353.png,,,
+rn1qkbnr/ppp1pppp/8/3p4/2PP2b1/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,3,5,White,1.5,0.81,0.69,Blunder,252,Good,cxd5,Queen's Gambit,knight_development; knight_development,board_images/board_354.png,0.81,3.33,2.52
+r1bqk2r/pp1nbpp1/2p1pn1p/3p2B1/2PP4/2NBPN2/PP3PPP/R2QK2R w KQkq - 0 8,Bh4,3,15,White,0.37,0.4,-0.03,Good,67,Good,Bf4,Queen's Pawn Game,bishop_development,board_images/board_355.png,0.40,1.07,0.67
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/P1N5/1P2PPPP/R1BQKBNR b KQkq - 2 4,c5,3,8,Black,-0.08,-0.14,0.06,Inaccuracy,5,Good,dxc4,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_356.png,,,
+rnbqkbnr/pp1p1ppp/4p3/2pP4/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3,c4,3,5,White,0.77,0.67,0.1,Inaccuracy,180,Excellent,c4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_357.png,,,
+r1bqkb1r/pp1npppp/2p2n2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,3,9,White,0.75,-0.1,0.85,Blunder,23,Inaccuracy,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_358.png,-0.10,0.13,0.23
+rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2,c5,3,4,Black,0.15,0.44,-0.29,Blunder,-59,Inaccuracy,Nf6,English Opening,pawn_push; central_control; queenside_attack,board_images/board_359.png,,,
+rn1qkb1r/pbpp1ppp/1p2pn2/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 1 5,Bd3,3,9,White,1.05,0.99,0.06,Inaccuracy,229,Good,Qc2,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_360.png,0.99,3.28,2.29
+rnbqk2r/pp2bppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,e3,3,11,White,0.4,0.31,0.09,Inaccuracy,69,Excellent,e3,Queen's Pawn Game,general,board_images/board_361.png,,,
+r1bqkb1r/ppp2ppp/2n5/4p3/8/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 8,Bg4,3,16,Black,-1.13,-1.19,0.06,Inaccuracy,249,Excellent,Bg4,Petroff Defense,bishop_development,board_images/board_362.png,-1.19,1.30,2.49
+r2qk2r/pp3ppp/2nbpn2/2ppN3/3P1Bb1/2P1P3/PP1NBPPP/R2QK2R b KQkq - 3 8,Bxe2,3,16,Black,-0.18,-0.17,-0.01,Excellent,35,Good,Bxe5,Queen's Pawn Game,capture,board_images/board_363.png,-0.17,0.18,0.35
+r1bqkb1r/ppp2ppp/2n5/4p3/4B3/5N2/PPPP1PPP/R1BQK2R b KQkq - 0 7,Bd6,3,14,Black,-0.13,-0.14,0.01,Excellent,33,Excellent,Bd6,Petroff Defense,bishop_development; bishop_development,board_images/board_364.png,-0.14,0.19,0.33
+rn1qkb1r/ppp1pppp/5n2/5b2/2BP4/4P3/PP3PPP/RNBQK1NR w KQkq - 1 5,Nc3,3,9,White,0.74,0.68,0.06,Inaccuracy,126,Good,Qb3,Queen's Gambit,knight_development; knight_development,board_images/board_365.png,0.68,1.94,1.26
+rnb1kbnr/pp2pppp/8/2pq4/8/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 1 4,Qd8,3,8,Black,1.32,1.29,0.03,Good,-265,Excellent,Qd8,Zukertort Opening,general,board_images/board_366.png,1.29,-1.36,2.65
+rnbqkbnr/ppp2ppp/3pp3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,3,5,White,0.54,0.54,0.0,Best,119,Good,Nf3,Queen's Pawn Game,knight_development; knight_development,board_images/board_367.png,,,
+rnb1kbnr/ppp2ppp/8/8/2Bq4/4P3/PP3PPP/RNB1K1NR w KQkq - 0 6,exd4,3,11,White,-0.17,-0.12,-0.05,Inaccuracy,-40,Excellent,exd4,Queen's Gambit,pawn_capture; capture,board_images/board_368.png,-0.12,-0.52,0.40
+r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 4,d5,3,8,Black,0.11,0.64,-0.53,Blunder,-63,Inaccuracy,Bc5,Petroff Defense,pawn_push; central_control,board_images/board_369.png,0.64,0.01,0.63
+rnbq1rk1/pp2bpp1/4pn1p/2pp4/2PP3B/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 8,Bd3,3,15,White,0.26,-0.11,0.37,Blunder,15,Inaccuracy,dxc5,Queen's Gambit,bishop_development; bishop_development,board_images/board_370.png,-0.11,0.04,0.15
+r3kb1r/ppp2ppp/2n5/3qp3/4N1b1/3P1N1P/PPP2PP1/R1BQK2R b KQkq - 0 8,Bh5,3,16,Black,-1.68,-1.36,-0.32,Blunder,354,Excellent,Bh5,Petroff Defense,bishop_development,board_images/board_371.png,-1.36,2.18,3.54
+rn1qkbnr/ppp2ppp/8/3P4/3P1pb1/5N2/PPP3PP/RNBQKB1R b KQkq - 0 5,c6,3,10,Black,0.18,1.06,-0.88,Blunder,-94,Inaccuracy,Qxd5,King's Pawn Game,general,board_images/board_372.png,1.06,0.12,0.94
+rnbqkbnr/pppp1ppp/8/4p3/2P1P3/8/PP1P1PPP/RNBQKBNR b KQkq - 0 2,Nf6,3,4,Black,-0.34,-0.13,-0.21,Blunder,63,Good,Nc6,English Opening,knight_development; knight_development,board_images/board_373.png,,,
+rnbqkbnr/1p2pppp/p1p5/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.4,0.39,0.01,Excellent,72,Good,e4,Queen's Gambit,knight_development; knight_development,board_images/board_374.png,,,
+rn1qkb1r/pp2ppp1/2p2n1p/3p2B1/2PP2b1/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,Bh4,3,11,White,1.13,0.33,0.8,Blunder,141,Good,Bxf6,Queen's Gambit,bishop_development,board_images/board_375.png,0.33,1.74,1.41
+rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPPNPPP/RNBQKB1R b KQkq - 1 2,Nf6,3,4,Black,0.02,0.04,-0.02,Excellent,20,Excellent,Nf6,King's Pawn Game,knight_development; knight_development,board_images/board_376.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/6N1/PPPP1PPP/RNBQKB1R b KQkq - 3 3,Nc6,3,6,Black,-0.77,-0.78,0.01,Excellent,164,Excellent,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_377.png,,,
+r1bqkb1r/pp1p1ppp/5n2/2p1Q3/4P3/2N5/PPP2PPP/R1B1KB1R b KQkq - 1 7,Be7,3,14,Black,1.58,1.51,0.07,Inaccuracy,-290,Excellent,Be7,Petroff Defense,bishop_development; bishop_development,board_images/board_378.png,1.51,-1.39,2.90
+rnbq1rk1/ppppppbp/5np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQ - 1 5,Be2,3,9,White,0.65,0.66,-0.01,Excellent,108,Excellent,Be2,King's Indian Defense,bishop_development; bishop_development,board_images/board_379.png,0.66,1.74,1.08
+r1bq1rk1/pppn1pbp/3p1np1/4p1B1/2PPP3/2N4P/PP2BPP1/R2QK1NR w KQ - 0 8,Nf3,3,15,White,0.53,0.1,0.43,Blunder,72,Good,d5,King's Indian Defense,knight_development; knight_development,board_images/board_380.png,0.10,0.82,0.72
+rnbqk2r/pp2bppp/4pn2/2Pp2B1/2P5/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 6,Bxc5,3,12,Black,0.29,0.45,-0.16,Mistake,-101,Inaccuracy,h6,Queen's Gambit,capture,board_images/board_381.png,,,
+rnbqk2r/pp3ppp/4pn2/2bP2B1/8/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 7,exd5,3,14,Black,0.29,0.85,-0.56,Blunder,-100,Good,Qb6,Queen's Gambit,pawn_capture; capture,board_images/board_382.png,,,
+r1bqk2r/ppp2pp1/2p2n2/2b4p/4P3/2PP4/PP2BPPP/RNBQK2R b KQkq - 0 7,a6,3,14,Black,2.41,2.45,-0.04,Good,-471,Inaccuracy,Ng4,Petroff Defense,defensive,board_images/board_383.png,2.45,-2.26,4.71
+r1bqkbnr/pp2pppp/2n5/2pp4/3P1P2/4PN2/PPP3PP/RNBQKB1R b KQkq - 0 4,Bg4,3,8,Black,-0.69,-0.65,-0.04,Good,129,Excellent,Bg4,Bird's Opening,bishop_development,board_images/board_384.png,,,
+rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N4P/PP2BPP1/R1BQK1NR w KQ - 0 8,Bg5,3,15,White,0.08,-0.07,0.15,Mistake,2,Good,Nf3,King's Indian Defense,bishop_development; bishop_development,board_images/board_385.png,-0.07,-0.05,0.02
+r1bqk2r/ppp2ppp/2p5/8/4P3/2NPbQ2/PPP3PP/R3KB1R b KQkq - 1 9,Bb6,3,18,Black,-0.93,-0.69,-0.24,Blunder,131,Mistake,Bd4,Petroff Defense,bishop_development,board_images/board_386.png,-0.69,0.62,1.31
+rnbqkb1r/ppp2pp1/4pn1p/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq - 0 5,Bh4,3,9,White,0.96,0.04,0.92,Blunder,85,Good,Bxf6,Queen's Gambit,bishop_development,board_images/board_387.png,,,
+r1bqk2r/pppp1ppp/2n2n2/1B2p3/1b2P3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq - 7 5,d6,3,10,Black,0.27,1.34,-1.07,Blunder,-147,Inaccuracy,O-O,Petroff Defense,general,board_images/board_388.png,1.34,-0.13,1.47
+rnbqk2r/pp2bppp/4pn2/2pp2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 4 6,e3,3,11,White,0.33,0.07,0.26,Blunder,58,Good,cxd5,Queen's Gambit,general,board_images/board_389.png,,,
+r1bqk2r/pppp1pp1/2n2n1p/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 6,d6,3,12,Black,0.28,0.39,-0.11,Mistake,-62,Good,Bxc3,Petroff Defense,general,board_images/board_390.png,0.39,-0.23,0.62
+rnbqkbnr/pp2pppp/8/2pp4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,cxd5,3,5,White,0.49,0.43,0.06,Inaccuracy,109,Excellent,cxd5,Queen's Gambit,capture,board_images/board_391.png,,,
+rnbqkb1r/pp3ppp/4pn2/2pP4/3P4/5NP1/PP2PP1P/RNBQKB1R b KQkq - 0 5,Nxd5,3,10,Black,0.38,0.41,-0.03,Good,-65,Good,cxd4,Queen's Gambit,capture,board_images/board_392.png,,,
+rnbq1rk1/pppp1ppp/4pn2/6B1/1bPP4/2N5/PP2PPPP/R2QKBNR w KQ - 4 5,Nf3,3,9,White,0.22,0.16,0.06,Inaccuracy,29,Good,e3,Queen's Pawn Game,knight_development; knight_development,board_images/board_393.png,0.16,0.45,0.29
+rnbqkb1r/pppp1ppp/5n2/4p3/4P3/3B1N2/PPPP1PPP/RNBQK2R b KQkq - 3 3,Nc6,3,6,Black,-0.49,-0.15,-0.34,Blunder,87,Good,d5,Petroff Defense,knight_development; knight_development,board_images/board_394.png,,,
+rnbqkb1r/pp1p1ppp/2p1pn2/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.88,0.23,0.65,Blunder,154,Mistake,e4,Queen's Pawn Game,knight_development; knight_development,board_images/board_395.png,,,
+rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2,Nf6,3,4,Black,0.15,0.15,0.0,Best,-20,Excellent,Nf6,English Opening,knight_development; knight_development,board_images/board_396.png,,,
+rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP2BPPP/R1BQK1NR w KQ - 3 6,Bg5,3,11,White,0.52,0.36,0.16,Mistake,96,Good,h4,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_397.png,0.36,1.32,0.96
+rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 5,c5,3,10,Black,0.02,0.22,-0.2,Mistake,-45,Inaccuracy,O-O,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_398.png,,,
+rn1qkbnr/ppp2ppp/8/3P4/2B2pb1/5N2/PPPP2PP/RNBQK2R b KQkq - 3 5,Bd6,3,10,Black,-0.39,-0.34,-0.05,Good,87,Excellent,Bd6,King's Pawn Game,bishop_development; bishop_development,board_images/board_399.png,-0.34,0.53,0.87
+rnbqkb1r/pp2pp1p/2p2np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bg5,3,9,White,0.46,0.51,-0.05,Good,85,Inaccuracy,e3,Queen's Gambit,bishop_development; bishop_development,board_images/board_400.png,,,
+r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/3P4/PPP1BPPP/RNBQK2R b KQkq - 2 6,Qd4,3,12,Black,1.81,2.51,-0.7,Blunder,-485,Inaccuracy,Ng4,Petroff Defense,general,board_images/board_401.png,2.51,-2.34,4.85
+r1b1k2r/ppp2ppp/2p2n2/2b5/3qP3/3P4/PPP1BPPP/RNBQ1RK1 b kq - 4 7,h5,3,14,Black,2.63,3.05,-0.42,Blunder,-577,Inaccuracy,O-O,Petroff Defense,pawn_push; kingside_attack,board_images/board_402.png,3.05,-2.72,5.77
+rnbqkbnr/pp2pppp/8/2pp4/3P4/2N2N2/PPP1PPPP/R1BQKB1R b KQkq - 1 3,Nf6,3,6,Black,-0.14,-0.17,0.03,Good,28,Excellent,Nf6,Queen's Pawn Game,knight_development; knight_development,board_images/board_403.png,,,
+rnbqkb1r/ppppp2p/5np1/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.57,0.59,-0.02,Good,128,Good,g3,Dutch Defense,knight_development; knight_development,board_images/board_404.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4N3/4P3/2N5/PPPP1PPP/R1BQKB1R b KQkq - 0 4,Nxe5,3,8,Black,-1.75,-1.71,-0.04,Good,374,Excellent,Nxe5,Petroff Defense,capture,board_images/board_405.png,-1.71,2.03,3.74
+r1bqkb1r/pppp1ppp/5n2/4n3/3PP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 5,Nc6,3,10,Black,-1.89,-0.84,-1.05,Blunder,218,Good,Ng6,Petroff Defense,knight_development; knight_development,board_images/board_406.png,-0.84,1.34,2.18
+r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2NP1N2/PPP2PPP/R1BQKB1R b KQkq - 0 4,h6,3,8,Black,-0.2,0.07,-0.27,Blunder,19,Inaccuracy,d5,Petroff Defense,defensive,board_images/board_407.png,0.07,0.26,0.19
+r1bqkb1r/pppp1pp1/2n2n1p/4p3/4P3/2NP1N2/PPP1BPPP/R1BQK2R b KQkq - 1 5,Bb4,3,10,Black,-0.19,0.26,-0.45,Blunder,6,Good,d5,Petroff Defense,bishop_development,board_images/board_408.png,0.26,0.32,0.06
+rnbqkbnr/ppp2ppp/8/4P3/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 4,e3,3,7,White,0.69,-0.15,0.84,Blunder,32,Inaccuracy,Nf3,Queen's Pawn Game,general,board_images/board_409.png,,,
+rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3,Nf6,3,6,Black,0.21,0.27,-0.06,Inaccuracy,-43,Good,dxc4,Queen's Gambit,knight_development; knight_development,board_images/board_410.png,,,
+r1bqkb1r/ppp2ppp/2n5/1B1pp3/4N3/5N2/PPPP1PPP/R1BQK2R b KQkq - 1 6,dxe4,3,12,Black,-2.31,-1.99,-0.32,Blunder,303,Excellent,dxe4,Petroff Defense,pawn_capture; capture,board_images/board_411.png,-1.99,1.04,3.03
+rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,cxd5,3,7,White,0.21,0.26,-0.05,Inaccuracy,61,Good,Nf3,King's Indian Defense,capture,board_images/board_412.png,,,
+r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/4PN2/PPPN1PPP/R2QKB1R b KQkq - 4 5,Bg4,3,10,Black,0.22,0.23,-0.01,Excellent,-41,Inaccuracy,Nh5,Queen's Pawn Game,bishop_development,board_images/board_413.png,0.23,-0.18,0.41
+rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bf4,3,9,White,0.32,0.33,-0.01,Excellent,69,Excellent,Bf4,Queen's Gambit,bishop_development; bishop_development,board_images/board_414.png,,,
+rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 4 6,e3,3,11,White,0.24,0.2,0.04,Good,49,Excellent,e3,Queen's Pawn Game,general,board_images/board_415.png,0.20,0.69,0.49
+r1b1kbnr/ppp2ppp/2n5/3q4/3P4/5N2/PP3PPP/RNBQKB1R b KQkq - 2 6,Bg4,3,12,Black,-0.15,-0.12,-0.03,Good,25,Excellent,Bg4,King's Pawn Game,bishop_development,board_images/board_416.png,-0.12,0.13,0.25
+rnbqkbnr/pp2pppp/8/2Pp4/8/2N5/PPP1PPPP/R1BQKBNR b KQkq - 0 3,Nf6,3,6,Black,-0.2,-0.16,-0.04,Good,37,Excellent,Nf6,Queen's Pawn Game,knight_development; knight_development,board_images/board_417.png,,,
+rnbqkbnr/pp2pppp/2p5/8/2pP4/4P3/PP3PPP/RNBQKBNR w KQkq - 0 4,Bxc4,3,7,White,0.84,0.85,-0.01,Excellent,181,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_418.png,,,
+r2qkb1r/pp2pppp/2n2n2/2pp4/3P1Bb1/2P1PN2/PP1N1PPP/R2QKB1R b KQkq - 0 6,e6,3,12,Black,0.36,0.22,0.14,Mistake,-61,Excellent,e6,Queen's Pawn Game,general,board_images/board_419.png,0.22,-0.39,0.61
+rnbqk1nr/pp1p1ppp/2p1p3/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Nf3,3,7,White,0.58,0.46,0.12,Mistake,106,Good,a3,Queen's Pawn Game,knight_development; knight_development,board_images/board_420.png,0.46,1.52,1.06
+rnbqk2r/pppp2pp/4pn2/5p2/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bd2,3,9,White,0.4,0.38,0.02,Good,68,Excellent,Bd2,Queen's Pawn Game,bishop_development,board_images/board_421.png,,,
+r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq - 0 5,d6,3,10,Black,-0.51,0.2,-0.71,Blunder,13,Good,Nxe4,Petroff Defense,general,board_images/board_422.png,0.20,0.33,0.13
+r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/2PBP3/PP3PPP/RN1QK1NR b KQkq - 2 5,Bg4,3,10,Black,-0.36,-0.09,-0.27,Blunder,55,Good,Qb6,Queen's Pawn Game,bishop_development,board_images/board_423.png,-0.09,0.46,0.55
+rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1,d5,3,2,Black,-0.11,-0.06,-0.05,Good,38,Excellent,d5,Unknown,pawn_push; central_control,board_images/board_424.png,,,
+r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/2N4P/PPPP1PP1/R1BQKB1R b KQkq - 0 6,Qd6,3,12,Black,1.86,1.94,-0.08,Inaccuracy,-361,Inaccuracy,Qd4,Petroff Defense,general,board_images/board_425.png,1.94,-1.67,3.61
+rn1qk1nr/ppp2ppp/4p3/3p1b2/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,3,9,White,0.44,0.41,0.03,Good,93,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_426.png,0.41,1.34,0.93
+rnbqk1nr/ppp1ppbp/3p2p1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,e4,3,7,White,0.52,0.52,0.0,Best,105,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_427.png,0.52,1.57,1.05
+r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 5,b5,3,10,Black,0.16,0.34,-0.18,Mistake,-33,Good,Be7,Petroff Defense,queenside_attack,board_images/board_428.png,0.34,0.01,0.33
+rnbqkbnr/ppp2ppp/8/4P3/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 4,Qd3,3,7,White,0.69,-0.41,1.1,Blunder,79,Inaccuracy,Nf3,Queen's Gambit,general,board_images/board_429.png,,,
+rnbqkbnr/ppp2pp1/4p2p/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.31,0.38,-0.07,Inaccuracy,63,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_430.png,,,
+rnbqkb1r/ppp2pp1/4pn1p/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bf4,3,9,White,0.34,0.39,-0.05,Good,66,Good,g3,Queen's Gambit,bishop_development; bishop_development,board_images/board_431.png,,,
+r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/P1N2N2/1PPP1PPP/R1BQKB1R b KQkq - 0 4,g6,3,8,Black,-0.11,0.2,-0.31,Blunder,-11,Inaccuracy,d5,Petroff Defense,defensive,board_images/board_432.png,0.20,0.09,0.11
+r1bq1bkr/ppp3p1/2n4p/3pp3/8/3P1N1N/PPP2PPP/R1BQK2R b KQ - 1 9,Bg4,3,18,Black,-2.76,-2.59,-0.17,Mistake,514,Blunder,Bd6,Petroff Defense,bishop_development,board_images/board_433.png,-2.59,2.55,5.14
+rn1qkbnr/pbpppp1p/1p4p1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,e4,3,7,White,1.03,1.04,-0.01,Excellent,207,Excellent,e4,Queen's Pawn Game,pawn_push; central_control,board_images/board_434.png,1.04,3.11,2.07
+rn1qk1nr/pbppppbp/1p4p1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 1 5,Nf3,3,9,White,0.96,0.9,0.06,Inaccuracy,199,Mistake,h4,Queen's Pawn Game,knight_development; knight_development,board_images/board_435.png,0.90,2.89,1.99
+rnbqkbnr/pp2pp1p/2p3p1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.46,0.38,0.08,Inaccuracy,93,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_436.png,,,
+rnbqkb1r/pppp1ppp/5n2/4P3/5p2/2N5/PPPP2PP/R1BQKBNR b KQkq - 0 4,Ng8,3,8,Black,0.69,0.61,0.08,Inaccuracy,-107,Excellent,Ng8,King's Pawn Game,knight_development,board_images/board_437.png,,,
+r1bqkb1r/pppn1ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bg5,3,9,White,0.24,0.21,0.03,Good,50,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_438.png,0.21,0.71,0.50
+rnbqkbnr/pp2pppp/8/2Pp4/8/4P3/PPP2PPP/RNBQKBNR b KQkq - 0 3,e5,3,6,Black,0.06,0.84,-0.78,Blunder,-90,Inaccuracy,e6,Queen's Pawn Game,pawn_push; central_control,board_images/board_439.png,,,
+r1bqk2r/pppnbppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 6 6,e3,3,11,White,0.3,0.22,0.08,Inaccuracy,51,Good,cxd5,Queen's Gambit,general,board_images/board_440.png,0.22,0.73,0.51
+r1bq1rk1/pppnbppp/4pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7,Bd3,3,13,White,0.25,0.2,0.05,Good,38,Inaccuracy,Rc1,Queen's Gambit,bishop_development; bishop_development,board_images/board_441.png,0.20,0.58,0.38
+rnbqk1nr/pppp2pp/4p3/5p2/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4,Bd2,3,7,White,0.46,0.5,-0.04,Good,99,Excellent,Bd2,Dutch Defense,bishop_development,board_images/board_442.png,0.50,1.49,0.99
+r2qkb1r/pp2pppp/2n2n2/2pp4/3P1Bb1/2PBPN2/PP3PPP/RN1QK2R b KQkq - 4 6,e6,3,12,Black,-0.22,0.09,-0.31,Blunder,18,Good,Qb6,Queen's Pawn Game,general,board_images/board_443.png,0.09,0.27,0.18
+rnbqkb1r/pppp1ppp/4pn2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Bg5,3,5,White,0.21,-0.01,0.22,Blunder,36,Inaccuracy,g3,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_444.png,,,
+r1bqkb1r/ppp2ppp/2n1pn2/8/2BP4/2N1P3/PP3PPP/R1BQK1NR w KQkq - 1 6,Nf3,3,11,White,0.97,1.0,-0.03,Good,169,Excellent,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_445.png,1.00,2.69,1.69
+r1bq1rk1/pppn1ppp/4pn2/6B1/1bpP4/2NBPN2/PP3PPP/R2QK2R w KQ - 0 8,Bxc4,3,15,White,0.21,0.21,0.0,Best,53,Excellent,Bxc4,Queen's Pawn Game,capture,board_images/board_446.png,0.21,0.74,0.53
+rnbqkb1r/pp3ppp/4pn2/2Pp4/2P5/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 0 5,Bxc5,3,10,Black,-0.15,-0.2,0.05,Inaccuracy,4,Excellent,Bxc5,Queen's Gambit,capture,board_images/board_447.png,,,
+rnbqk2r/pp2bpp1/2p1pn1p/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 0 7,Bh4,3,13,White,0.46,0.38,0.08,Inaccuracy,63,Good,Bxf6,Queen's Gambit,bishop_development,board_images/board_448.png,,,
+rnbqkbnr/ppp2ppp/8/3p4/3QP3/2P5/PP3PPP/RNB1KBNR b KQkq - 0 4,Nf6,3,8,Black,-0.31,-0.13,-0.18,Mistake,46,Good,Be6,King's Pawn Game,knight_development; knight_development,board_images/board_449.png,,,
+r1bqkb1r/pp3ppp/2n1pn2/2pP4/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 6,exd5,3,12,Black,0.18,0.26,-0.08,Inaccuracy,-23,Excellent,exd5,Queen's Gambit,pawn_capture; capture,board_images/board_450.png,0.26,0.03,0.23
+rn1qk2r/pp2bppp/2p1pn2/3p1bB1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 1 7,Bd3,3,13,White,0.17,0.18,-0.01,Excellent,35,Good,Nh4,Queen's Gambit,bishop_development; bishop_development,board_images/board_451.png,0.18,0.53,0.35
+rnbqkb1r/ppp2ppp/8/4P3/3Pp3/8/PPP3PP/R1BQKBNR b KQkq d3 0 6,Nc6,3,12,Black,-0.48,0.47,-0.95,Blunder,9,Inaccuracy,exd3,King's Pawn Game,knight_development; knight_development,board_images/board_452.png,,,
+r1bqkb1r/pp2pppp/2n2n2/1Npp4/3P1B2/4P3/PPP2PPP/R2QKBNR b KQkq - 2 5,e5,3,10,Black,1.67,1.68,-0.01,Excellent,-335,Good,Bg4,Queen's Pawn Game,pawn_push; central_control,board_images/board_453.png,1.68,-1.67,3.35
+rnbqkb1r/pp3ppp/4pn2/2p3B1/2pP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6,e4,3,11,White,0.18,0.16,0.02,Excellent,27,Inaccuracy,Bxf6,Queen's Gambit,pawn_push; central_control,board_images/board_454.png,,,
+rnbqkb1r/pppp1ppp/5n2/4p3/2BPP3/8/PPP2PPP/RNBQK1NR b KQkq - 0 3,exd4,3,6,Black,-0.4,-0.3,-0.1,Mistake,94,Excellent,exd4,King's Pawn Game,pawn_capture; capture,board_images/board_455.png,,,
+rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/2N1P3/PPP2PPP/R2QKBNR b KQkq - 0 4,Nc6,3,8,Black,0.1,1.66,-1.56,Blunder,-163,Inaccuracy,cxd4,Queen's Pawn Game,knight_development; knight_development,board_images/board_456.png,,,
+rnbqk1nr/ppp2ppp/4p3/3p4/2PP4/2b2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,bxc3,3,9,White,0.81,0.82,-0.01,Excellent,160,Excellent,bxc3,Queen's Pawn Game,capture,board_images/board_457.png,0.82,2.42,1.60
+rnbqk2r/ppp2p2/4pn1p/3p2p1/2PP3B/2P2N2/P3PPPP/R2QKB1R w KQkq - 0 8,Bg3,3,15,White,1.07,0.93,0.14,Mistake,201,Excellent,Bg3,Queen's Pawn Game,bishop_development,board_images/board_458.png,,,
+rnbqk2r/ppp2p2/4p2p/3p2p1/2PPn3/2P2NB1/P3PPPP/R2QKB1R w KQkq - 2 9,Qc2,3,17,White,0.98,0.85,0.13,Mistake,174,Good,Nd2,Queen's Pawn Game,general,board_images/board_459.png,,,
+rnbqk2r/ppp1ppbp/3p1np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,3,9,White,0.54,0.13,0.41,Blunder,59,Inaccuracy,h3,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_460.png,,,
+rnbqkbnr/ppp2ppp/8/3p4/3PP3/8/PP3PPP/RNBQKBNR b KQkq - 0 4,dxe4,3,8,Black,-0.85,-0.87,0.02,Good,184,Excellent,dxe4,King's Pawn Game,pawn_capture; capture,board_images/board_461.png,,,
+rnbqkbnr/pp3ppp/2p1p3/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,e4,3,9,White,0.38,0.03,0.35,Blunder,16,Inaccuracy,a4,Queen's Gambit,pawn_push; central_control,board_images/board_462.png,,,
+rn1qkbnr/ppp1pppp/3p4/5b2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3,Nc3,3,5,White,0.64,0.73,-0.09,Inaccuracy,161,Excellent,Nc3,Queen's Pawn Game,knight_development; knight_development,board_images/board_463.png,0.73,2.34,1.61
+rnbq1rk1/ppp2pp1/4pn1p/3p4/1bPP3B/2N2N2/PP2PPPP/R2QKB1R w KQ - 2 7,e3,3,13,White,0.31,0.42,-0.11,Mistake,63,Excellent,e3,Queen's Gambit,general,board_images/board_464.png,0.42,1.05,0.63
+r1bq1rk1/pppn1pp1/4pn1p/3p4/1bPP3B/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 8,Bd3,3,15,White,0.57,0.29,0.28,Blunder,87,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_465.png,0.29,1.16,0.87
+rnbqkbnr/ppp2ppp/8/4P3/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 4,e4,3,7,White,0.69,-0.06,0.75,Blunder,50,Inaccuracy,Nf3,Queen's Gambit,pawn_push; central_control,board_images/board_466.png,,,
+rnbqk1nr/ppp2ppp/4p3/8/1bBP4/4P3/PP3PPP/RNBQK1NR w KQkq - 1 5,Bd2,3,9,White,0.53,0.47,0.06,Inaccuracy,83,Good,Nc3,Queen's Gambit,bishop_development,board_images/board_467.png,0.47,1.30,0.83
+rnbqk1nr/ppp2ppp/4p3/8/2BP4/4P3/PP1b1PPP/RN1QK1NR w KQkq - 0 6,Nxd2,3,11,White,0.48,0.54,-0.06,Inaccuracy,74,Excellent,Nxd2,Queen's Gambit,capture,board_images/board_468.png,0.54,1.28,0.74
+rnbqkbnr/ppp2ppp/8/3P4/5p2/5N2/PPPP2PP/RNBQKB1R b KQkq - 1 4,c6,3,8,Black,-0.12,-0.1,-0.02,Excellent,70,Excellent,c6,King's Pawn Game,general,board_images/board_469.png,,,
+rnbqkb1r/pp2pppp/5n2/2pp4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.29,-0.22,0.51,Blunder,-6,Inaccuracy,cxd5,Queen's Pawn Game,knight_development; knight_development,board_images/board_470.png,,,
+rn1qkb1r/pp3pp1/2p1pn1p/3p2B1/2PP2b1/2N1PN2/PP3PPP/R2QKB1R w KQkq - 0 7,Bh4,3,13,White,0.4,0.26,0.14,Mistake,57,Good,Bxf6,Queen's Gambit,bishop_development,board_images/board_471.png,0.26,0.83,0.57
+r1bqkb1r/pp3ppp/2n2n2/2Pp4/8/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 7,Bxc5,3,14,Black,-0.16,-0.13,-0.03,Good,37,Excellent,Bxc5,Queen's Gambit,capture,board_images/board_472.png,-0.13,0.24,0.37
+rnbqkb1r/ppp2ppp/8/3pP3/4n3/2N2Q2/PPPP2PP/R1B1KBNR b KQkq - 1 5,Be6,3,10,Black,-0.29,0.04,-0.33,Blunder,22,Inaccuracy,f5,King's Pawn Game,bishop_development,board_images/board_473.png,,,
+rn1qkb1r/ppp2ppp/4b3/3pP3/4N3/5Q2/PPPP2PP/R1B1KBNR b KQkq - 0 6,dxe4,3,12,Black,0.1,0.06,0.04,Good,-19,Excellent,dxe4,King's Pawn Game,pawn_capture; capture,board_images/board_474.png,0.06,-0.13,0.19
+r1bqkbnr/pp2pppp/2n5/2pp4/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq - 0 4,Nf6,3,8,Black,0.18,1.84,-1.66,Blunder,-181,Inaccuracy,e6,Reti Opening,knight_development; knight_development,board_images/board_475.png,,,
+r1bqk2r/ppp1bppp/2n2n2/3p2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 7,Bg4,3,14,Black,0.46,0.92,-0.46,Blunder,-131,Inaccuracy,h6,Queen's Gambit,bishop_development,board_images/board_476.png,0.92,-0.39,1.31
+rn1qkbnr/p1p1pppp/b7/1p6/P1pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 1 5,axb5,3,9,White,1.98,2.1,-0.12,Mistake,428,Excellent,axb5,Queen's Gambit,capture,board_images/board_477.png,2.10,6.38,4.28
+rnbqkb1r/p1p2ppp/1p2pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5,Bg5,3,9,White,0.52,0.3,0.22,Blunder,77,Good,cxd5,Queen's Gambit,bishop_development; bishop_development,board_images/board_478.png,,,
+r1bqk2r/ppp2pp1/2np1n1p/4p3/1b2P3/P1NP1N2/1PPBBPPP/R2QK2R b KQkq - 0 7,Ba5,3,14,Black,0.14,0.23,-0.09,Inaccuracy,-20,Good,Bxc3,Petroff Defense,bishop_development,board_images/board_479.png,0.23,0.03,0.20
+r1bqk2r/ppp1bpp1/2n1pn1p/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 0 7,Bh4,3,13,White,0.54,0.49,0.05,Inaccuracy,95,Good,Bf4,Queen's Gambit,bishop_development,board_images/board_480.png,0.49,1.44,0.95
+r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 5,Nxc3,3,10,Black,-1.73,-1.7,-0.03,Good,357,Excellent,Nxc3,Petroff Defense,capture,board_images/board_481.png,-1.70,1.87,3.57
+r1bqkb1r/pppp1ppp/2n5/4p3/2B5/2PP1N2/P1P2PPP/R1BQK2R b KQkq - 0 6,d5,3,12,Black,-1.66,-1.68,0.02,Good,343,Excellent,d5,Petroff Defense,pawn_push; central_control,board_images/board_482.png,-1.68,1.75,3.43
+r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPPBPPP/R1BQK2R b KQkq - 5 4,Bc5,3,8,Black,-0.13,0.59,-0.72,Blunder,-23,Inaccuracy,d5,King's Pawn Game,bishop_development,board_images/board_483.png,0.59,0.36,0.23
+r1bqk2r/pppp1ppp/2n2n2/2b1p3/4P3/2N2N2/PPPPBPPP/R1BQ1RK1 b kq - 7 5,d6,3,10,Black,-0.17,-0.08,-0.09,Inaccuracy,42,Excellent,d6,King's Pawn Game,general,board_images/board_484.png,-0.08,0.34,0.42
+rnbqkbnr/ppp1pppp/8/3p4/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2,c5,3,4,Black,0.24,0.27,-0.03,Good,-30,Excellent,c5,King's Indian Attack,pawn_push; central_control; queenside_attack,board_images/board_485.png,,,
+rnbqkb1r/ppp2ppp/4p3/8/3PP3/2P5/P4PPP/R1BQKBNR b KQkq - 0 6,b6,3,12,Black,0.31,0.68,-0.37,Blunder,-107,Inaccuracy,c5,Queen's Gambit,defensive,board_images/board_486.png,,,
+rn1qkb1r/pp2pppp/2p2n2/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5,Bf4,3,9,White,0.63,0.2,0.43,Blunder,90,Good,Qb3,Queen's Gambit,bishop_development; bishop_development,board_images/board_487.png,0.20,1.10,0.90
+rn1qkb1r/ppp2ppp/8/3pP3/4n3/2N2B2/PPPP2PP/R1BQK2R b KQkq - 0 7,Qh4+,3,14,Black,0.4,2.01,-1.61,Blunder,-265,Inaccuracy,Nc6,King's Pawn Game,check,board_images/board_488.png,2.01,-0.64,2.65
+rnbq1rk1/pp2bpp1/2p1pn1p/8/2pP3B/2NBPN2/PP3PPP/R2QK2R w KQ - 0 9,Bxc4,3,17,White,0.44,0.32,0.12,Mistake,49,Excellent,Bxc4,Queen's Gambit,capture,board_images/board_489.png,0.32,0.81,0.49
+r1bqk2r/pppn1ppp/4pn2/3p2B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 4 6,e3,3,11,White,0.42,0.42,0.0,Best,91,Good,cxd5,Queen's Gambit,general,board_images/board_490.png,0.42,1.33,0.91
+r1bqk2r/pppn1pp1/4pn1p/3p2B1/1bPP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 0 7,Bh4,3,13,White,0.43,0.41,0.02,Good,103,Excellent,Bh4,Queen's Gambit,bishop_development,board_images/board_491.png,0.41,1.44,1.03
+rnbqkbnr/pp1ppppp/8/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 1 2,d6,3,4,Black,0.29,0.56,-0.27,Blunder,-62,Inaccuracy,e6,English Opening,general,board_images/board_492.png,,,
+rnbqk2r/pppp1ppp/4pn2/6B1/2PP4/2b5/PP2PPPP/R2QKBNR w KQkq - 0 5,bxc3,3,9,White,0.27,0.2,0.07,Inaccuracy,58,Excellent,bxc3,Queen's Pawn Game,capture,board_images/board_493.png,,,
+rnbq1rk1/pp2bpp1/2p1pn1p/3p2B1/2PP4/2NBPN2/PP3PPP/R2QK2R w KQ - 0 8,Bh4,3,15,White,0.33,0.24,0.09,Inaccuracy,73,Good,Bf4,Queen's Gambit,bishop_development,board_images/board_494.png,0.24,0.97,0.73
+r1bqk2r/p1pp1ppp/2p2n2/2b5/4P3/2NB4/PPP2PPP/R1BQK2R b KQkq - 1 7,d6,3,14,Black,0.32,0.49,-0.17,Mistake,-58,Good,O-O,Petroff Defense,general,board_images/board_495.png,0.49,-0.09,0.58
+rnbqk1nr/pp1pppbp/6p1/2p5/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.61,0.01,0.6,Blunder,61,Inaccuracy,d5,Queen's Pawn Game,knight_development; knight_development,board_images/board_496.png,0.01,0.62,0.61
+r2qkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/2NbPN2/PP3PPP/R2QK2R w KQkq - 0 8,Qxd3,3,15,White,0.15,0.11,0.04,Good,26,Excellent,Qxd3,Queen's Gambit,capture,board_images/board_497.png,0.11,0.37,0.26
+rnbq1rk1/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQ - 4 5,e4,3,9,White,0.54,0.47,0.07,Inaccuracy,79,Excellent,e4,King's Indian Defense,pawn_push; central_control,board_images/board_498.png,0.47,1.26,0.79
+rnbqk1nr/ppp1ppbp/3p2p1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4,Nf3,3,7,White,0.53,0.57,-0.04,Good,105,Good,e4,Queen's Pawn Game,knight_development; knight_development,board_images/board_499.png,0.57,1.62,1.05
+r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/3P1N2/PPP1BPPP/RNBQK2R b KQkq - 2 4,Bc5,3,8,Black,-0.21,0.14,-0.35,Blunder,-9,Good,d5,Petroff Defense,bishop_development,board_images/board_500.png,0.14,0.05,0.09
+rnbqkb1r/pp2pppp/2p2n2/8/2BP4/4P3/PP3PPP/RNBQK1NR w KQkq - 0 5,Nc3,3,9,White,0.98,0.8,0.18,Mistake,158,Good,Nf3,Queen's Gambit,knight_development; knight_development,board_images/board_501.png,,,
+rBbqkbnr/pp2pppp/8/2pp4/3P4/8/PPP1PPPP/RN1QKBNR b KQkq - 0 3,Rxb8,3,6,Black,-0.46,-0.34,-0.12,Mistake,99,Excellent,Rxb8,Queen's Pawn Game,capture,board_images/board_502.png,-0.34,0.65,0.99
+rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5,Bg5,3,9,White,0.31,0.14,0.17,Mistake,38,Inaccuracy,cxd5,King's Indian Defense,bishop_development; bishop_development,board_images/board_503.png,,,
+rnbqkbnr/ppp1pppp/8/3p4/8/6P1/PPPPPPBP/RNBQK1NR b KQkq - 1 2,Nf6,3,4,Black,-0.2,0.26,-0.46,Blunder,3,Good,e5,Irregular Opening,knight_development; knight_development,board_images/board_504.png,,,
+rnbqk2r/ppppppbp/5np1/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 3 4,Nc3,3,7,White,0.35,0.3,0.05,Good,55,Excellent,Nc3,Queen's Pawn Game,knight_development; knight_development,board_images/board_505.png,,,
+rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6,Bg5,3,11,White,0.46,0.32,0.14,Mistake,91,Inaccuracy,Be2,Queen's Pawn Game,bishop_development; bishop_development,board_images/board_506.png,0.32,1.23,0.91
+r1bqk2r/ppp2ppp/2p5/8/4P3/2NPb3/PPP1Q1PP/R3KB1R b KQkq - 1 9,Bb6,3,18,Black,-1.0,-0.83,-0.17,Mistake,214,Mistake,Qh4+,Petroff Defense,bishop_development,board_images/board_507.png,-0.83,1.31,2.14
+r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq - 1 5,Nxc3,3,10,Black,-0.66,-0.68,0.02,Good,147,Excellent,Nxc3,Petroff Defense,capture,board_images/board_508.png,-0.68,0.79,1.47
+r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/P2P1N2/1PP2PPP/RNBQKB1R b KQkq - 0 4,Bc5,3,8,Black,-0.39,-0.1,-0.29,Blunder,57,Good,d5,Petroff Defense,bishop_development,board_images/board_509.png,-0.10,0.47,0.57
+rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4,c5,3,8,Black,0.06,0.12,-0.06,Inaccuracy,1,Good,a6,Queen's Gambit,pawn_push; central_control; queenside_attack,board_images/board_510.png,,,
+rnbqkbnr/pppp1ppp/8/4p3/1P6/8/PBPPPPPP/RN1QKBNR b KQkq - 1 2,d6,3,4,Black,-0.32,-0.04,-0.28,Blunder,37,Good,Bxb4,Irregular Opening,general,board_images/board_511.png,,,
+rnbqkbnr/pp1p1ppp/4p3/2P5/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3,b4,3,5,White,0.22,-0.38,0.6,Blunder,-47,Inaccuracy,e4,Queen's Pawn Game,queenside_attack,board_images/board_512.png,,,
+rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 0 9,Be3,3,1,White,0.98,1.01,-0.03,Good,182,Excellent,Be3,Unknown,bishop_development,board_images/board_513.png,1.01,2.83,1.82
+r1bqk2r/pppp1ppp/2n2n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 5,d6,3,10,Black,0.14,0.22,-0.08,Inaccuracy,-18,Inaccuracy,Nd4,Petroff Defense,general,board_images/board_514.png,0.22,0.04,0.18
+r1bqkbnr/pppp1ppp/2n5/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 1 3,Nf3,3,5,White,1.24,1.35,-0.11,Mistake,266,Excellent,Nf3,Queen's Pawn Game,knight_development; knight_development,board_images/board_515.png,,,
+rnbqkbnr/pp1ppppp/8/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq - 1 2,Nc6,3,4,Black,0.3,0.29,0.01,Excellent,-37,Excellent,Nc6,English Opening,knight_development; knight_development,board_images/board_516.png,,,
