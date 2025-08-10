@@ -247,13 +247,13 @@
         }
 
         /* Light shades of move quality colors for stats */
-        .stats-row:first-child .stat-item:nth-child(1) .stat-number { color: #9C27B0; } /* Total - purple to match All button */
-        .stats-row:first-child .stat-item:nth-child(2) .stat-number { color: #1976D2; } /* Best - blue */
-        .stats-row:first-child .stat-item:nth-child(3) .stat-number { color: #4CAF50; } /* Excellent - green */
-        .stats-row:first-child .stat-item:nth-child(4) .stat-number { color: #8BC34A; } /* Good - light green */
-        .stats-row:last-child .stat-item:nth-child(1) .stat-number { color: #FFC107; } /* Inaccuracy - yellow */
-        .stats-row:last-child .stat-item:nth-child(2) .stat-number { color: #FF9800; } /* Mistake - orange */
-        .stats-row:last-child .stat-item:nth-child(3) .stat-number { color: #F44336; } /* Blunder - red */
+        .stats-row .stat-item:nth-child(1) .stat-number { color: #9C27B0; } /* Total - purple to match All button */
+        .stats-row .stat-item:nth-child(2) .stat-number { color: #1976D2; } /* Best - blue */
+        .stats-row .stat-item:nth-child(3) .stat-number { color: #4CAF50; } /* Excellent - green */
+        .stats-row .stat-item:nth-child(4) .stat-number { color: #8BC34A; } /* Good - light green */
+        .stats-row .stat-item:nth-child(5) .stat-number { color: #FFC107; } /* Inaccuracy - yellow */
+        .stats-row .stat-item:nth-child(6) .stat-number { color: #FF9800; } /* Mistake - orange */
+        .stats-row .stat-item:nth-child(7) .stat-number { color: #F44336; } /* Blunder - red */
 
         .move-card {
             background: white;
@@ -615,6 +615,52 @@
             min-width: 32px;
         }
 
+        /* Desktop-specific improvements */
+        @media (min-width: 768px) {
+            .sticky-header .filter-button {
+                padding: 8px 12px;
+                font-size: 0.85em;
+                min-width: auto;
+            }
+            
+            .stats {
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .stats-row {
+                flex-direction: row;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .stat-item {
+                min-width: 80px;
+                padding: 8px 12px;
+                flex: 0 0 auto;
+            }
+            
+            .stat-number {
+                font-size: 1.4em;
+            }
+            
+            .stat-label {
+                font-size: 0.8em;
+            }
+            
+            #moves-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 20px;
+            }
+            
+            .move-card {
+                margin-bottom: 0;
+            }
+        }
+
 
 
         .sticky-header.show {
@@ -755,8 +801,6 @@
                         <div class="stat-number" id="good-count">-</div>
                         <div class="stat-label">Good</div>
                     </div>
-                </div>
-                <div class="stats-row">
                     <div class="stat-item">
                         <div class="stat-number" id="inaccuracy-count">-</div>
                         <div class="stat-label">Inaccuracy</div>
