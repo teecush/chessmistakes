@@ -621,9 +621,36 @@
             min-width: 32px;
         }
 
+        /* Override sticky button sizing for desktop */
+        @media (min-width: 768px) {
+            .sticky-header .filter-button {
+                padding: 8px 12px !important;
+                font-size: 0.85em !important;
+                min-width: auto !important;
+            }
+        }
+
         /* Desktop sticky header improvements */
         @media (min-width: 768px) {
             .sticky-header .filter-button {
+                padding: 8px 12px !important;
+                font-size: 0.85em !important;
+                min-width: auto !important;
+                width: auto !important;
+                height: auto !important;
+            }
+            
+            /* Override any conflicting styles */
+            .sticky-header .filter-controls .filter-button {
+                padding: 8px 12px !important;
+                font-size: 0.85em !important;
+                min-width: auto !important;
+                width: auto !important;
+                height: auto !important;
+            }
+            
+            /* Ensure sticky buttons don't shrink */
+            .sticky-header.show .filter-button {
                 padding: 8px 12px !important;
                 font-size: 0.85em !important;
                 min-width: auto !important;
@@ -868,10 +895,10 @@
                     <button class="filter-button button-best" data-quality="best">⭐ Best</button>
                     <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
                     <button class="filter-button button-good" data-quality="good">✅ Good</button>
-                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inacc</button>
+                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
                     <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
                     <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
-                    <button class="filter-button button-all-errors" data-quality="errors">💥 Errors</button>
+                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
                 </div>
             </div>
 
