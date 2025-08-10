@@ -727,48 +727,51 @@
             }
             
             /* Row 1: Statistics and Move Counter side by side */
-            .filter-section > .stats,
-            .filter-section > .move-counter {
-                display: inline-block;
-                width: 50%;
-                vertical-align: top;
-                margin-right: 0;
+            .filter-section .stats,
+            .filter-section .move-counter {
+                display: inline-block !important;
+                width: 50% !important;
+                vertical-align: top !important;
+                margin-right: 0 !important;
+                float: left !important;
             }
             
-            .filter-section > .stats {
-                margin-left: 0;
+            .filter-section .stats {
+                margin-left: 0 !important;
             }
             
             /* Row 2: Move Quality and Side Filters side by side */
-            .filter-section > .filter-row:nth-child(3),
-            .filter-section > .filter-row:nth-child(4) {
-                display: inline-block;
-                width: 50%;
-                vertical-align: top;
-                margin-right: 0;
+            .filter-section .filter-row:nth-of-type(1),
+            .filter-section .filter-row:nth-of-type(2) {
+                display: inline-block !important;
+                width: 50% !important;
+                vertical-align: top !important;
+                margin-right: 0 !important;
+                float: left !important;
             }
             
-            .filter-section > .filter-row:nth-child(3) {
-                margin-left: 0;
+            .filter-section .filter-row:nth-of-type(1) {
+                margin-left: 0 !important;
             }
             
             /* Row 3: All 4 dropdowns side by side */
-            .filter-section > .filter-row:nth-child(5),
-            .filter-section > .filter-row:nth-child(6),
-            .filter-section > .filter-row:nth-child(7),
-            .filter-section > .filter-row:nth-child(8) {
-                display: inline-block;
-                width: 25%;
-                margin-right: 0;
-                vertical-align: top;
+            .filter-section .filter-row:nth-of-type(3),
+            .filter-section .filter-row:nth-of-type(4),
+            .filter-section .filter-row:nth-of-type(5),
+            .filter-section .filter-row:nth-of-type(6) {
+                display: inline-block !important;
+                width: 25% !important;
+                margin-right: 0 !important;
+                vertical-align: top !important;
+                float: left !important;
             }
             
-            .filter-section > .filter-row:nth-child(5) {
-                margin-left: 0;
+            .filter-section .filter-row:nth-of-type(3) {
+                margin-left: 0 !important;
             }
             
-            .filter-section > .filter-row:nth-child(8) {
-                margin-right: 0;
+            .filter-section .filter-row:nth-of-type(6) {
+                margin-right: 0 !important;
             }
             
             /* Clear floats to prevent layout issues */
