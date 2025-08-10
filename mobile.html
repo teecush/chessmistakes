@@ -400,7 +400,7 @@
         }
 
         .eval-before {
-            color: #2e7d32; /* Green to match Best Move */
+            color: #d32f2f; /* Red to match Your Move */
         }
 
         .eval-arrow {
@@ -408,7 +408,7 @@
         }
 
         .eval-after {
-            color: #d32f2f; /* Red to match Your Move */
+            color: #2e7d32; /* Green to match Best Move */
         }
 
         .eval-drop {
@@ -1105,10 +1105,10 @@
                                     <button class="lichess-button-small" onclick="window.open('${generateLichessUrl(move.Position, move.Move)}', '_blank')">
                                         🔍
                                     </button>
-                                    <span class="eval-label">Eval:</span> 
-                                    <span class="eval-after">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
-                                    <span class="eval-arrow">→</span>
-                                    <span class="eval-before">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
+                                                                            <span class="eval-label">Eval:</span> 
+                                        <span class="eval-before">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
+                                        <span class="eval-arrow">→</span>
+                                        <span class="eval-after">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
                                     <span class="eval-drop">(${Math.abs(parseFloat(move.Original_Eval_Drop) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
