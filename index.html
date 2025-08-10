@@ -609,6 +609,12 @@
             justify-content: center;
         }
 
+        .sticky-filters {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .sticky-header .filter-button {
             padding: 6px 8px;
             font-size: 0.8em;
@@ -618,9 +624,9 @@
         /* Desktop sticky header improvements */
         @media (min-width: 768px) {
             .sticky-header .filter-button {
-                padding: 8px 12px;
-                font-size: 0.85em;
-                min-width: auto;
+                padding: 8px 12px !important;
+                font-size: 0.85em !important;
+                min-width: auto !important;
             }
         }
 
@@ -682,10 +688,24 @@
             }
             
             .filter-section > .filter-row:nth-child(3),
-            .filter-section > .filter-row:nth-child(4),
+            .filter-section > .filter-row:nth-child(4) {
+                grid-column: span 1;
+            }
+            
             .filter-section > .filter-row:nth-child(5),
             .filter-section > .filter-row:nth-child(6) {
                 grid-column: span 1;
+            }
+            
+            /* Desktop sticky header layout */
+            .sticky-filters {
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .sticky-filters .filter-controls {
+                gap: 8px;
             }
         }
 
@@ -771,15 +791,22 @@
 <body>
                 <!-- Sticky header for move quality filters -->
         <div class="sticky-header" id="sticky-header">
-            <div class="filter-controls">
-                <button class="filter-button button-all active" data-quality="all">∀</button>
-                <button class="filter-button button-best" data-quality="best">⭐</button>
-                <button class="filter-button button-excellent" data-quality="excellent">👍</button>
-                <button class="filter-button button-good" data-quality="good">✅</button>
-                <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!?</button>
-                <button class="filter-button button-mistake" data-quality="mistake">?</button>
-                <button class="filter-button button-blunder" data-quality="blunder">??</button>
-                <button class="filter-button button-all-errors" data-quality="errors">💥</button>
+            <div class="sticky-filters">
+                <div class="filter-controls">
+                    <button class="filter-button button-all active" data-quality="all">∀</button>
+                    <button class="filter-button button-best" data-quality="best">⭐</button>
+                    <button class="filter-button button-excellent" data-quality="excellent">👍</button>
+                    <button class="filter-button button-good" data-quality="good">✅</button>
+                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!?</button>
+                    <button class="filter-button button-mistake" data-quality="mistake">?</button>
+                    <button class="filter-button button-blunder" data-quality="blunder">??</button>
+                    <button class="filter-button button-all-errors" data-quality="errors">💥</button>
+                </div>
+                <div class="filter-controls">
+                    <button class="filter-button active" data-side="all">All</button>
+                    <button class="filter-button button-white" data-side="white">White</button>
+                    <button class="filter-button button-black" data-side="black">Black</button>
+                </div>
             </div>
             <div class="move-counter" id="sticky-move-counter">
                 <span id="sticky-current-count">0</span> of <span id="sticky-total-count">0</span> moves
@@ -793,24 +820,6 @@
         </div>
 
         <div class="filter-section">
-            <div class="filter-row">
-                <div class="filter-label">Move Quality</div>
-                <div class="filter-controls">
-                    <button class="filter-button button-all active" data-quality="all">All</button>
-                    <button class="filter-button button-best" data-quality="best">⭐ Best</button>
-                    <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
-                    <button class="filter-button button-good" data-quality="good">✅ Good</button>
-                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
-                    <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
-                    <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
-                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
-                </div>
-            </div>
-
-            <div class="move-counter" id="move-counter">
-                <span id="current-count">0</span> of <span id="total-count">0</span> moves
-            </div>
-
             <div class="stats">
                 <div class="stats-row">
                     <div class="stat-item">
@@ -841,6 +850,24 @@
                         <div class="stat-number" id="blunder-count">-</div>
                         <div class="stat-label">Blunder</div>
                     </div>
+                </div>
+            </div>
+
+            <div class="move-counter" id="move-counter">
+                <span id="current-count">0</span> of <span id="total-count">0</span> moves
+            </div>
+
+            <div class="filter-row">
+                <div class="filter-label">Move Quality</div>
+                <div class="filter-controls">
+                    <button class="filter-button button-all active" data-quality="all">All</button>
+                    <button class="filter-button button-best" data-quality="best">⭐ Best</button>
+                    <button class="filter-button button-excellent" data-quality="excellent">👍 Excellent</button>
+                    <button class="filter-button button-good" data-quality="good">✅ Good</button>
+                    <button class="filter-button button-inaccuracy" data-quality="inaccuracy">!? Inaccuracy</button>
+                    <button class="filter-button button-mistake" data-quality="mistake">? Mistake</button>
+                    <button class="filter-button button-blunder" data-quality="blunder">?? Blunder</button>
+                    <button class="filter-button button-all-errors" data-quality="errors">💥 All Errors</button>
                 </div>
             </div>
 
@@ -1241,6 +1268,26 @@
             });
         });
 
+        // Event listeners for side filter buttons
+        document.querySelectorAll('.filter-section .filter-button[data-side]').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all side filter buttons (main and sticky)
+                document.querySelectorAll('.filter-button[data-side]').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Sync with sticky header
+                const stickyButton = document.querySelector(`.sticky-header .filter-button[data-side="${this.dataset.side}"]`);
+                if (stickyButton) {
+                    stickyButton.classList.add('active');
+                }
+                
+                filterData();
+            });
+        });
+
         // Event listeners for sliders
         document.getElementById('move-number-slider').addEventListener('input', function() {
             const value = this.value;
@@ -1277,23 +1324,41 @@
         document.querySelectorAll('.sticky-header .filter-button').forEach(button => {
             button.addEventListener('click', function() {
                 const quality = this.dataset.quality;
+                const side = this.dataset.side;
                 
-                // Force update main filter buttons - be very specific
-                document.querySelectorAll('.filter-section .filter-button[data-quality]').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                
-                // Find and activate the specific main filter button
-                const mainButton = document.querySelector(`.filter-section .filter-button[data-quality="${quality}"]`);
-                if (mainButton) {
-                    mainButton.classList.add('active');
+                if (quality) {
+                    // Handle quality filter buttons
+                    document.querySelectorAll('.filter-section .filter-button[data-quality]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    const mainButton = document.querySelector(`.filter-section .filter-button[data-quality="${quality}"]`);
+                    if (mainButton) {
+                        mainButton.classList.add('active');
+                    }
+                    
+                    // Update sticky header quality buttons
+                    document.querySelectorAll('.sticky-header .filter-button[data-quality]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                } else if (side) {
+                    // Handle side filter buttons
+                    document.querySelectorAll('.filter-section .filter-button[data-side]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    const mainButton = document.querySelector(`.filter-section .filter-button[data-side="${side}"]`);
+                    if (mainButton) {
+                        mainButton.classList.add('active');
+                    }
+                    
+                    // Update sticky header side buttons
+                    document.querySelectorAll('.sticky-header .filter-button[data-side]').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
                 }
-                
-                // Update sticky header buttons
-                document.querySelectorAll('.sticky-header .filter-button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                this.classList.add('active');
                 
                 filterData();
             });
