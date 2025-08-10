@@ -416,6 +416,31 @@
             font-weight: bold;
         }
 
+        /* Centipawn-based eval difference number colors */
+        .eval-drop .eval-number.best {
+            color: #1976D2; /* Blue - Best */
+        }
+
+        .eval-drop .eval-number.excellent {
+            color: #4CAF50; /* Green - Excellent */
+        }
+
+        .eval-drop .eval-number.good {
+            color: #8BC34A; /* Light green - Good */
+        }
+
+        .eval-drop .eval-number.inaccuracy {
+            color: #FFC107; /* Yellow - Inaccuracy */
+        }
+
+        .eval-drop .eval-number.mistake {
+            color: #FF9800; /* Orange - Mistake */
+        }
+
+        .eval-drop .eval-number.blunder {
+            color: #F44336; /* Red - Blunder */
+        }
+
 
 
         .move-number {
@@ -937,6 +962,25 @@
             }
         }
 
+        function getCentipawnQuality(evalDiff) {
+            // Classify move based on eval difference in centipawns for color coding
+            const centipawns = Math.abs(evalDiff * 100);
+            
+            if (centipawns === 0) {
+                return 'best';
+            } else if (centipawns <= 19) {
+                return 'excellent';
+            } else if (centipawns <= 49) {
+                return 'good';
+            } else if (centipawns <= 149) {
+                return 'inaccuracy';
+            } else if (centipawns <= 299) {
+                return 'mistake';
+            } else {
+                return 'blunder';
+            }
+        }
+
         function extractDestination(move) {
             if (!move) return null;
             
@@ -1109,7 +1153,7 @@
                                     <span class="eval-after">${(parseFloat(move.Your_Move_Eval) || 0).toFixed(2)}</span>
                                     <span class="eval-arrow">→</span>
                                     <span class="eval-before">${(parseFloat(move.Best_Move_Eval) || 0).toFixed(2)}</span>
-                                    <span class="eval-drop">(${Math.abs(parseFloat(move.Eval_Difference) || 0).toFixed(2)})</span>
+                                    <span class="eval-drop">(<span class="eval-number ${getCentipawnQuality(parseFloat(move.Eval_Difference) || 0)}">${Math.abs(parseFloat(move.Eval_Difference) || 0).toFixed(2)}</span>)</span>
                                 </div>
                             </div>
                         </div>
