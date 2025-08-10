@@ -1106,10 +1106,10 @@
                                         🔍
                                     </button>
                                                                             <span class="eval-label">Eval:</span> 
-                                        <span class="eval-after">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
+                                        <span class="eval-after">${(parseFloat(move.Your_Move_Eval) || 0).toFixed(2)}</span>
                                         <span class="eval-arrow">→</span>
-                                        <span class="eval-before">${(parseFloat(move.Original_Eval_After) + parseFloat(move.Stockfish_Eval_Drop) / 100 || 0).toFixed(2)}</span>
-                                        <span class="eval-drop">(${Math.abs(parseFloat(move.Stockfish_Eval_Drop) / 100 || 0).toFixed(2)})</span>
+                                        <span class="eval-before">${(parseFloat(move.Best_Move_Eval) || 0).toFixed(2)}</span>
+                                        <span class="eval-drop">(${Math.abs(parseFloat(move.Eval_Difference) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
                         </div>
@@ -1231,7 +1231,7 @@
         async function loadData() {
             try {
                 console.log('Starting to load CSV...');
-                const response = await fetch('repeated_moves_stockfish_analysis_with_images_fixed.csv');
+                const response = await fetch('repeated_moves_with_deterministic_evals.csv');
                 console.log('Response status:', response.status);
                 
                 if (!response.ok) {
