@@ -721,47 +721,51 @@
             
             /* Desktop filter layout - organized rows */
             .filter-section {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-areas: 
+                    "stats"
+                    "counter"
+                    "quality side"
+                    "dropdown1 dropdown2 dropdown3 dropdown4";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 20px;
             }
             
-            /* Row 1: Statistics and Move Counter */
-            .filter-section > .stats,
+            /* Row 1: Statistics */
+            .filter-section > .stats {
+                grid-area: stats;
+            }
+            
+            /* Row 1: Move Counter */
             .filter-section > .move-counter {
-                width: 100%;
+                grid-area: counter;
             }
             
-            /* Row 2: Move Quality and Side Filters side by side */
-            .filter-section > .filter-row:nth-child(3),
-            .filter-section > .filter-row:nth-child(4) {
-                display: inline-block;
-                width: 50%;
-                vertical-align: top;
-                margin-right: 0;
-            }
-            
+            /* Row 2: Move Quality */
             .filter-section > .filter-row:nth-child(3) {
-                margin-left: 0;
+                grid-area: quality;
             }
             
-            /* Row 3: All 4 dropdowns side by side */
-            .filter-section > .filter-row:nth-child(5),
-            .filter-section > .filter-row:nth-child(6),
-            .filter-section > .filter-row:nth-child(7),
-            .filter-section > .filter-row:nth-child(8) {
-                display: inline-block;
-                width: 25%;
-                margin-right: 0;
-                vertical-align: top;
+            /* Row 2: Side Filters */
+            .filter-section > .filter-row:nth-child(4) {
+                grid-area: side;
             }
             
+            /* Row 3: All 4 dropdowns */
             .filter-section > .filter-row:nth-child(5) {
-                margin-left: 0;
+                grid-area: dropdown1;
+            }
+            
+            .filter-section > .filter-row:nth-child(6) {
+                grid-area: dropdown2;
+            }
+            
+            .filter-section > .filter-row:nth-child(7) {
+                grid-area: dropdown3;
             }
             
             .filter-section > .filter-row:nth-child(8) {
-                margin-right: 0;
+                grid-area: dropdown4;
             }
             
             /* Desktop sticky header layout */
