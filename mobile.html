@@ -1045,14 +1045,15 @@
             const fen = position.replace(/ /g, '%20');
             
             // Determine board orientation based on whose move it is
-            // Extract the side to move from FEN (4th part of FEN string)
+            // Extract the side to move from FEN (2nd part of FEN string)
             const fenParts = position.split(' ');
             const sideToMove = fenParts.length >= 2 ? fenParts[1] : 'w';
             
-            // If it's black's move, flip the board by adding ?color=black
-            const colorParam = sideToMove === 'b' ? '?color=black' : '';
+            // For mobile, try using the 'flip' parameter which might work better in mobile apps
+            // The Lichess mobile app might handle 'flip' better than 'color'
+            const flipParam = sideToMove === 'b' ? '?flip=1' : '';
             
-            return `https://lichess.org/analysis/${fen}${colorParam}`;
+            return `https://lichess.org/analysis/${fen}${flipParam}`;
         }
 
         function getQualityDisplay(quality) {
