@@ -416,9 +416,12 @@
             font-weight: bold;
         }
 
-        .eval-drop span {
-            color: inherit;
+        /* Ensure inner spans don't inherit the black color */
+        .eval-drop > span {
+            color: unset;
         }
+
+
 
         .eval-drop.best {
             color: #2196F3; /* Blue for Best */
