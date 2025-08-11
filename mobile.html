@@ -1049,11 +1049,17 @@
             const fenParts = position.split(' ');
             const sideToMove = fenParts.length >= 2 ? fenParts[1] : 'w';
             
-            // For mobile, try using the 'flip' parameter which might work better in mobile apps
-            // The Lichess mobile app might handle 'flip' better than 'color'
-            const flipParam = sideToMove === 'b' ? '?flip=1' : '';
+            // For mobile, the Lichess app might not support URL parameters for board orientation
+            // Try using a different approach - maybe the app has its own deep link format
+            // For now, let's try the most basic approach and see if the app respects any parameters
             
-            return `https://lichess.org/analysis/${fen}${flipParam}`;
+            if (sideToMove === 'b') {
+                // Try multiple parameter combinations for mobile app compatibility
+                // The Lichess mobile app might need a different approach entirely
+                return `https://lichess.org/analysis/${fen}?color=black&flip=1&orientation=black&view=black`;
+            } else {
+                return `https://lichess.org/analysis/${fen}`;
+            }
         }
 
         function getQualityDisplay(quality) {
