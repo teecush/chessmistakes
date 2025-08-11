@@ -425,7 +425,7 @@
         }
 
         .eval-drop {
-            color: #666;
+            color: #000;
             font-weight: bold;
         }
 
@@ -1163,7 +1163,7 @@
                                     <span class="eval-before">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
                                     <span class="eval-arrow">→</span>
                                     <span class="eval-after">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
-                                    <span class="eval-drop ${getQualityClass(Math.abs(parseFloat(move.Original_Eval_Drop) || 0))}">(${Math.abs(parseFloat(move.Original_Eval_Drop) || 0).toFixed(2)})</span>
+                                    <span class="eval-drop" style="color: #000;">(<span class="${getQualityClass(Math.abs(parseFloat(move.Original_Eval_Drop) || 0))}">${Math.abs(parseFloat(move.Original_Eval_Drop) || 0).toFixed(2)}</span>)</span>
                                 </div>
                             </div>
                         </div>
