@@ -1049,16 +1049,25 @@
             const fenParts = position.split(' ');
             const sideToMove = fenParts.length >= 2 ? fenParts[1] : 'w';
             
-            // For mobile, the Lichess app might not support URL parameters for board orientation
-            // Try using a different approach - maybe the app has its own deep link format
-            // For now, let's try the most basic approach and see if the app respects any parameters
-            
+            // For mobile, try to force opening in browser instead of app to ensure parameters work
+            // The Lichess mobile app doesn't seem to support URL parameters for board orientation
             if (sideToMove === 'b') {
-                // Try multiple parameter combinations for mobile app compatibility
-                // The Lichess mobile app might need a different approach entirely
-                return `https://lichess.org/analysis/${fen}?color=black&flip=1&orientation=black&view=black`;
+                // Use the working color parameter that works in browsers
+                return `https://lichess.org/analysis/${fen}?color=black`;
             } else {
                 return `https://lichess.org/analysis/${fen}`;
+            }
+        }
+
+        function openLichessInBrowser(url) {
+            // Try to force opening in browser instead of app
+            // This might help with board orientation parameters
+            try {
+                // Try opening in a new tab with noopener to prevent app takeover
+                window.open(url, '_blank', 'noopener,noreferrer');
+            } catch (e) {
+                // Fallback to regular window.open
+                window.open(url, '_blank');
             }
         }
 
@@ -1195,7 +1204,7 @@
                                     <div class="move-number">Move #${getMoveNumberFromFEN(move.Position) || move.Move_Number || 'N/A'}</div>
                                 </div>
                                 <div class="eval-row">
-                                    <button class="lichess-button-small" onclick="window.open('${generateLichessUrl(move.Position, move.Move)}', '_blank')">
+                                    <button class="lichess-button-small" onclick="openLichessInBrowser('${generateLichessUrl(move.Position, move.Move)}')">
                                         🔍
                                     </button>
                                     <span class="eval-label">Eval:</span> 
