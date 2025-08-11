@@ -1,9 +1,9 @@
 Position,Move,Times_Repeated,Move_Number,Side,Original_Eval_Before,Original_Eval_After,Original_Eval_Drop,Original_Move_Quality,Stockfish_Eval_Drop,Stockfish_Move_Quality,Stockfish_Best_Move,Opening,Move_Theme,Board_Image,Your_Move_Eval,Best_Move_Eval,Eval_Difference
-rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1,d4,880,1,White,0.36,0.24,0.12,Mistake,51,Good,e4,Unknown,pawn_push; central_control,board_images/board_000.png,-0.35,0.32,0.67
-rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1,e5,543,2,Black,0.3,0.35,-0.05,Good,-67,Good,c5,Unknown,pawn_push; central_control,board_images/board_001.png,0.30,-0.28,-0.58
-rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,434,3,White,0.22,0.24,-0.02,Excellent,56,Excellent,c4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_002.png,-0.26,0.31,0.57
-rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2,Nf6,357,4,Black,0.32,0.4,-0.08,Inaccuracy,-80,Good,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_003.png,0.44,-0.36,-0.80
-rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1,d5,243,2,Black,0.27,0.27,0.0,Best,-50,Good,Nf6,Unknown,pawn_push; central_control,board_images/board_004.png,0.31,-0.35,-0.66
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1,d4,880,1,White,0.36,0.24,0.12,Mistake,51,Good,e4,Unknown,pawn_push; central_control,board_images/board_000.png,0.24,0.75,0.51
+rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1,e5,543,2,Black,0.3,0.35,-0.05,Good,-67,Good,c5,Unknown,pawn_push; central_control,board_images/board_001.png,0.35,-0.32,0.67
+rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2,c4,434,3,White,0.22,0.24,-0.02,Excellent,56,Excellent,c4,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_002.png,0.24,0.80,0.56
+rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2,Nf6,357,4,Black,0.32,0.4,-0.08,Inaccuracy,-80,Good,Nc6,King's Pawn Game,knight_development; knight_development,board_images/board_003.png,0.40,-0.40,0.80
+rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1,d5,243,2,Black,0.27,0.27,0.0,Best,-50,Good,Nf6,Unknown,pawn_push; central_control,board_images/board_004.png,0.27,-0.23,0.50
 rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2,c4,161,3,White,0.24,0.25,-0.01,Excellent,50,Good,Nf3,Queen's Pawn Game,pawn_push; central_control; queenside_attack,board_images/board_005.png,,,
 rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 3 3,Nc6,137,6,Black,0.17,0.13,0.04,Good,-34,Excellent,Nc6,Petroff Defense,knight_development; knight_development,board_images/board_006.png,,,
 rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3,Nc3,131,5,White,0.31,0.27,0.04,Good,58,Excellent,Nc3,Queen's Pawn Game,knight_development; knight_development,board_images/board_007.png,,,
