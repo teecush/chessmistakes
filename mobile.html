@@ -399,19 +399,19 @@
             font-weight: bold;
         }
 
-        .eval-your-move {
-            color: #d32f2f; /* Red to match Your Move */
+        .eval-before {
+            color: #2e7d32; /* Green to match Best Move */
         }
 
         .eval-arrow {
             color: #666;
         }
 
-        .eval-best-move {
-            color: #2e7d32; /* Green to match Best Move */
+        .eval-after {
+            color: #d32f2f; /* Red to match Your Move */
         }
 
-        .eval-difference {
+        .eval-drop {
             color: #666;
             font-weight: bold;
         }
@@ -992,26 +992,6 @@
             return `${emoji} ${quality}`;
         }
 
-        function getEvalDifferenceColor(quality) {
-            // Return color based on move quality to match the color scheme
-            switch(quality.toLowerCase()) {
-                case 'best':
-                    return '#1976D2'; // Blue
-                case 'excellent':
-                    return '#4CAF50'; // Green
-                case 'good':
-                    return '#8BC34A'; // Light green
-                case 'inaccuracy':
-                    return '#FFC107'; // Yellow
-                case 'mistake':
-                    return '#FF9800'; // Orange
-                case 'blunder':
-                    return '#F44336'; // Red
-                default:
-                    return '#666'; // Default gray
-            }
-        }
-
         function updateMoveCounter() {
             const total = filteredData.length;
             const best = filteredData.filter(move => getActualMoveQuality(move) === 'Best').length;
@@ -1126,10 +1106,10 @@
                                         🔍
                                     </button>
                                     <span class="eval-label">Eval:</span> 
-                                    <span class="eval-your-move">${(parseFloat(move.Your_Move_Eval) || 0).toFixed(2)}</span>
-                                    <span class="eval-arrow">></span>
-                                    <span class="eval-best-move">${(parseFloat(move.Best_Move_Eval) || 0).toFixed(2)}</span>
-                                    <span class="eval-difference" style="color: ${getEvalDifferenceColor(actualQuality)}">(${Math.abs(parseFloat(move.Eval_Difference) || 0).toFixed(2)})</span>
+                                    <span class="eval-after">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
+                                    <span class="eval-arrow">→</span>
+                                    <span class="eval-before">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
+                                    <span class="eval-drop">(${Math.abs(parseFloat(move.Original_Eval_Drop) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
                         </div>
@@ -1251,7 +1231,7 @@
         async function loadData() {
             try {
                 console.log('Starting to load CSV...');
-                const response = await fetch('repeated_moves_with_deterministic_evals.csv');
+                const response = await fetch('repeated_moves_stockfish_analysis_with_images_fixed.csv');
                 console.log('Response status:', response.status);
                 
                 if (!response.ok) {
