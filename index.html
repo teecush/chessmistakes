@@ -1372,9 +1372,9 @@
                                         🔍
                                     </button>
                                     <span class="eval-label">Eval:</span> 
-                                    <span class="eval-before">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
+                                    <span class="eval-before">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
                                     <span class="eval-arrow">→</span>
-                                    <span class="eval-after">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
+                                    <span class="eval-after">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
                                     <span class="eval-drop ${getQualityClass(Math.abs(parseFloat(move.Original_Eval_After - move.Original_Eval_Before) || 0))}">(${Math.abs(parseFloat(move.Original_Eval_After - move.Original_Eval_Before) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
