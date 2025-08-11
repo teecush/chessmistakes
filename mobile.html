@@ -1210,6 +1210,20 @@
             });
         });
 
+        // Event listeners for side filter buttons
+        document.querySelectorAll('.filter-section .filter-button[data-side]').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all side filter buttons
+                document.querySelectorAll('.filter-button[data-side]').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                filterData();
+            });
+        });
+
         // Event listeners for sliders
         document.getElementById('move-number-slider').addEventListener('input', function() {
             const value = this.value;
