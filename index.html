@@ -416,6 +416,30 @@
             font-weight: bold;
         }
 
+        .eval-drop.best {
+            color: #2196F3; /* Blue for Best */
+        }
+
+        .eval-drop.excellent {
+            color: #4CAF50; /* Green for Excellent */
+        }
+
+        .eval-drop.good {
+            color: #8BC34A; /* Light Green for Good */
+        }
+
+        .eval-drop.inaccuracy {
+            color: #FF9800; /* Orange for Inaccuracy */
+        }
+
+        .eval-drop.mistake {
+            color: #FF5722; /* Red-Orange for Mistake */
+        }
+
+        .eval-drop.blunder {
+            color: #F44336; /* Red for Blunder */
+        }
+
 
 
         .move-number {
@@ -1241,6 +1265,23 @@
             document.getElementById('sticky-total-count').textContent = movesData.length;
         }
 
+        function getQualityClass(evalDrop) {
+            // Determine quality class based on evaluation drop
+            if (evalDrop === 0.0) {
+                return 'best';
+            } else if (evalDrop <= 0.1) {
+                return 'excellent';
+            } else if (evalDrop <= 0.3) {
+                return 'good';
+            } else if (evalDrop <= 1.0) {
+                return 'inaccuracy';
+            } else if (evalDrop <= 2.0) {
+                return 'mistake';
+            } else {
+                return 'blunder';
+            }
+        }
+
         function filterData() {
             const selectedQuality = document.querySelector('.filter-button[data-quality].active')?.dataset.quality;
             const selectedSide = document.querySelector('.filter-button[data-side].active')?.dataset.side;
@@ -1334,7 +1375,7 @@
                                     <span class="eval-before">${(parseFloat(move.Original_Eval_Before) || 0).toFixed(2)}</span>
                                     <span class="eval-arrow">→</span>
                                     <span class="eval-after">${(parseFloat(move.Original_Eval_After) || 0).toFixed(2)}</span>
-                                    <span class="eval-drop">(${Math.abs(parseFloat(move.Original_Eval_After - move.Original_Eval_Before) || 0).toFixed(2)})</span>
+                                    <span class="eval-drop ${getQualityClass(Math.abs(parseFloat(move.Original_Eval_After - move.Original_Eval_Before) || 0))}">(${Math.abs(parseFloat(move.Original_Eval_After - move.Original_Eval_Before) || 0).toFixed(2)})</span>
                                 </div>
                             </div>
                         </div>
